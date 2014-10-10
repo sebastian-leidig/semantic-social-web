@@ -1,0 +1,194 @@
+@prefix : <http://www.semanticweb.org/sebastian/ontologies/2014/9/untitled-ontology-13#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbpedia-owl: <http://dbpedia.org/ontology/> .
+@base <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology> .
+
+<http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology> rdf:type owl:Ontology .
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#AdjunctFaculty
+
+<http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#AdjunctFaculty> rdf:type owl:Class ;
+                                                                                          
+                                                                                          rdfs:subClassOf <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Faculty> .
+
+
+
+###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Club
+
+<http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Club> rdf:type owl:Class ;
+                                                                                
+                                                                                rdfs:subClassOf <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Organization> .
+
+
+
+###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Company
+
+<http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Company> rdf:type owl:Class ;
+                                                                                   
+                                                                                   rdfs:subClassOf <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#ExternalOrganization> .
+
+
+
+###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Competition
+
+<http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Competition> rdf:type owl:Class ;
+                                                                                       
+                                                                                       rdfs:subClassOf <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Event> .
+
+
+
+###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Department
+
+<http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Department> rdf:type owl:Class ;
+                                                                                      
+                                                                                      rdfs:subClassOf <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Organization> .
+
+
+
+###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Event
+
+<http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Event> rdf:type owl:Class .
+
+
+
+###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#ExternalOrganization
+
+<http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#ExternalOrganization> rdf:type owl:Class ;
+                                                                                                
+                                                                                                rdfs:subClassOf <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Organization> .
+
+
+
+###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Faculty
+
+<http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Faculty> rdf:type owl:Class ;
+                                                                                   
+                                                                                   rdfs:subClassOf <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Person> .
+
+
+
+###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#GuestFaculty
+
+<http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#GuestFaculty> rdf:type owl:Class ;
+                                                                                        
+                                                                                        rdfs:subClassOf <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Faculty> .
+
+
+
+###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Institute
+
+<http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Institute> rdf:type owl:Class ;
+                                                                                     
+                                                                                     rdfs:subClassOf <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Organization> .
+
+
+
+###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Interest
+
+<http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Interest> rdf:type owl:Class .
+
+
+
+###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Lab
+
+<http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Lab> rdf:type owl:Class ;
+                                                                               
+                                                                               rdfs:subClassOf <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Event> .
+
+
+
+###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Lecture
+
+<http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Lecture> rdf:type owl:Class ;
+                                                                                   
+                                                                                   rdfs:subClassOf <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Event> .
+
+
+
+###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Meeting
+
+<http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Meeting> rdf:type owl:Class ;
+                                                                                   
+                                                                                   rdfs:subClassOf <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Event> .
+
+
+
+###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Organization
+
+<http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Organization> rdf:type owl:Class .
+
+
+
+###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#PermanentFaculty
+
+<http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#PermanentFaculty> rdf:type owl:Class ;
+                                                                                            
+                                                                                            rdfs:subClassOf <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Faculty> .
+
+
+
+###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Person
+
+<http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Person> rdf:type owl:Class .
+
+
+
+###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Project
+
+<http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Project> rdf:type owl:Class .
+
+
+
+###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#ResearchAssistant
+
+<http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#ResearchAssistant> rdf:type owl:Class ;
+                                                                                             
+                                                                                             rdfs:subClassOf <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Student> .
+
+
+
+###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Student
+
+<http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Student> rdf:type owl:Class ;
+                                                                                   
+                                                                                   rdfs:subClassOf <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Person> .
+
+
+
+###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Subject
+
+<http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Subject> rdf:type owl:Class .
+
+
+
+###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#TeachingAssistant
+
+<http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#TeachingAssistant> rdf:type owl:Class ;
+                                                                                             
+                                                                                             rdfs:subClassOf <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Student> .
+
+
+
+###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Team
+
+<http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Team> rdf:type owl:Class ;
+                                                                                
+                                                                                rdfs:subClassOf <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Organization> .
+
+
+
+
+###  Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net
+
