@@ -35,7 +35,9 @@
 
 <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#attendedBy> rdf:type owl:ObjectProperty ;
                                                                                       
-                                                                                      owl:inverseOf <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#attends> .
+                                                                                      owl:inverseOf <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#attends> ;
+                                                                                      
+                                                                                      rdfs:subPropertyOf <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#connectsToAgent> .
 
 
 
@@ -45,7 +47,38 @@
                                                                                    
                                                                                    rdfs:range <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Event> ;
                                                                                    
-                                                                                   rdfs:domain <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Person> .
+                                                                                   rdfs:domain <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Person> ;
+                                                                                   
+                                                                                   rdfs:subPropertyOf <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#connectsToBox> .
+
+
+
+###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#colleageOf
+
+<http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#colleageOf> rdf:type owl:ObjectProperty ,
+                                                                                               owl:SymmetricProperty ;
+                                                                                      
+                                                                                      rdfs:domain <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Person> ;
+                                                                                      
+                                                                                      rdfs:range <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Person> .
+
+
+
+###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#connectsToAgent
+
+<http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#connectsToAgent> rdf:type owl:ObjectProperty ;
+                                                                                           
+                                                                                           rdfs:domain <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Agent> ;
+                                                                                           
+                                                                                           rdfs:range <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Box> .
+
+
+
+###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#connectsToBox
+
+<http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#connectsToBox> rdf:type owl:ObjectProperty ;
+                                                                                         
+                                                                                         owl:inverseOf <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#connectsToAgent> .
 
 
 
@@ -59,6 +92,18 @@
 
 
 
+###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#hasMember
+
+<http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#hasMember> rdf:type owl:ObjectProperty ;
+                                                                                     
+                                                                                     rdfs:range <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Agent> ;
+                                                                                     
+                                                                                     rdfs:domain <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Organization> ;
+                                                                                     
+                                                                                     rdfs:subPropertyOf <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#connectsToAgent> .
+
+
+
 ###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#hasPrerequisite
 
 <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#hasPrerequisite> rdf:type owl:ObjectProperty ;
@@ -69,16 +114,29 @@
 
 
 
+###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#hasRelationship
+
+<http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#hasRelationship> rdf:type owl:ObjectProperty ;
+                                                                                           
+                                                                                           rdfs:domain <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Person> ;
+                                                                                           
+                                                                                           rdfs:range <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Relationship> .
+
+
+
 ###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#hasSubject
 
 <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#hasSubject> rdf:type owl:ObjectProperty ;
                                                                                       
-                                                                                      rdfs:domain <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Lab> ,
-                                                                                                  <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Lecture> ;
-                                                                                      
                                                                                       rdfs:range <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Subject> ;
                                                                                       
-                                                                                      rdfs:subPropertyOf <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#hasTopic> .
+                                                                                      rdfs:subPropertyOf <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#isAbout> ;
+                                                                                      
+                                                                                      rdfs:domain [ rdf:type owl:Class ;
+                                                                                                    owl:unionOf ( <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Lab>
+                                                                                                                  <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Lecture>
+                                                                                                                )
+                                                                                                  ] .
 
 
 
@@ -90,17 +148,19 @@
                                                                                                 
                                                                                                 rdfs:domain <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Subject> ;
                                                                                                 
+                                                                                                rdfs:subPropertyOf <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#connectsToAgent> ;
+                                                                                                
                                                                                                 owl:inverseOf <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#isTeachingAssistantOf> .
 
 
 
-###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#hasTopic
+###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#isAbout
 
-<http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#hasTopic> rdf:type owl:ObjectProperty ;
-                                                                                    
-                                                                                    rdfs:domain <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Event> ;
-                                                                                    
-                                                                                    rdfs:range <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Interest> .
+<http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#isAbout> rdf:type owl:ObjectProperty ;
+                                                                                   
+                                                                                   rdfs:domain <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Box> ;
+                                                                                   
+                                                                                   rdfs:range <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Interest> .
 
 
 
@@ -110,13 +170,27 @@
                                                                                                  
                                                                                                  rdfs:range <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Project> ;
                                                                                                  
-                                                                                                 rdfs:domain <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Student> .
+                                                                                                 rdfs:domain <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Student> ;
+                                                                                                 
+                                                                                                 rdfs:subPropertyOf <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#connectsToBox> .
 
 
 
 ###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#isTeachingAssistantOf
 
-<http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#isTeachingAssistantOf> rdf:type owl:ObjectProperty .
+<http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#isTeachingAssistantOf> rdf:type owl:ObjectProperty ;
+                                                                                                 
+                                                                                                 rdfs:subPropertyOf <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#connectsToBox> .
+
+
+
+###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#memberOf
+
+<http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#memberOf> rdf:type owl:ObjectProperty ;
+                                                                                    
+                                                                                    rdfs:subPropertyOf <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#connectsToBox> ;
+                                                                                    
+                                                                                    owl:inverseOf <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#hasMember> .
 
 
 
@@ -126,7 +200,9 @@
                                                                                        
                                                                                        rdfs:range <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Agent> ;
                                                                                        
-                                                                                       rdfs:domain <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Event> .
+                                                                                       rdfs:domain <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Event> ;
+                                                                                       
+                                                                                       rdfs:subPropertyOf <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#connectsToAgent> .
 
 
 
@@ -136,7 +212,9 @@
                                                                                         
                                                                                         rdfs:range <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Faculty> ;
                                                                                         
-                                                                                        rdfs:domain <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Project> .
+                                                                                        rdfs:domain <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Project> ;
+                                                                                        
+                                                                                        rdfs:subPropertyOf <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#connectsToAgent> .
 
 
 
@@ -146,7 +224,9 @@
                                                                                      
                                                                                      rdfs:range <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Person> ;
                                                                                      
-                                                                                     rdfs:domain <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Project> .
+                                                                                     rdfs:domain <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Project> ;
+                                                                                     
+                                                                                     rdfs:subPropertyOf <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#connectsToAgent> .
 
 
 
@@ -168,7 +248,13 @@
                                                                                    
                                                                                    rdfs:range <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Subject> ;
                                                                                    
-                                                                                   rdfs:subPropertyOf owl:topObjectProperty .
+                                                                                   rdfs:subPropertyOf <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#connectsToBox> .
+
+
+
+###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#withPerson
+
+<http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#withPerson> rdf:type owl:ObjectProperty .
 
 
 
@@ -256,6 +342,12 @@
 
 
 
+###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Box
+
+<http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Box> rdf:type owl:Class .
+
+
+
 ###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Club
 
 <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Club> rdf:type owl:Class ;
@@ -298,7 +390,9 @@
 
 ###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Event
 
-<http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Event> rdf:type owl:Class .
+<http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Event> rdf:type owl:Class ;
+                                                                                 
+                                                                                 rdfs:subClassOf <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Box> .
 
 
 
@@ -374,7 +468,8 @@
 
 <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Organization> rdf:type owl:Class ;
                                                                                         
-                                                                                        rdfs:subClassOf <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Agent> .
+                                                                                        rdfs:subClassOf <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Agent> ,
+                                                                                                        <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Box> .
 
 
 
@@ -396,7 +491,15 @@
 
 ###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Project
 
-<http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Project> rdf:type owl:Class .
+<http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Project> rdf:type owl:Class ;
+                                                                                   
+                                                                                   rdfs:subClassOf <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Box> .
+
+
+
+###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Relationship
+
+<http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Relationship> rdf:type owl:Class .
 
 
 
