@@ -57,15 +57,19 @@
 
 :connectsToAgent rdf:type owl:ObjectProperty ;
                  
-                 rdfs:domain :Agent ;
+                 rdfs:range :Agent ;
                  
-                 rdfs:range :Box .
+                 rdfs:domain :Box .
 
 
 
 ###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#connectsToBox
 
 :connectsToBox rdf:type owl:ObjectProperty ;
+               
+               rdfs:domain :Agent ;
+               
+               rdfs:range :Box ;
                
                owl:inverseOf :connectsToAgent .
 
@@ -76,7 +80,7 @@
 :hasAcquaintance rdf:type owl:ObjectProperty ,
                           owl:SymmetricProperty ;
                  
-                 rdfs:subPropertyOf :knows .
+                 rdfs:subPropertyOf :mightKnow .
 
 
 
@@ -89,7 +93,7 @@
               
               rdfs:range :Person ;
               
-              rdfs:subPropertyOf :knows .
+              rdfs:subPropertyOf :hasAcquaintance .
 
 
 
@@ -102,7 +106,7 @@
            
            rdfs:range :Person ;
            
-           rdfs:subPropertyOf :knows .
+           rdfs:subPropertyOf :hasAcquaintance .
 
 
 
@@ -236,17 +240,6 @@
 
 
 
-###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#knows
-
-:knows rdf:type owl:ObjectProperty ,
-                owl:SymmetricProperty ;
-       
-       rdfs:domain :Person ;
-       
-       rdfs:range :Person .
-
-
-
 ###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#memberOf
 
 :memberOf rdf:type owl:ObjectProperty ;
@@ -254,6 +247,12 @@
           rdfs:subPropertyOf :connectsToBox ;
           
           owl:inverseOf :hasMember .
+
+
+
+###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#mightKnow
+
+:mightKnow rdf:type owl:ObjectProperty .
 
 
 
@@ -620,6 +619,225 @@
 
 
 
+
+
+#################################################################
+#
+#    Individuals
+#
+#################################################################
+
+
+###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Adam
+
+:Adam rdf:type :Person ,
+               owl:NamedIndividual ;
+      
+      :memberOf :IIITD .
+
+
+
+###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Computers
+
+:Computers rdf:type :Interest ,
+                    owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#IIITD
+
+:IIITD rdf:type :Organization ,
+                owl:NamedIndividual ;
+       
+       :isAbout :Computers .
+
+
+
+###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Rahul
+
+:Rahul rdf:type :Person ,
+                owl:NamedIndividual ;
+       
+       :memberOf :IIITD .
+
+
+
+
+
+#################################################################
+#
+#    Rules
+#
+#################################################################
+
+
+<urn:swrl#a> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl#b> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl#o> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl#project> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl#box> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl#p> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl#i> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+  <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                          rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                      <http://www.w3.org/2003/11/swrl#classPredicate> :Box ;
+                                                      <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#box>
+                                                    ] ;
+                                          rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                     rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                      rdf:rest rdf:nil ;
+                                                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :connectsToBox ;
+                                                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#b> ;
+                                                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#box>
+                                                                                                ]
+                                                                                    ] ;
+                                                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :connectsToBox ;
+                                                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#a> ;
+                                                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#box>
+                                                                                     ]
+                                                                         ] ;
+                                                                rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                            <http://www.w3.org/2003/11/swrl#classPredicate> :Person ;
+                                                                            <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#b>
+                                                                          ]
+                                                              ] ;
+                                                     rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                 <http://www.w3.org/2003/11/swrl#classPredicate> :Person ;
+                                                                 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#a>
+                                                               ]
+                                                   ]
+                                        ] ;
+  <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                          rdf:rest rdf:nil ;
+                                          rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                      <http://www.w3.org/2003/11/swrl#propertyPredicate> :mightKnow ;
+                                                      <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#a> ;
+                                                      <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#b>
+                                                    ]
+                                        ]
+] .
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+  <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                          rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                     rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                 <http://www.w3.org/2003/11/swrl#classPredicate> :Person ;
+                                                                 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#b>
+                                                               ] ;
+                                                     rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                            <http://www.w3.org/2003/11/swrl#classPredicate> :Team ;
+                                                                            <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#o>
+                                                                          ] ;
+                                                                rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                      rdf:rest rdf:nil ;
+                                                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :memberOf ;
+                                                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#b> ;
+                                                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#o>
+                                                                                                ]
+                                                                                    ] ;
+                                                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :memberOf ;
+                                                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#a> ;
+                                                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#o>
+                                                                                     ]
+                                                                         ]
+                                                              ]
+                                                   ] ;
+                                          rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                      <http://www.w3.org/2003/11/swrl#classPredicate> :Person ;
+                                                      <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#a>
+                                                    ]
+                                        ] ;
+  <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                          rdf:rest rdf:nil ;
+                                          rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                      <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasColleague ;
+                                                      <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#a> ;
+                                                      <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#b>
+                                                    ]
+                                        ]
+] .
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+  <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                          rdf:rest rdf:nil ;
+                                          rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                      <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasInterest ;
+                                                      <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#i> ;
+                                                      <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#p>
+                                                    ]
+                                        ] ;
+  <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                          rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                     rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                rdf:rest rdf:nil ;
+                                                                rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                            <http://www.w3.org/2003/11/swrl#propertyPredicate> :isAbout ;
+                                                                            <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#b> ;
+                                                                            <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#i>
+                                                                          ]
+                                                              ] ;
+                                                     rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                 <http://www.w3.org/2003/11/swrl#propertyPredicate> :connectsToBox ;
+                                                                 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#b> ;
+                                                                 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#p>
+                                                               ]
+                                                   ] ;
+                                          rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                      <http://www.w3.org/2003/11/swrl#classPredicate> :Person ;
+                                                      <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#p>
+                                                    ]
+                                        ]
+] .
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+  <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                          rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                      <http://www.w3.org/2003/11/swrl#classPredicate> :Person ;
+                                                      <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#a>
+                                                    ] ;
+                                          rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                     rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                            <http://www.w3.org/2003/11/swrl#classPredicate> :Project ;
+                                                                            <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#project>
+                                                                          ] ;
+                                                                rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :takenUpBy ;
+                                                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#a> ;
+                                                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#project>
+                                                                                     ] ;
+                                                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                      rdf:rest rdf:nil ;
+                                                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :takenUpBy ;
+                                                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#b> ;
+                                                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#project>
+                                                                                                ]
+                                                                                    ]
+                                                                         ]
+                                                              ] ;
+                                                     rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                 <http://www.w3.org/2003/11/swrl#classPredicate> :Person ;
+                                                                 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#b>
+                                                               ]
+                                                   ]
+                                        ] ;
+  <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                          rdf:rest rdf:nil ;
+                                          rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                      <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasColleague ;
+                                                      <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#a> ;
+                                                      <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#b>
+                                                    ]
+                                        ]
+] .
 
 ###  Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net
 
