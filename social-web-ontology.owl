@@ -53,17 +53,6 @@
 
 
 
-###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#colleageOf
-
-:colleageOf rdf:type owl:ObjectProperty ,
-                     owl:SymmetricProperty ;
-            
-            rdfs:domain :Person ;
-            
-            rdfs:range :Person .
-
-
-
 ###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#connectsToAgent
 
 :connectsToAgent rdf:type owl:ObjectProperty ;
@@ -79,6 +68,51 @@
 :connectsToBox rdf:type owl:ObjectProperty ;
                
                owl:inverseOf :connectsToAgent .
+
+
+
+###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#hasAcquaintance
+
+:hasAcquaintance rdf:type owl:ObjectProperty ,
+                          owl:SymmetricProperty ;
+                 
+                 rdfs:subPropertyOf :knows .
+
+
+
+###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#hasColleague
+
+:hasColleague rdf:type owl:ObjectProperty ,
+                       owl:SymmetricProperty ;
+              
+              rdfs:domain :Person ;
+              
+              rdfs:range :Person ;
+              
+              rdfs:subPropertyOf :knows .
+
+
+
+###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#hasFriend
+
+:hasFriend rdf:type owl:ObjectProperty ,
+                    owl:SymmetricProperty ;
+           
+           rdfs:domain :Person ;
+           
+           rdfs:range :Person ;
+           
+           rdfs:subPropertyOf :knows .
+
+
+
+###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#hasInterest
+
+:hasInterest rdf:type owl:ObjectProperty ;
+             
+             rdfs:range :Interest ;
+             
+             rdfs:domain :Person .
 
 
 
@@ -104,6 +138,16 @@
 
 
 
+###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#hasOffice
+
+:hasOffice rdf:type owl:ObjectProperty ;
+           
+           rdfs:range :Location ;
+           
+           rdfs:domain :Organization .
+
+
+
 ###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#hasPrerequisite
 
 :hasPrerequisite rdf:type owl:ObjectProperty ;
@@ -118,9 +162,7 @@
 
 :hasRelationship rdf:type owl:ObjectProperty ;
                  
-                 rdfs:domain :Person ;
-                 
-                 rdfs:range :Relationship .
+                 rdfs:domain :Person .
 
 
 
@@ -164,6 +206,16 @@
 
 
 
+###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#isPartOf
+
+:isPartOf rdf:type owl:ObjectProperty ;
+          
+          rdfs:domain :Organization ;
+          
+          rdfs:range :Organization .
+
+
+
 ###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#isResearchAssistantOf
 
 :isResearchAssistantOf rdf:type owl:ObjectProperty ;
@@ -181,6 +233,17 @@
 :isTeachingAssistantOf rdf:type owl:ObjectProperty ;
                        
                        rdfs:subPropertyOf :connectsToBox .
+
+
+
+###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#knows
+
+:knows rdf:type owl:ObjectProperty ,
+                owl:SymmetricProperty ;
+       
+       rdfs:domain :Person ;
+       
+       rdfs:range :Person .
 
 
 
@@ -230,16 +293,6 @@
 
 
 
-###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#taughtInSemester
-
-:taughtInSemester rdf:type owl:ObjectProperty ;
-                  
-                  rdfs:range :Semester ;
-                  
-                  rdfs:domain :Subject .
-
-
-
 ###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#teaches
 
 :teaches rdf:type owl:ObjectProperty ;
@@ -249,12 +302,6 @@
          rdfs:range :Subject ;
          
          rdfs:subPropertyOf :connectsToBox .
-
-
-
-###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#withPerson
-
-:withPerson rdf:type owl:ObjectProperty .
 
 
 
@@ -277,6 +324,16 @@
 #    Data properties
 #
 #################################################################
+
+
+###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#hasAddress
+
+:hasAddress rdf:type owl:DatatypeProperty ;
+            
+            rdfs:domain :Location ;
+            
+            rdfs:range xsd:string .
+
 
 
 ###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#hasCredits
@@ -303,17 +360,25 @@
 
 :hasEndDate rdf:type owl:DatatypeProperty ;
             
-            rdfs:domain :Semester ;
-            
             rdfs:range xsd:dateTime .
+
+
+
+###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#hasLabel
+
+:hasLabel rdf:type owl:DatatypeProperty ;
+          
+          rdfs:range xsd:string ;
+          
+          rdfs:domain owl:Thing ;
+          
+          rdfs:subPropertyOf owl:topDataProperty .
 
 
 
 ###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#hasStartDate
 
 :hasStartDate rdf:type owl:DatatypeProperty ;
-              
-              rdfs:domain :Semester ;
               
               rdfs:range xsd:dateTime .
 
@@ -497,12 +562,6 @@
 
 
 
-###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Relationship
-
-:Relationship rdf:type owl:Class .
-
-
-
 ###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#ResearchAssistant
 
 :ResearchAssistant rdf:type owl:Class ;
@@ -521,12 +580,6 @@
 :ResearchProject rdf:type owl:Class ;
                  
                  rdfs:subClassOf :Project .
-
-
-
-###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Semester
-
-:Semester rdf:type owl:Class .
 
 
 
