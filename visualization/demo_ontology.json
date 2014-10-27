@@ -5,7 +5,9 @@
       "subClassOf": [
         "Person"
       ],
-      "equivalentClass": "isTeachingAssistantOf some Subject"
+      "equivalentClass": [
+        "isTeachingAssistantOf some Subject"
+      ]
     },
     {
       "name": "Person"
