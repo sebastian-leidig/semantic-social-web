@@ -1,0 +1,24 @@
+{
+  "classes": [
+    {
+      "name": "Student",
+      "subClassOf": [
+        "Person"
+      ],
+      "equivalentClass": "isTeachingAssistantOf some Subject"
+    },
+    {
+      "name": "Person"
+    }
+  ],
+  "properties": [
+    {
+      "name": "teaches",
+      "domain": "Faculty",
+      "range":  "Subject",
+      "subPropertyOf": [
+        "connectsToBox"
+      ]
+    }
+  ]
+}
