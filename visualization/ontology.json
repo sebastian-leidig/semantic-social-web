@@ -1,0 +1,291 @@
+{
+"classes":[
+{
+"id" : "AdjunctFaculty",
+"subClassOf":["Faculty"]
+}
+,{
+"id" : "Agent",
+"equivalentClass":["http://xmlns.com/foaf/0.1/Agent"]
+}
+,{
+"id" : "Box"}
+,{
+"id" : "Club",
+"subClassOf":["Organization"]
+}
+,{
+"id" : "Company",
+"subClassOf":["ExternalOrganization"]
+}
+,{
+"id" : "Competition",
+"subClassOf":["Event"]
+}
+,{
+"id" : "CourseProject",
+"subClassOf":["Project"]
+}
+,{
+"id" : "Department",
+"subClassOf":["Organization"]
+}
+,{
+"id" : "Event",
+"subClassOf":["Box"]
+}
+,{
+"id" : "ExternalOrganization",
+"subClassOf":["Organization"]
+}
+,{
+"id" : "Faculty",
+"subClassOf":["Person"]
+}
+,{
+"id" : "GuestFaculty",
+"subClassOf":["Faculty"]
+}
+,{
+"id" : "Institute",
+"subClassOf":["Organization"]
+}
+,{
+"id" : "Interest"}
+,{
+"id" : "Lab",
+"subClassOf":["Event"]
+}
+,{
+"id" : "Lecture",
+"subClassOf":["Event"]
+}
+,{
+"id" : "Location"}
+,{
+"id" : "Meeting",
+"subClassOf":["Event"]
+}
+,{
+"id" : "Organization",
+"equivalentClass":["http://xmlns.com/foaf/0.1/Organization"]
+,
+"subClassOf":["Agent","Box"]
+}
+,{
+"id" : "PermanentFaculty",
+"subClassOf":["Faculty"]
+}
+,{
+"id" : "Person",
+"equivalentClass":["http://xmlns.com/foaf/0.1/Person"]
+,
+"subClassOf":["Agent"]
+}
+,{
+"id" : "Project",
+"subClassOf":["Box"]
+}
+,{
+"id" : "ResearchAssistant",
+"subClassOf":["Student"]
+}
+,{
+"id" : "ResearchProject",
+"subClassOf":["Project"]
+}
+,{
+"id" : "Student",
+"subClassOf":["Person"]
+}
+,{
+"id" : "Subject",
+"subClassOf":["Interest"]
+}
+,{
+"id" : "TeachingAssistant",
+"subClassOf":["Student"]
+}
+,{
+"id" : "Team",
+"subClassOf":["Organization"]
+}
+],
+"properties":[
+{
+ "id":"assistedBy"
+, "domain" : "ResearchProject"
+, "range" : "Student"
+, "inverseOf" : "isResearchAssistantOf"
+, "subPropertyOf" : ["takenUpBy"
+]}
+,{
+ "id":"attendedBy"
+, "inverseOf" : "attends"
+, "subPropertyOf" : ["connectsToAgent"
+]}
+,{
+ "id":"attends"
+, "range" : "Event"
+, "domain" : "Person"
+, "subPropertyOf" : ["connectsToBox"
+]}
+,{
+ "id":"connectsToAgent"
+, "range" : "Agent"
+, "domain" : "Box"
+}
+,{
+ "id":"connectsToBox"
+, "domain" : "Agent"
+, "range" : "Box"
+, "inverseOf" : "connectsToAgent"
+}
+,{
+ "id":"hasAcquaintance"
+, "subPropertyOf" : ["mightKnow"
+], "equivalentProperty" : "http://xmlns.com/foaf/0.1/knows"
+}
+,{
+ "id":"hasColleague"
+, "domain" : "Person"
+, "range" : "Person"
+, "subPropertyOf" : ["hasAcquaintance"
+]}
+,{
+ "id":"hasFriend"
+, "domain" : "Person"
+, "range" : "Person"
+, "subPropertyOf" : ["hasAcquaintance"
+]}
+,{
+ "id":"hasInterest"
+, "range" : "Interest"
+, "domain" : "Person"
+}
+,{
+ "id":"hasLocation"
+, "domain" : "Event"
+, "range" : "Location"
+}
+,{
+ "id":"hasMember"
+, "range" : "Agent"
+, "domain" : "Organization"
+, "subPropertyOf" : ["connectsToAgent"
+]}
+,{
+ "id":"hasOffice"
+, "range" : "Location"
+, "domain" : "Organization"
+}
+,{
+ "id":"hasPrerequisite"
+, "domain" : "Subject"
+, "range" : "Subject"
+}
+,{
+ "id":"hasRelationship"
+, "domain" : "Person"
+}
+,{
+ "id":"hasSubject"
+, "range" : "Subject"
+, "subPropertyOf" : ["isAbout"
+]}
+,{
+ "id":"hasTeachingAssistant"
+, "range" : "Student"
+, "domain" : "Subject"
+, "subPropertyOf" : ["connectsToAgent"
+], "inverseOf" : "isTeachingAssistantOf"
+}
+,{
+ "id":"isAbout"
+, "domain" : "Box"
+, "range" : "Interest"
+}
+,{
+ "id":"isPartOf"
+, "domain" : "Organization"
+, "range" : "Organization"
+}
+,{
+ "id":"isResearchAssistantOf"
+, "range" : "Project"
+, "domain" : "Student"
+, "subPropertyOf" : ["connectsToBox"
+]}
+,{
+ "id":"isTeachingAssistantOf"
+, "subPropertyOf" : ["connectsToBox"
+]}
+,{
+ "id":"memberOf"
+, "subPropertyOf" : ["connectsToBox"
+], "inverseOf" : "hasMember"
+}
+,{
+ "id":"mightKnow"
+}
+,{
+ "id":"organizedBy"
+, "range" : "Agent"
+, "domain" : "Event"
+, "subPropertyOf" : ["connectsToAgent"
+]}
+,{
+ "id":"supervisedBy"
+, "range" : "Faculty"
+, "domain" : "Project"
+, "subPropertyOf" : ["connectsToAgent"
+]}
+,{
+ "id":"takenUpBy"
+, "range" : "Person"
+, "domain" : "Project"
+, "subPropertyOf" : ["connectsToAgent"
+]}
+,{
+ "id":"teaches"
+, "domain" : "Faculty"
+, "range" : "Subject"
+, "subPropertyOf" : ["connectsToBox"
+]}
+,{
+ "id":"wonBy"
+, "domain" : "Competition"
+, "range" : "Person"
+, "subPropertyOf" : ["attendedBy"
+]}
+,{
+ "id":"hasAddress"
+, "domain" : "Location"
+, "range" : "string"
+}
+,{
+ "id":"hasCredits"
+, "domain" : "Subject"
+, "range" : "int"
+}
+,{
+ "id":"hasDateTime"
+, "domain" : "Event"
+, "range" : "dateTime"
+}
+,{
+ "id":"hasEndDate"
+, "range" : "dateTime"
+}
+,{
+ "id":"hasLabel"
+, "range" : "string"
+, "domain" : "Thing"
+, "subPropertyOf" : ["topDataProperty"
+]}
+,{
+ "id":"hasStartDate"
+, "range" : "dateTime"
+}
+]
+}
