@@ -1,4 +1,28 @@
-var fileName = './demo_ontology_graph.json';
+/**
+ *  Displays the graph described by data using sigmaJS library.
+ */
+function showGraph(data) {
+  s = new sigma({container: 'graph-container', graph: data });
+  initForceAtlasLayout();
+  initNodeSelectGreyout(s);
+  
+  s.bind('clickNode', displayDetails);
+  s.bind('clickStage', resetDetails);
+}
+
+
+// Add a method to the graph model that returns an
+// object with every neighbors of a node inside:
+sigma.classes.graph.addMethod('neighbors', function(nodeId) {
+    var k,
+        neighbors = {},
+        index = this.allNeighborsIndex[nodeId] || {};
+
+    for (k in index)
+      neighbors[k] = this.nodesIndex[k];
+
+    return neighbors;
+});
 
 
 /**
@@ -7,43 +31,62 @@ var fileName = './demo_ontology_graph.json';
 function displayDetails(e) {
   var nodeId = e.data.node.id;
   
-  $('#details-title').html(e.data.node.label);
+  var title = e.data.node.label;
   
   // show description
   $('#details-description').empty();
   if(e.data.node.descr)
     $('#details-description').html(e.data.node.descr);
   
-  // show superclasses
-  $('#details-superclasses').empty();
-  if(e.data.node.subClassOf) {
-    var items = [];
-    $.each( e.data.node.subClassOf, function( i, val ) {
-      items.push( "<li>" + val + "</li>" );
-    });
-    $( "<ul/>", {
-      //"class": "my-new-list",
-      html: items.join( "" )
-    }).appendTo( "#details-superclasses" );
-  }
-  else {
-    $('#details-superclasses').text("None");
+  //display class/property details
+  $('#details-class').hide();
+  $('#details-property').hide();
+  if(e.data.node.ontologyType)
+  {
+    if(e.data.node.ontologyType == "class") {
+      $('#details-class').show();
+      title = "Class: "+title;
+    }
+    else if(e.data.node.ontologyType == "property") {
+      $('#details-property').show();
+      title = "Property: "+title;
+    }
   }
   
-  // show equivalences
-  $('#details-equivalent-classes').empty();
-  if(e.data.node.equivalentClass) {
+  listIfPresent(e.data.node.subClassOf, '#details-superclasses', "None");
+  listIfPresent(e.data.node.subPropertyOf, '#details-superproperties', "None");
+  
+  listIfPresent(e.data.node.properties, '#details-class-properties', "None");
+  
+  listIfPresent(e.data.node.equivalentClass, '#details-additional', "");
+  listIfPresent(e.data.node.inverseOf, '#details-additional', "");
+  
+  $('#details-title').html(title);
+}
+/**
+ *  Resets the displayDetails().
+ */
+function resetDetails(e) {
+  var x; // fake event object with default details
+  x = { data: { node: { label:"Social Web Ontology", descr:"<i>Click a node in the graph to display its details.</i>" } } };
+  displayDetails(x);
+}
+
+function listIfPresent(arr, domSelector, textIfMissing)
+{
+  $(domSelector).empty();
+  if(arr) {
     var items = [];
-    $.each( e.data.node.equivalentClass, function( i, val ) {
+    $.each( arr, function( i, val ) {
       items.push( "<li>" + val + "</li>" );
     });
     $( "<ul/>", {
       //"class": "my-new-list",
       html: items.join( "" )
-    }).appendTo( "#details-equivalent-classes" );
+    }).appendTo( domSelector );
   }
   else {
-    $('#details-equivalent-classes').text("None");
+    $(domSelector).text(textIfMissing);
   }
 }
 
@@ -60,7 +103,7 @@ function initForceAtlasLayout()
     for (i = 0; i < len; i++) {
         nodes[i].x = Math.random();
         nodes[i].y = Math.random();
-        nodes[i].size = s.graph.degree(nodes[i].id);
+        //nodes[i].size = s.graph.degree(nodes[i].id);
         //nodes[i].color = nodes[i].center ? '#333' : '#666';
     }
 
@@ -69,7 +112,7 @@ function initForceAtlasLayout()
 
     // ForceAtlas Layout
     s.startForceAtlas2();
-    s.stopForceAtlas2();
+    //s.stopForceAtlas2();
 }
 
 /**
@@ -142,43 +185,8 @@ function initNodeSelectGreyout(s)
       s.graph.edges().forEach(function(e) {
         e.color = e.originalColor;
       });
-      
-      // reset details text
-      var x; // fake event object with default details
-      x = { data: { node: { label:"Social Web Ontology", descr:"<i>Click a node in the graph to display its details.</i>" } } };
-      displayDetails(x);
 
       // Same as in the previous event:
       s.refresh();
     });
 }
-
-
-// Add a method to the graph model that returns an
-// object with every neighbors of a node inside:
-sigma.classes.graph.addMethod('neighbors', function(nodeId) {
-    var k,
-        neighbors = {},
-        index = this.allNeighborsIndex[nodeId] || {};
-
-    for (k in index)
-      neighbors[k] = this.nodesIndex[k];
-
-    return neighbors;
-});
-
-
-s = new sigma({ container: 'graph-container' });
-
-
-sigma.parsers.json(
-    fileName,
-    s,
-    function(s) {
-        initForceAtlasLayout();
-
-        initNodeSelectGreyout(s);
-        
-        s.bind('clickNode', displayDetails);
-    }
-); 

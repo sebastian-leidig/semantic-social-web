@@ -1,7 +1,10 @@
 {
   "classes": [
     {
-      "name": "Student",
+      "id": "Person"
+    },
+    {
+      "id": "Student",
       "subClassOf": [
         "Person"
       ],
@@ -10,17 +13,31 @@
       ]
     },
     {
-      "name": "Person"
+      "id": "Faculty",
+      "subClassOf": [
+        "Person"
+      ]
+    },
+    {
+      "id": "Subject"
+    },
+    {
+      "id": "Box"
     }
   ],
   "properties": [
     {
-      "name": "teaches",
+      "id": "teaches",
       "domain": "Faculty",
       "range":  "Subject",
       "subPropertyOf": [
         "connectsToBox"
       ]
+    },
+    {
+      "id": "connectsToBox",
+      "domain": "Person",
+      "range":  "Box"
     }
   ]
 }

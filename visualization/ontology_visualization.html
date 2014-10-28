@@ -49,31 +49,48 @@
     <div class="jumbotron">
       <div class="container">
         <h1>Ontology Visualization</h1>
-        <p>This graph represents the ontology (i.e. the abstract structure) of the <i>Semantic Social Web</i> application. Select a node to display additional information and highlight its relations.</p>
+        <p>This graph represents the ontology (i.e. the abstract structure) of the <i>Semantic Social Web</i> application.</p>
       </div>
     </div>
 
     <div class="container">
       <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-9">
           <div id="graph-container"></div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
           <h2 id="details-title">Class Name</h2>
           <p id="details-description">
             Some description of this ...
           </p>
-          <h3>Superclasses</h3>
-          <div id="details-superclasses">
-            <ul>
-              <li>superclass 1</li>
-              <li>superclass 2</li>
-            </ul>
+          <div id="details-class" style="visibility:none;">
+            <h3>Superclasses</h3>
+            <div id="details-superclasses">
+              <ul>
+                <li>superclass 1</li>
+                <li>superclass 2</li>
+              </ul>
+            </div>
+            <h3>Properties</h3>
+            <div id="details-class-properties">
+              <ul>
+                <li>property 1</li>
+                <li>property 2</li>
+              </ul>
+            </div>
+          </div>
+          <div id="details-property" style="visibility:none;">
+            <h3>Superproperties</h3>
+            <div id="details-superproperties">
+              <ul>
+                <li>superclass 1</li>
+                <li>superclass 2</li>
+              </ul>
+            </div>
           </div>
           <h3>Remarks</h3>
-          <h4>Equivalent</h4>
-          <div id="details-equivalent-classes">
-            None
+          <div id="details-additional">
+            Equal to, etc.
           </div>
        </div>
       </div>
@@ -104,6 +121,7 @@
     <script src="lib/sigma/plugins/sigma.layout.forceAtlas2.min.js"></script>
     <!-- Custom visualization implementation -->
     <script src="./ontology_visualization.js"></script>
+    <script src="./ontology2graph.js"></script>
     
   </body>
 </html>
