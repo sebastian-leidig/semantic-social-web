@@ -5,6 +5,7 @@ function showGraph(data) {
   s = new sigma({container: 'graph-container', graph: data });
   initForceAtlasLayout();
   initNodeSelectGreyout(s);
+  resetDetails();
   
   s.bind('clickNode', displayDetails);
   s.bind('clickStage', resetDetails);

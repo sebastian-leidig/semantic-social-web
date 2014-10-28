@@ -1,9 +1,6 @@
 // Settings
 var ontologyFileName = "./ontology.json";
 
-//var fileName = './demo_ontology_graph.json';
-//$.getJSON( fileName, showGraph);
-
 NODE_SIZE_CLASS = 6;
 NODE_COLOR_CLASS = "rgb(255, 51, 51)";
 NODE_COLOR_EQCLASS = "rgb(255, 120, 51)";
