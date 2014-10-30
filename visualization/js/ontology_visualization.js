@@ -58,13 +58,15 @@ function displayDetails(e) {
     }
   }
   
-  listIfPresent(e.data.node.subClassOf, '#details-superclasses', "None");
-  listIfPresent(e.data.node.subPropertyOf, '#details-superproperties', "None");
+  listIfPresent(e.data.node.subClassOf, '#details-superclasses', "");
+  listIfPresent(e.data.node.subPropertyOf, '#details-superproperties', "");
   
-  listIfPresent(e.data.node.properties, '#details-class-properties', "None");
+  listIfPresent(e.data.node.properties, '#details-class-properties', "");
   
-  listIfPresent(e.data.node.equivalentClass, '#details-additional', "");
-  listIfPresent(e.data.node.inverseOf, '#details-additional', "");
+  if(e.data.node.equivalentClass)
+    listIfPresent(e.data.node.equivalentClass, '#details-additional', "Equivalent to ");
+  else
+    listIfPresent(e.data.node.inverseOf, '#details-additional', "Inverse of ");
   
   $('#details-title').html(title);
 }
@@ -77,13 +79,13 @@ function resetDetails(e) {
   displayDetails(x);
 }
 
-function listIfPresent(arr, domSelector, textIfMissing)
+function listIfPresent(arr, domSelector, prefixText)
 {
   $(domSelector).empty();
   if(arr) {
     var items = [];
     $.each( arr, function( i, val ) {
-      items.push( "<li>" + val + "</li>" );
+      items.push( "<li>" + prefixText + val + "</li>" );
     });
     $( "<ul/>", {
       //"class": "my-new-list",
@@ -91,7 +93,7 @@ function listIfPresent(arr, domSelector, textIfMissing)
     }).appendTo( domSelector );
   }
   else {
-    $(domSelector).text(textIfMissing);
+    $(domSelector).text("None");
   }
 }
 
