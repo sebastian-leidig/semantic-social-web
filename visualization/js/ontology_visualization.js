@@ -9,6 +9,10 @@ function showGraph(data) {
   
   s.bind('clickNode', displayDetails);
   s.bind('clickStage', resetDetails);
+  
+  // make data available for download
+  var dataJSON = "text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(data));
+  $('#graph-download').attr("href", "data:'" + dataJSON + "'");
 }
 
 
