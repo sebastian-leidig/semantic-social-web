@@ -1,0 +1,1017 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1/" >
+    <!ENTITY dbpedia-owl "http://dbpedia.org/ontology/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY swrl "http://www.w3.org/2003/11/swrl#" >
+    <!ENTITY swrlb "http://www.w3.org/2003/11/swrlb#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#"
+     xml:base="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:dbpedia-owl="http://dbpedia.org/ontology/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology">
+        <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#assistedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#assistedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#ResearchProject"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Student"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#isResearchAssistantOf"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#takenUpBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#attendedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#attendedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#attends"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#connectsToAgent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#attends -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#attends">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Event"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Person"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#connectsToBox"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#connectsToAgent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#connectsToAgent">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Agent"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Box"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#connectsToBox -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#connectsToBox">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Agent"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Box"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#connectsToAgent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#hasAcquaintance -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#hasAcquaintance">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#mightKnow"/>
+        <owl:equivalentProperty rdf:resource="&foaf;knows"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#hasColleague -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#hasColleague">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Person"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#hasAcquaintance"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#hasFriend -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#hasFriend">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Person"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#hasAcquaintance"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#hasInterest -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#hasInterest">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Interest"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#hasLocation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#hasLocation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Event"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Location"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#hasMember -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#hasMember">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Agent"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Organization"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#connectsToAgent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#hasOffice -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#hasOffice">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Location"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Organization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#hasPrerequisite -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#hasPrerequisite">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Subject"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Subject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#hasRelationship -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#hasRelationship">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#hasSubject -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#hasSubject">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Subject"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#isAbout"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Lab"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Lecture"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#hasTeachingAssistant -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#hasTeachingAssistant">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Student"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Subject"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#connectsToAgent"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#isTeachingAssistantOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#isAbout -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#isAbout">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Box"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Interest"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#isPartOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#isPartOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Organization"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Organization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#isResearchAssistantOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#isResearchAssistantOf">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Project"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Student"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#connectsToBox"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#isTeachingAssistantOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#isTeachingAssistantOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#connectsToBox"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#memberOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#memberOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#connectsToBox"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#hasMember"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#mightKnow -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#mightKnow"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#organizedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#organizedBy">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Agent"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Event"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#connectsToAgent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#supervisedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#supervisedBy">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Faculty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Project"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#connectsToAgent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#takenUpBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#takenUpBy">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Person"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Project"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#connectsToAgent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#teaches -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#teaches">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Faculty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Subject"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#connectsToBox"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#wonBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#wonBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Competition"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Person"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#attendedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/knows -->
+
+    <rdf:Description rdf:about="&foaf;knows"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#hasAddress -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#hasAddress">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Location"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#hasCredits -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#hasCredits">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Subject"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#hasDateTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#hasDateTime">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Event"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#hasEndDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#hasEndDate">
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#hasLabel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#hasLabel">
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#hasStartDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#hasStartDate">
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#AdjunctFaculty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#AdjunctFaculty">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Faculty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Agent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Agent">
+        <owl:equivalentClass rdf:resource="&foaf;Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Box -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Box"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Club -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Club">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Company -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Company">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#ExternalOrganization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Competition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Competition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#CourseProject -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#CourseProject">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Project"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Department -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Department">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Event -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Event">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Box"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#ExternalOrganization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#ExternalOrganization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Faculty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Faculty">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#GuestFaculty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#GuestFaculty">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Faculty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Institute -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Institute">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Interest -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Interest"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Lab -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Lab">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Lecture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Lecture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Location -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Location"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Meeting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Meeting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Organization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Organization">
+        <owl:equivalentClass rdf:resource="&foaf;Organization"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Agent"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Box"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#PermanentFaculty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#PermanentFaculty">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Faculty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Person">
+        <owl:equivalentClass rdf:resource="&foaf;Person"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Project -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Project">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Box"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#ResearchAssistant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#ResearchAssistant">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#isResearchAssistantOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Project"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Student"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#ResearchProject -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#ResearchProject">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Project"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Student -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Student">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Subject -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Subject">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Interest"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#TeachingAssistant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#TeachingAssistant">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#isTeachingAssistantOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Subject"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Student"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Team -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Team">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Agent -->
+
+    <rdf:Description rdf:about="&foaf;Agent"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Organization -->
+
+    <rdf:Description rdf:about="&foaf;Organization"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+    <rdf:Description rdf:about="&foaf;Person"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Adam -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Adam">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Person"/>
+        <memberOf rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#IIITD"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Computers -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Computers">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Interest"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#IIITD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#IIITD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Organization"/>
+        <isAbout rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Computers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Rahul -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Rahul">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Person"/>
+        <memberOf rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#IIITD"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="urn:swrl#a">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#b">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#o">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#project">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#box">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#p">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#i">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#hasColleague"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#a"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#b"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Person"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Person"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#b"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#takenUpBy"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#a"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#project"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                                <rdf:rest rdf:resource="&rdf;nil"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#takenUpBy"/>
+                                                        <swrl:argument2 rdf:resource="urn:swrl#b"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl#project"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Project"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#project"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#hasInterest"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#i"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#p"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Person"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#connectsToBox"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#b"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#p"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                <rdf:rest rdf:resource="&rdf;nil"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#isAbout"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#b"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl#i"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Person"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                                <rdf:rest rdf:resource="&rdf;nil"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#memberOf"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl#b"/>
+                                                        <swrl:argument2 rdf:resource="urn:swrl#o"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#memberOf"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#a"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#o"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                    </rdf:Description>
+                                </rdf:rest>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Team"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#o"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                            </rdf:Description>
+                        </rdf:rest>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Person"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#b"/>
+                            </rdf:Description>
+                        </rdf:first>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#hasColleague"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#a"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#b"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#mightKnow"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#a"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#b"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Box"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#box"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Person"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#a"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#Person"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#b"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                                <rdf:rest rdf:resource="&rdf;nil"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#connectsToBox"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl#b"/>
+                                                        <swrl:argument2 rdf:resource="urn:swrl#box"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#connectsToBox"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#a"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#box"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
