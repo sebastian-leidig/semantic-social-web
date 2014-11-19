@@ -1,0 +1,85 @@
+# Listing
+
+http://www.usebackpack.com/iiitd/m2014
+http://www.usebackpack.com/iiitd/s2014
+http://www.usebackpack.com/iiitd/w2014
+
+<span class="course_link">
+    <a class="cse5xx" data-push="true" data-target="#yield" href="/iiitd/m2014/cse5xx">
+        Artificial Intelligence
+    </a>
+</span>
+
+
+
+
+
+# Course
+
+## Course Info
+http://www.usebackpack.com/iiitd/m2014/cse632/info
+
+
+## Instructur + TAs
+from "header":
+
+<p style="font-weight:bold;color:#fff;">
+                4 credits
+							</p>  
+
+<div class="col-xs-6 col-sm-3 add-info" style="color:#fff">
+  <p><strong>Instructor</strong></p>
+      <a href="/users/145" class="ajaxlink" data-remote="true" data-target="#user_profile_modal" data-toggle="modal">
+          <img data-original-title="Anupama Mallik" title="" data-toggle="tooltip" data-placement="top" src="/photos/145/M.jpg?1376307767" style="width:30px;height:30px;margin-bottom:5px;margin-right:10px;" class="img-circle tooltip_class  badge-icon ta-photo">
+        
+          Anupama Mallik
+        </a>
+      <br>
+<br>
+</div>
+
+<div class="col-xs-6 col-sm-3 add-info">
+    <p><strong>Teaching Assistant</strong></p>
+        
+          <a href="/users/497" class="ajaxlink" data-remote="true" data-target="#user_profile_modal" data-toggle="modal">
+            <img data-original-title="Adarsh Dubey" title="" src="/assets/default_avatar.png" data-toggle="tooltip" data-placement="top" style="width:30px;height:30px;margin-bottom:5px;margin-right:10px;" class="img-circle  tooltip_class badge-icon ta-photo">
+         Adarsh Dubey
+         </a>
+        <br>
+</div>
+
+
+## Course Members
+http://www.usebackpack.com/iiitd/m2014/cse632/students
+
+<table class="table table-striped">
+<tr>
+    <td class="table-picture">
+      <a href="/users/37"
+         data-remote="true"
+         data-target="#user_profile_modal"
+         data-toggle="modal"
+         class="ajaxlink">
+        <img src="/photos/37/M.jpg?1375902579" style="height:30px;width:30px;max-width:none;" class="img-circle">
+      </a>
+    </td>
+    <td class="table-question">
+        <a href="/users/37"  
+           data-remote="true"
+           data-target="#user_profile_modal"
+           data-toggle="modal"
+           class="ajaxlink">
+          Aditya Gupta
+        </a>
+    </td>
+    <td class="table-time">2011009</td>
+    <td class="table-time">aditya11009@iiitd.ac.in </td>
+</tr>
+<tr>
+    ...
+
+
+## Course Discussions (?)
+http://www.usebackpack.com/iiitd/m2014/cse632/discussions
+
+
