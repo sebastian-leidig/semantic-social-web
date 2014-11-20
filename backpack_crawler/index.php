@@ -116,7 +116,8 @@ function name2id($name)
         '.' => '_',
         ',' => '_',
         ';' => '_',
-        '@' => '-at-'
+        '@' => '-at-',
+        '&' => '-'
     );
 
     $cname = strtolower(trim($name));
