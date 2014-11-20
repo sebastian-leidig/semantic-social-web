@@ -1,0 +1,26 @@
+{% extends 'SWebSemanticSocialWebBundle::base.html.twig' %}
+
+{% block jumbotron %}
+
+    <h1>Find Your Connections</h1>
+    <p>Find relevant information based on your preferences.</p>
+
+{% endblock %}
+
+
+{% block body %}
+    {% if course is defined %}
+        <h2>People sharing the course <i>{{ course }}</i> with <i>{{ person }}</i>:</h2>
+    {% else %}
+        <h2>People sharing a course with <i>{{ person }}</i>:</h2>
+    {% endif %}
+    
+    
+    {% for item in results %}
+      <p>
+        <img src="http://www.usebackpack.com/assets/default_avatar.png" class="user-img"> {{ item.label }} 
+            {% if item.course is defined %} ({{ item.course }}) {% endif %}
+      </p>
+    {% endfor %}
+
+{% endblock %}

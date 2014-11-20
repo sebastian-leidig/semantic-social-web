@@ -1,0 +1,22 @@
+{% extends 'SWebSemanticSocialWebBundle::base.html.twig' %}
+
+{% block jumbotron %}
+
+    <h1>Find Your Connections</h1>
+    <p>Find relevant information based on your preferences.</p>
+
+{% endblock %}
+
+
+{% block body %}
+
+    <p>
+      <form action="{{ path('predefined_queries_handler') }}" method="POST">
+        Enter the Full Name of the Person : </br>
+        <input type="text" name="pname"></br>
+        <input type="hidden" name="form" value="4">
+        <input type="submit" value="Submit">
+      </form>
+    </p>
+
+{% endblock %}

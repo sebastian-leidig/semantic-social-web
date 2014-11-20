@@ -3,19 +3,20 @@
 {% block jumbotron %}
 
     <h1>Find Your Connections</h1>
-    <p>Use the predefined queries to find how people are connected.</p>
+    <p>Find relevant information based on your preferences.</p>
 
 {% endblock %}
 
 
 {% block body %}
 
-    <p>Rahul's queries to be included here.</p>
     <p>
       <ul>
-        {% for item in results %}
-          <li>{{ item.name }}</li>
-        {% endfor %}
+        <li><a href="{{ path('predefined_queries_form', {'index': 1} ) }}">Find People with a given Interest</a></li>
+        <li><a href="{{ path('predefined_queries_form', {'index': 2} ) }}">Find Interests of a Person</a></li>
+        <li><a href="{{ path('predefined_queries_form', {'index': 3} ) }}">Find the People sharing your courses</a></li>
+        <li><a href="{{ path('predefined_queries_form', {'index': 4} ) }}">Find all the Events attended by a Person</a></li>
+        <li><a href="{{ path('predefined_queries_form', {'index': 5} ) }}">Find the relationship between two People</a></li>
       </ul>
     </p>
 

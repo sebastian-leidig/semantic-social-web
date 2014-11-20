@@ -5,6 +5,12 @@ home:
 predefined_queries:
     path:     /connections
     defaults: { _controller: SWebSemanticSocialWebBundle:PredefinedQueries:index }
+predefined_queries_form:
+    path:     /connections/form/{index}
+    defaults: { _controller: SWebSemanticSocialWebBundle:PredefinedQueries:form }
+predefined_queries_handler:
+    path:     /connections/result
+    defaults: { _controller: SWebSemanticSocialWebBundle:PredefinedQueries:handle }
 
 ontology_visualization:
     path:     /ontology
