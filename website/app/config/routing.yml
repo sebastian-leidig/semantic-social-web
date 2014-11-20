@@ -1,0 +1,4 @@
+s_web_semantic_social_web:
+    resource: "@SWebSemanticSocialWebBundle/Resources/config/routing.yml"
+    prefix:   /
+

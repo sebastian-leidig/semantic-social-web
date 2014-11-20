@@ -1,0 +1,4 @@
+services:
+#    s_web_semantic_social_web.example:
+#        class: SWeb\SemanticSocialWebBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]
