@@ -46,14 +46,17 @@ $courses = json_decode($data);
 
 $count_courses = count($courses);
 $count_students = 0;
-$prefix_course = "backpack-course-$semester-";
-$prefix_user = "backpack-user-";
+$prefix_course = "$semester-";//"backpack-course-$semester-";
+$prefix_user = "";//"backpack-user-";
 $statements = "";
 foreach ($courses as $c) {
-	$courseId = $prefix_course . $c->id;
-    $statements .= ":$courseId
-			rdf:type :Subject ;
-    		:hasID \"".($c->id)."\" ;
+  $subjectId = name2id($c->label);
+	$lectureId = $prefix_course . $c->id;
+    $statements .= ":$subjectId rdf:type :Subject ;
+                        :hasLabel \"".($c->label)."\".";
+    $statements .= ":$lectureId
+        :hasSubject :$subjectId ;
+    		:hasCourseId \"".($c->id)."\" ;
     		:hasLabel \"".($c->label)."\" ;
     		:hasWebsite \"".($c->url)."\".\n\n";
     foreach($c->instructors as $i)
@@ -67,9 +70,9 @@ foreach ($courses as $c) {
     			foaf:name \"".($i->name)."\" ;
 	    		:hasImage \"".($i->img)."\" .\n";
 		if(($i->id) != "-1")
-			$statements .= ":$id :hasID \"".($i->id)."\".\n";
+			$statements .= ":$id :hasUserId \"".($i->id)."\".\n";
     	// course membership
-    	$statements .= ":$id :teaches :$courseId .\n\n";
+    	$statements .= ":$id :teaches :$subjectId .\n\n";
     }
     foreach($c->assistants as $i)
     {
@@ -81,15 +84,14 @@ foreach ($courses as $c) {
     			foaf:name \"".($i->name)."\" ;
 	    		:hasImage \"".($i->img)."\" .\n";
 		if(($i->id) != "-1")
-			$statements .= ":$id :hasID \"".($i->id)."\".\n";
+			$statements .= ":$id :hasUserId \"".($i->id)."\".\n";
     	// course membership
-    	$statements .= ":$id :isTeachingAssistantOf :$courseId .\n\n";
+    	$statements .= ":$id :isTeachingAssistantOf :$subjectId .\n\n";
     }
     foreach($c->students as $i)
     {
     	$id = $prefix_user.name2id($i->name);
     	// basic user information
-    		//TODO: create rdf properties 'hasID', 'hasImage', 'hasRollNo', 'hasEmail'
     	$statements .= ":$id
 				rdf:type :Student ;
 	    		:hasLabel \"".($i->name)."\" ;
@@ -98,10 +100,9 @@ foreach ($courses as $c) {
 	    		:hasRollNo \"".($i->roll)."\" ;
 	    		:hasEmail \"".($i->email)."\" .\n";
 		if(($i->id) != "-1")
-			$statements .= ":$id :hasID \"".($i->id)."\".\n";
+			$statements .= ":$id :hasUserId \"".($i->id)."\".\n";
     	// course membership
-    		//TODO: create rdf property 'isStudent'
-    	$statements .= ":$id :isStudent :$courseId .\n\n";
+    	$statements .= ":$id :attends :$lectureId .\n\n";
     	$count_students++;
     }
 }

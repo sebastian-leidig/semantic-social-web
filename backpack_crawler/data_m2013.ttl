@@ -4,2756 +4,2776 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 
 
-:backpack-course-m2013-com301
-			rdf:type :Subject ;
-    		:hasID "com301" ;
+:technical_communication rdf:type :Subject ;
+                        :hasLabel "Technical Communication".:m2013-com301
+        :hasSubject :technical_communication ;
+    		:hasCourseId "com301" ;
     		:hasLabel "Technical Communication" ;
     		:hasWebsite "http://www.usebackpack.com/iiitd/m2013/com301".
 
-:backpack-user-hemant_kumar
+:hemant_kumar
     			rdf:type :Faculty ;
     			:hasLabel "Hemant Kumar" ;
     			foaf:name "Hemant Kumar" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" .
-:backpack-user-hemant_kumar :teaches :backpack-course-m2013-com301 .
+:hemant_kumar :teaches :technical_communication .
 
-:backpack-user-pankaj_jalote
+:pankaj_jalote
     			rdf:type :Faculty ;
     			:hasLabel "Pankaj Jalote" ;
     			foaf:name "Pankaj Jalote" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" .
-:backpack-user-pankaj_jalote :teaches :backpack-course-m2013-com301 .
+:pankaj_jalote :teaches :technical_communication .
 
-:backpack-user-sakshi_gupta
+:sakshi_gupta
     			rdf:type :Student ;
     			:hasLabel "Sakshi Gupta" ;
     			foaf:name "Sakshi Gupta" ;
 	    		:hasImage "http://www.usebackpack.com/photos/29/M.jpg?1408542501" .
-:backpack-user-sakshi_gupta :hasID "29".
-:backpack-user-sakshi_gupta :isTeachingAssistantOf :backpack-course-m2013-com301 .
+:sakshi_gupta :hasUserId "29".
+:sakshi_gupta :isTeachingAssistantOf :technical_communication .
 
-:backpack-user-divya_kundra
+:divya_kundra
     			rdf:type :Student ;
     			:hasLabel "Divya Kundra" ;
     			foaf:name "Divya Kundra" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" .
-:backpack-user-divya_kundra :isTeachingAssistantOf :backpack-course-m2013-com301 .
+:divya_kundra :isTeachingAssistantOf :technical_communication .
 
-:backpack-user-shariq_murtuza
+:shariq_murtuza
     			rdf:type :Student ;
     			:hasLabel "Shariq Murtuza" ;
     			foaf:name "Shariq Murtuza" ;
 	    		:hasImage "http://www.usebackpack.com/photos/71/M.jpg?1414386454" .
-:backpack-user-shariq_murtuza :hasID "71".
-:backpack-user-shariq_murtuza :isTeachingAssistantOf :backpack-course-m2013-com301 .
+:shariq_murtuza :hasUserId "71".
+:shariq_murtuza :isTeachingAssistantOf :technical_communication .
 
-:backpack-user-dheryta_jaisinghani
+:dheryta_jaisinghani
     			rdf:type :Student ;
     			:hasLabel "Dheryta Jaisinghani" ;
     			foaf:name "Dheryta Jaisinghani" ;
 	    		:hasImage "http://www.usebackpack.com/photos/82/M.jpg?1375948604" .
-:backpack-user-dheryta_jaisinghani :hasID "82".
-:backpack-user-dheryta_jaisinghani :isTeachingAssistantOf :backpack-course-m2013-com301 .
+:dheryta_jaisinghani :hasUserId "82".
+:dheryta_jaisinghani :isTeachingAssistantOf :technical_communication .
 
-:backpack-user-samit_anwer
+:samit_anwer
     			rdf:type :Student ;
     			:hasLabel "Samit Anwer" ;
     			foaf:name "Samit Anwer" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" .
-:backpack-user-samit_anwer :isTeachingAssistantOf :backpack-course-m2013-com301 .
+:samit_anwer :isTeachingAssistantOf :technical_communication .
 
-:backpack-user-mridula_singh
+:mridula_singh
     			rdf:type :Student ;
     			:hasLabel "Mridula Singh" ;
     			foaf:name "Mridula Singh" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" .
-:backpack-user-mridula_singh :isTeachingAssistantOf :backpack-course-m2013-com301 .
+:mridula_singh :isTeachingAssistantOf :technical_communication .
 
-:backpack-user-vivek_gupta
+:vivek_gupta
     			rdf:type :Student ;
     			:hasLabel "Vivek Gupta" ;
     			foaf:name "Vivek Gupta" ;
 	    		:hasImage "http://www.usebackpack.com/photos/346/M.jpg?1403198156" .
-:backpack-user-vivek_gupta :hasID "346".
-:backpack-user-vivek_gupta :isTeachingAssistantOf :backpack-course-m2013-com301 .
+:vivek_gupta :hasUserId "346".
+:vivek_gupta :isTeachingAssistantOf :technical_communication .
 
-:backpack-user-neha_gupta
+:neha_gupta
     			rdf:type :Student ;
     			:hasLabel "Neha Gupta" ;
     			foaf:name "Neha Gupta" ;
 	    		:hasImage "http://www.usebackpack.com/photos/1325/M.jpg?1390374789" .
-:backpack-user-neha_gupta :hasID "1325".
-:backpack-user-neha_gupta :isTeachingAssistantOf :backpack-course-m2013-com301 .
+:neha_gupta :hasUserId "1325".
+:neha_gupta :isTeachingAssistantOf :technical_communication .
 
-:backpack-course-m2013-cse535
-			rdf:type :Subject ;
-    		:hasID "cse535" ;
+:mobile_computing rdf:type :Subject ;
+                        :hasLabel "Mobile Computing".:m2013-cse535
+        :hasSubject :mobile_computing ;
+    		:hasCourseId "cse535" ;
     		:hasLabel "Mobile Computing" ;
     		:hasWebsite "http://www.usebackpack.com/iiitd/m2013/cse535".
 
-:backpack-user-vinayak_naik
+:vinayak_naik
     			rdf:type :Faculty ;
     			:hasLabel "Vinayak Naik" ;
     			foaf:name "Vinayak Naik" ;
 	    		:hasImage "http://www.usebackpack.com/photos/8/M.jpg?1375785754" .
-:backpack-user-vinayak_naik :hasID "8".
-:backpack-user-vinayak_naik :teaches :backpack-course-m2013-cse535 .
+:vinayak_naik :hasUserId "8".
+:vinayak_naik :teaches :mobile_computing .
 
-:backpack-user-aakarsha_agarwal
+:aakarsha_agarwal
     			rdf:type :Student ;
     			:hasLabel "Aakarsha Agarwal" ;
     			foaf:name "Aakarsha Agarwal" ;
 	    		:hasImage "http://www.usebackpack.com/photos/132/M.jpeg?1377506882" .
-:backpack-user-aakarsha_agarwal :hasID "132".
-:backpack-user-aakarsha_agarwal :isTeachingAssistantOf :backpack-course-m2013-cse535 .
+:aakarsha_agarwal :hasUserId "132".
+:aakarsha_agarwal :isTeachingAssistantOf :mobile_computing .
 
-:backpack-user-prateek_jassal
+:prateek_jassal
     			rdf:type :Student ;
     			:hasLabel "Prateek Jassal" ;
     			foaf:name "Prateek Jassal" ;
 	    		:hasImage "http://www.usebackpack.com/photos/156/M.jpg?1378335935" .
-:backpack-user-prateek_jassal :hasID "156".
-:backpack-user-prateek_jassal :isTeachingAssistantOf :backpack-course-m2013-cse535 .
+:prateek_jassal :hasUserId "156".
+:prateek_jassal :isTeachingAssistantOf :mobile_computing .
 
-:backpack-user-sonia_soubam
+:sonia_soubam
     			rdf:type :Student ;
     			:hasLabel "Sonia Soubam" ;
     			foaf:name "Sonia Soubam" ;
 	    		:hasImage "http://www.usebackpack.com/photos/157/M.PNG?1376052454" .
-:backpack-user-sonia_soubam :hasID "157".
-:backpack-user-sonia_soubam :isTeachingAssistantOf :backpack-course-m2013-cse535 .
+:sonia_soubam :hasUserId "157".
+:sonia_soubam :isTeachingAssistantOf :mobile_computing .
 
-:backpack-user-shaifali_gupta
+:shaifali_gupta
     			rdf:type :Student ;
     			:hasLabel "Shaifali Gupta" ;
     			foaf:name "Shaifali Gupta" ;
 	    		:hasImage "http://www.usebackpack.com/photos/158/M.jpg?1377001806" .
-:backpack-user-shaifali_gupta :hasID "158".
-:backpack-user-shaifali_gupta :isTeachingAssistantOf :backpack-course-m2013-cse535 .
+:shaifali_gupta :hasUserId "158".
+:shaifali_gupta :isTeachingAssistantOf :mobile_computing .
 
-:backpack-course-m2013-cse648
-			rdf:type :Subject ;
-    		:hasID "cse648" ;
+:psosm rdf:type :Subject ;
+                        :hasLabel "PSOSM".:m2013-cse648
+        :hasSubject :psosm ;
+    		:hasCourseId "cse648" ;
     		:hasLabel "PSOSM" ;
     		:hasWebsite "http://www.usebackpack.com/iiitd/m2013/cse648".
 
-:backpack-user-ponnurangam_k_pk
+:ponnurangam_k_pk
     			rdf:type :Faculty ;
     			:hasLabel "Ponnurangam K (PK)" ;
     			foaf:name "Ponnurangam K (PK)" ;
 	    		:hasImage "http://www.usebackpack.com/photos/14/M.JPG?1375796079" .
-:backpack-user-ponnurangam_k_pk :hasID "14".
-:backpack-user-ponnurangam_k_pk :teaches :backpack-course-m2013-cse648 .
+:ponnurangam_k_pk :hasUserId "14".
+:ponnurangam_k_pk :teaches :psosm .
 
-:backpack-user-anupama_aggarwal
+:anupama_aggarwal
     			rdf:type :Student ;
     			:hasLabel "Anupama Aggarwal" ;
     			foaf:name "Anupama Aggarwal" ;
 	    		:hasImage "http://www.usebackpack.com/photos/12/M.png?1375799645" .
-:backpack-user-anupama_aggarwal :hasID "12".
-:backpack-user-anupama_aggarwal :isTeachingAssistantOf :backpack-course-m2013-cse648 .
+:anupama_aggarwal :hasUserId "12".
+:anupama_aggarwal :isTeachingAssistantOf :psosm .
 
-:backpack-user-sudip_mittal
+:sudip_mittal
     			rdf:type :Student ;
     			:hasLabel "Sudip Mittal" ;
     			foaf:name "Sudip Mittal" ;
 	    		:hasImage "http://www.usebackpack.com/photos/52/M.jpg?1378129438" .
-:backpack-user-sudip_mittal :hasID "52".
-:backpack-user-sudip_mittal :isTeachingAssistantOf :backpack-course-m2013-cse648 .
+:sudip_mittal :hasUserId "52".
+:sudip_mittal :isTeachingAssistantOf :psosm .
 
-:backpack-course-m2013-bpk101
-			rdf:type :Subject ;
-    		:hasID "bpk101" ;
+:introduction_to_backpack rdf:type :Subject ;
+                        :hasLabel "Introduction to Backpack".:m2013-bpk101
+        :hasSubject :introduction_to_backpack ;
+    		:hasCourseId "bpk101" ;
     		:hasLabel "Introduction to Backpack" ;
     		:hasWebsite "http://www.usebackpack.com/iiitd/m2013/bpk101".
 
-:backpack-user-apoorv_narang
+:apoorv_narang
     			rdf:type :Faculty ;
     			:hasLabel "Apoorv Narang" ;
     			foaf:name "Apoorv Narang" ;
 	    		:hasImage "http://www.usebackpack.com/photos/5/M.jpg?1403498601" .
-:backpack-user-apoorv_narang :hasID "5".
-:backpack-user-apoorv_narang :teaches :backpack-course-m2013-bpk101 .
+:apoorv_narang :hasUserId "5".
+:apoorv_narang :teaches :introduction_to_backpack .
 
-:backpack-user-jayasi_mehar
+:jayasi_mehar
     			rdf:type :Student ;
     			:hasLabel "Jayasi Mehar" ;
     			foaf:name "Jayasi Mehar" ;
 	    		:hasImage "http://www.usebackpack.com/photos/10/M.jpg?1375794174" .
-:backpack-user-jayasi_mehar :hasID "10".
-:backpack-user-jayasi_mehar :isTeachingAssistantOf :backpack-course-m2013-bpk101 .
+:jayasi_mehar :hasUserId "10".
+:jayasi_mehar :isTeachingAssistantOf :introduction_to_backpack .
 
-:backpack-user-apoorv_singh
+:apoorv_singh
     			rdf:type :Student ;
     			:hasLabel "Apoorv Singh" ;
     			foaf:name "Apoorv Singh" ;
 	    		:hasImage "http://www.usebackpack.com/photos/11/M.JPG?1415665742" .
-:backpack-user-apoorv_singh :hasID "11".
-:backpack-user-apoorv_singh :isTeachingAssistantOf :backpack-course-m2013-bpk101 .
+:apoorv_singh :hasUserId "11".
+:apoorv_singh :isTeachingAssistantOf :introduction_to_backpack .
 
-:backpack-course-m2013-cse201
-			rdf:type :Subject ;
-    		:hasID "cse201" ;
+:advanced_programming rdf:type :Subject ;
+                        :hasLabel "Advanced Programming".:m2013-cse201
+        :hasSubject :advanced_programming ;
+    		:hasCourseId "cse201" ;
     		:hasLabel "Advanced Programming" ;
     		:hasWebsite "http://www.usebackpack.com/iiitd/m2013/cse201".
 
-:backpack-user-srikanta_bedathur
+:srikanta_bedathur
     			rdf:type :Faculty ;
     			:hasLabel "Srikanta Bedathur" ;
     			foaf:name "Srikanta Bedathur" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" .
-:backpack-user-srikanta_bedathur :teaches :backpack-course-m2013-cse201 .
+:srikanta_bedathur :teaches :advanced_programming .
 
-:backpack-user-shruti_bansal
+:shruti_bansal
     			rdf:type :Student ;
     			:hasLabel "Shruti Bansal" ;
     			foaf:name "Shruti Bansal" ;
 	    		:hasImage "http://www.usebackpack.com/photos/25/M.JPG?1378033218" .
-:backpack-user-shruti_bansal :hasID "25".
-:backpack-user-shruti_bansal :isTeachingAssistantOf :backpack-course-m2013-cse201 .
+:shruti_bansal :hasUserId "25".
+:shruti_bansal :isTeachingAssistantOf :advanced_programming .
 
-:backpack-user-saurabh_arora
+:saurabh_arora
     			rdf:type :Student ;
     			:hasLabel "Saurabh Arora" ;
     			foaf:name "Saurabh Arora" ;
 	    		:hasImage "http://www.usebackpack.com/photos/95/M.jpg?1375881607" .
-:backpack-user-saurabh_arora :hasID "95".
-:backpack-user-saurabh_arora :isTeachingAssistantOf :backpack-course-m2013-cse201 .
+:saurabh_arora :hasUserId "95".
+:saurabh_arora :isTeachingAssistantOf :advanced_programming .
 
-:backpack-user-nishesh_manaktala
+:nishesh_manaktala
     			rdf:type :Student ;
     			:hasLabel "Nishesh Manaktala" ;
     			foaf:name "Nishesh Manaktala" ;
 	    		:hasImage "http://www.usebackpack.com/photos/136/M.jpg?1408293209" .
-:backpack-user-nishesh_manaktala :hasID "136".
-:backpack-user-nishesh_manaktala :isTeachingAssistantOf :backpack-course-m2013-cse201 .
+:nishesh_manaktala :hasUserId "136".
+:nishesh_manaktala :isTeachingAssistantOf :advanced_programming .
 
-:backpack-user-rohit_mehra
+:rohit_mehra
     			rdf:type :Student ;
     			:hasLabel "Rohit Mehra" ;
     			foaf:name "Rohit Mehra" ;
 	    		:hasImage "http://www.usebackpack.com/photos/159/M.JPG?1377348609" .
-:backpack-user-rohit_mehra :hasID "159".
-:backpack-user-rohit_mehra :isTeachingAssistantOf :backpack-course-m2013-cse201 .
+:rohit_mehra :hasUserId "159".
+:rohit_mehra :isTeachingAssistantOf :advanced_programming .
 
-:backpack-user-siddharth_dawar
+:siddharth_dawar
     			rdf:type :Student ;
     			:hasLabel "Siddharth Dawar" ;
     			foaf:name "Siddharth Dawar" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" .
-:backpack-user-siddharth_dawar :isTeachingAssistantOf :backpack-course-m2013-cse201 .
+:siddharth_dawar :isTeachingAssistantOf :advanced_programming .
 
-:backpack-user-kunal_gupta
+:kunal_gupta
     			rdf:type :Student ;
     			:hasLabel "Kunal Gupta" ;
     			foaf:name "Kunal Gupta" ;
 	    		:hasImage "http://www.usebackpack.com/photos/387/M.jpg?1381683682" .
-:backpack-user-kunal_gupta :hasID "387".
-:backpack-user-kunal_gupta :isTeachingAssistantOf :backpack-course-m2013-cse201 .
+:kunal_gupta :hasUserId "387".
+:kunal_gupta :isTeachingAssistantOf :advanced_programming .
 
-:backpack-user-kongara_amani
+:kongara_amani
     			rdf:type :Student ;
     			:hasLabel "Kongara Amani" ;
     			foaf:name "Kongara Amani" ;
 	    		:hasImage "http://www.usebackpack.com/photos/466/M.jpg?1380465708" .
-:backpack-user-kongara_amani :hasID "466".
-:backpack-user-kongara_amani :isTeachingAssistantOf :backpack-course-m2013-cse201 .
+:kongara_amani :hasUserId "466".
+:kongara_amani :isTeachingAssistantOf :advanced_programming .
 
-:backpack-user-preeti_mittal
+:preeti_mittal
     			rdf:type :Student ;
     			:hasLabel "Preeti Mittal" ;
     			foaf:name "Preeti Mittal" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" .
-:backpack-user-preeti_mittal :isTeachingAssistantOf :backpack-course-m2013-cse201 .
+:preeti_mittal :isTeachingAssistantOf :advanced_programming .
 
-:backpack-user-ankita_likhyani
+:ankita_likhyani
     			rdf:type :Student ;
     			:hasLabel "Ankita Likhyani" ;
     			foaf:name "Ankita Likhyani" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" .
-:backpack-user-ankita_likhyani :isTeachingAssistantOf :backpack-course-m2013-cse201 .
+:ankita_likhyani :isTeachingAssistantOf :advanced_programming .
 
-:backpack-user-amit_semwal
+:amit_semwal
     			rdf:type :Student ;
     			:hasLabel "Amit Semwal" ;
     			foaf:name "Amit Semwal" ;
 	    		:hasImage "http://www.usebackpack.com/photos/696/M.jpg?1378670740" .
-:backpack-user-amit_semwal :hasID "696".
-:backpack-user-amit_semwal :isTeachingAssistantOf :backpack-course-m2013-cse201 .
+:amit_semwal :hasUserId "696".
+:amit_semwal :isTeachingAssistantOf :advanced_programming .
 
-:backpack-user-prateek_sharma
+:prateek_sharma
     			rdf:type :Student ;
     			:hasLabel "Prateek Sharma" ;
     			foaf:name "Prateek Sharma" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" .
-:backpack-user-prateek_sharma :isTeachingAssistantOf :backpack-course-m2013-cse201 .
+:prateek_sharma :isTeachingAssistantOf :advanced_programming .
 
-:backpack-course-m2013-cse101
-			rdf:type :Subject ;
-    		:hasID "cse101" ;
+:introduction_to_programming rdf:type :Subject ;
+                        :hasLabel "Introduction to Programming".:m2013-cse101
+        :hasSubject :introduction_to_programming ;
+    		:hasCourseId "cse101" ;
     		:hasLabel "Introduction to Programming" ;
     		:hasWebsite "http://www.usebackpack.com/iiitd/m2013/cse101".
 
-:backpack-user-h__b__acharya
+:h__b__acharya
     			rdf:type :Faculty ;
     			:hasLabel "H. B. Acharya" ;
     			foaf:name "H. B. Acharya" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" .
-:backpack-user-h__b__acharya :teaches :backpack-course-m2013-cse101 .
+:h__b__acharya :teaches :introduction_to_programming .
 
-:backpack-user-masood_pathan
+:masood_pathan
     			rdf:type :Student ;
     			:hasLabel "Masood Pathan" ;
     			foaf:name "Masood Pathan" ;
 	    		:hasImage "http://www.usebackpack.com/photos/9/M.jpg?1396967769" .
-:backpack-user-masood_pathan :hasID "9".
-:backpack-user-masood_pathan :isTeachingAssistantOf :backpack-course-m2013-cse101 .
+:masood_pathan :hasUserId "9".
+:masood_pathan :isTeachingAssistantOf :introduction_to_programming .
 
-:backpack-user-aditya_gupta
+:aditya_gupta
     			rdf:type :Student ;
     			:hasLabel "Aditya Gupta" ;
     			foaf:name "Aditya Gupta" ;
 	    		:hasImage "http://www.usebackpack.com/photos/37/M.jpg?1375902579" .
-:backpack-user-aditya_gupta :hasID "37".
-:backpack-user-aditya_gupta :isTeachingAssistantOf :backpack-course-m2013-cse101 .
+:aditya_gupta :hasUserId "37".
+:aditya_gupta :isTeachingAssistantOf :introduction_to_programming .
 
-:backpack-user-akif_khan
+:akif_khan
     			rdf:type :Student ;
     			:hasLabel "Akif Khan" ;
     			foaf:name "Akif Khan" ;
 	    		:hasImage "http://www.usebackpack.com/photos/372/M.jpg?1407333258" .
-:backpack-user-akif_khan :hasID "372".
-:backpack-user-akif_khan :isTeachingAssistantOf :backpack-course-m2013-cse101 .
+:akif_khan :hasUserId "372".
+:akif_khan :isTeachingAssistantOf :introduction_to_programming .
 
-:backpack-user-tarang_chugh
+:tarang_chugh
     			rdf:type :Student ;
     			:hasLabel "TARANG CHUGH" ;
     			foaf:name "TARANG CHUGH" ;
 	    		:hasImage "http://www.usebackpack.com/photos/449/M.jpg?1376808125" .
-:backpack-user-tarang_chugh :hasID "449".
-:backpack-user-tarang_chugh :isTeachingAssistantOf :backpack-course-m2013-cse101 .
+:tarang_chugh :hasUserId "449".
+:tarang_chugh :isTeachingAssistantOf :introduction_to_programming .
 
-:backpack-user-kireet_pant
+:kireet_pant
     			rdf:type :Student ;
     			:hasLabel "Kireet Pant" ;
     			foaf:name "Kireet Pant" ;
 	    		:hasImage "http://www.usebackpack.com/photos/486/M.JPG?1410723672" .
-:backpack-user-kireet_pant :hasID "486".
-:backpack-user-kireet_pant :isTeachingAssistantOf :backpack-course-m2013-cse101 .
+:kireet_pant :hasUserId "486".
+:kireet_pant :isTeachingAssistantOf :introduction_to_programming .
 
-:backpack-user-shivam_chaturvedi
+:shivam_chaturvedi
     			rdf:type :Student ;
     			:hasLabel "Shivam Chaturvedi" ;
     			foaf:name "Shivam Chaturvedi" ;
 	    		:hasImage "http://www.usebackpack.com/photos/561/M.jpg?1376895191" .
-:backpack-user-shivam_chaturvedi :hasID "561".
-:backpack-user-shivam_chaturvedi :isTeachingAssistantOf :backpack-course-m2013-cse101 .
+:shivam_chaturvedi :hasUserId "561".
+:shivam_chaturvedi :isTeachingAssistantOf :introduction_to_programming .
 
-:backpack-user-stuti_jain
+:stuti_jain
     			rdf:type :Student ;
     			:hasLabel "Stuti Jain" ;
     			foaf:name "Stuti Jain" ;
 	    		:hasImage "http://www.usebackpack.com/photos/600/M.JPG?1390485358" .
-:backpack-user-stuti_jain :hasID "600".
-:backpack-user-stuti_jain :isTeachingAssistantOf :backpack-course-m2013-cse101 .
+:stuti_jain :hasUserId "600".
+:stuti_jain :isTeachingAssistantOf :introduction_to_programming .
 
-:backpack-user-dipto_sarkar
+:dipto_sarkar
     			rdf:type :Student ;
     			:hasLabel "Dipto Sarkar" ;
     			foaf:name "Dipto Sarkar" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" .
-:backpack-user-dipto_sarkar :isTeachingAssistantOf :backpack-course-m2013-cse101 .
+:dipto_sarkar :isTeachingAssistantOf :introduction_to_programming .
 
-:backpack-user-muhammed_noufal_k
+:muhammed_noufal_k
     			rdf:type :Student ;
     			:hasLabel "Muhammed Noufal K" ;
     			foaf:name "Muhammed Noufal K" ;
 	    		:hasImage "http://www.usebackpack.com/photos/658/M.jpg?1408980536" .
-:backpack-user-muhammed_noufal_k :hasID "658".
-:backpack-user-muhammed_noufal_k :isTeachingAssistantOf :backpack-course-m2013-cse101 .
+:muhammed_noufal_k :hasUserId "658".
+:muhammed_noufal_k :isTeachingAssistantOf :introduction_to_programming .
 
-:backpack-user-vaishali_garg
+:vaishali_garg
     			rdf:type :Student ;
     			:hasLabel "Vaishali garg" ;
     			foaf:name "Vaishali garg" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" .
-:backpack-user-vaishali_garg :isTeachingAssistantOf :backpack-course-m2013-cse101 .
+:vaishali_garg :isTeachingAssistantOf :introduction_to_programming .
 
-:backpack-user-deepika_iiitd
+:deepika_iiitd
     			rdf:type :Student ;
     			:hasLabel "Deepika IIITD" ;
     			foaf:name "Deepika IIITD" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" .
-:backpack-user-deepika_iiitd :isTeachingAssistantOf :backpack-course-m2013-cse101 .
+:deepika_iiitd :isTeachingAssistantOf :introduction_to_programming .
 
-:backpack-user-aarushi_iiitd
+:aarushi_iiitd
 				rdf:type :Student ;
 	    		:hasLabel "Aarushi IIITD" ;
     			foaf:name "Aarushi IIITD" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" ;
 	    		:hasRollNo "2013001" ;
 	    		:hasEmail "aarushi13001@iiitd.ac.in" .
-:backpack-user-aarushi_iiitd :isStudent :backpack-course-m2013-cse101 .
+:aarushi_iiitd :attends :m2013-cse101 .
 
-:backpack-user-aashanvit_sheoran
+:aashanvit_sheoran
 				rdf:type :Student ;
 	    		:hasLabel "Aashanvit Sheoran" ;
     			foaf:name "Aashanvit Sheoran" ;
 	    		:hasImage "http://www.usebackpack.com/photos/526/M.jpg?1408770872" ;
 	    		:hasRollNo "2013002" ;
 	    		:hasEmail "aashanvit13002@iiitd.ac.in" .
-:backpack-user-aashanvit_sheoran :hasID "526".
-:backpack-user-aashanvit_sheoran :isStudent :backpack-course-m2013-cse101 .
+:aashanvit_sheoran :hasUserId "526".
+:aashanvit_sheoran :attends :m2013-cse101 .
 
-:backpack-user-abhishek_chaudhary
+:abhishek_chaudhary
 				rdf:type :Student ;
 	    		:hasLabel "Abhishek Chaudhary" ;
     			foaf:name "Abhishek Chaudhary" ;
 	    		:hasImage "http://www.usebackpack.com/photos/286/M.jpg?1376218660" ;
 	    		:hasRollNo "2013003" ;
 	    		:hasEmail "abhishek13003@iiitd.ac.in" .
-:backpack-user-abhishek_chaudhary :hasID "286".
-:backpack-user-abhishek_chaudhary :isStudent :backpack-course-m2013-cse101 .
+:abhishek_chaudhary :hasUserId "286".
+:abhishek_chaudhary :attends :m2013-cse101 .
 
-:backpack-user-abhishek_jain
+:abhishek_jain
 				rdf:type :Student ;
 	    		:hasLabel "Abhishek Jain" ;
     			foaf:name "Abhishek Jain" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" ;
 	    		:hasRollNo "2013004" ;
 	    		:hasEmail "abhishek13004@iiitd.ac.in" .
-:backpack-user-abhishek_jain :isStudent :backpack-course-m2013-cse101 .
+:abhishek_jain :attends :m2013-cse101 .
 
-:backpack-user-abhishek_mittal
+:abhishek_mittal
 				rdf:type :Student ;
 	    		:hasLabel "Abhishek Mittal" ;
     			foaf:name "Abhishek Mittal" ;
 	    		:hasImage "http://www.usebackpack.com/photos/290/M.jpg?1385483884" ;
 	    		:hasRollNo "2013005" ;
 	    		:hasEmail "abhishek13005@iiitd.ac.in" .
-:backpack-user-abhishek_mittal :hasID "290".
-:backpack-user-abhishek_mittal :isStudent :backpack-course-m2013-cse101 .
+:abhishek_mittal :hasUserId "290".
+:abhishek_mittal :attends :m2013-cse101 .
 
-:backpack-user-aditi_mithal
+:aditi_mithal
 				rdf:type :Student ;
 	    		:hasLabel "Aditi Mithal" ;
     			foaf:name "Aditi Mithal" ;
 	    		:hasImage "http://www.usebackpack.com/photos/367/M.jpg?1377373321" ;
 	    		:hasRollNo "2013122" ;
 	    		:hasEmail "aditim13122@iiitd.ac.in" .
-:backpack-user-aditi_mithal :hasID "367".
-:backpack-user-aditi_mithal :isStudent :backpack-course-m2013-cse101 .
+:aditi_mithal :hasUserId "367".
+:aditi_mithal :attends :m2013-cse101 .
 
-:backpack-user-aditya_lakra
+:aditya_lakra
 				rdf:type :Student ;
 	    		:hasLabel "Aditya Lakra" ;
     			foaf:name "Aditya Lakra" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" ;
 	    		:hasRollNo "2013006" ;
 	    		:hasEmail "aditya13006@iiitd.ac.in" .
-:backpack-user-aditya_lakra :isStudent :backpack-course-m2013-cse101 .
+:aditya_lakra :attends :m2013-cse101 .
 
-:backpack-user-aditya_tomar
+:aditya_tomar
 				rdf:type :Student ;
 	    		:hasLabel "Aditya Tomar" ;
     			foaf:name "Aditya Tomar" ;
 	    		:hasImage "http://www.usebackpack.com/photos/701/M.jpeg?1378737169" ;
 	    		:hasRollNo "MT13002" ;
 	    		:hasEmail "aditya1302@iiitd.ac.in" .
-:backpack-user-aditya_tomar :hasID "701".
-:backpack-user-aditya_tomar :isStudent :backpack-course-m2013-cse101 .
+:aditya_tomar :hasUserId "701".
+:aditya_tomar :attends :m2013-cse101 .
 
-:backpack-user-ajitanshu_singh
+:ajitanshu_singh
 				rdf:type :Student ;
 	    		:hasLabel "Ajitanshu Singh" ;
     			foaf:name "Ajitanshu Singh" ;
 	    		:hasImage "http://www.usebackpack.com/photos/355/M.jpg?1377786607" ;
 	    		:hasRollNo "2013007" ;
 	    		:hasEmail "ajitanshu13007@iiitd.ac.in" .
-:backpack-user-ajitanshu_singh :hasID "355".
-:backpack-user-ajitanshu_singh :isStudent :backpack-course-m2013-cse101 .
+:ajitanshu_singh :hasUserId "355".
+:ajitanshu_singh :attends :m2013-cse101 .
 
-:backpack-user-akanksha_mishra
+:akanksha_mishra
 				rdf:type :Student ;
 	    		:hasLabel "Akanksha Mishra" ;
     			foaf:name "Akanksha Mishra" ;
 	    		:hasImage "http://www.usebackpack.com/photos/27/M.jpg?1400013179" ;
 	    		:hasRollNo "MT13061" ;
 	    		:hasEmail "akanksha1361@iiitd.ac.in" .
-:backpack-user-akanksha_mishra :hasID "27".
-:backpack-user-akanksha_mishra :isStudent :backpack-course-m2013-cse101 .
+:akanksha_mishra :hasUserId "27".
+:akanksha_mishra :attends :m2013-cse101 .
 
-:backpack-user-akash_gautam
+:akash_gautam
 				rdf:type :Student ;
 	    		:hasLabel "Akash Gautam" ;
     			foaf:name "Akash Gautam" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" ;
 	    		:hasRollNo "2013008" ;
 	    		:hasEmail "akash13008@iiitd.ac.in" .
-:backpack-user-akash_gautam :isStudent :backpack-course-m2013-cse101 .
+:akash_gautam :attends :m2013-cse101 .
 
-:backpack-user-akash_jain
+:akash_jain
 				rdf:type :Student ;
 	    		:hasLabel "Akash Jain" ;
     			foaf:name "Akash Jain" ;
 	    		:hasImage "http://www.usebackpack.com/photos/527/M.JPG?1409055587" ;
 	    		:hasRollNo "2013123" ;
 	    		:hasEmail "akash13123@iiitd.ac.in" .
-:backpack-user-akash_jain :hasID "527".
-:backpack-user-akash_jain :isStudent :backpack-course-m2013-cse101 .
+:akash_jain :hasUserId "527".
+:akash_jain :attends :m2013-cse101 .
 
-:backpack-user-akshay_tomar
+:akshay_tomar
 				rdf:type :Student ;
 	    		:hasLabel "Akshay Tomar" ;
     			foaf:name "Akshay Tomar" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" ;
 	    		:hasRollNo "2012013" ;
 	    		:hasEmail "akshay12013@iiitd.ac.in" .
-:backpack-user-akshay_tomar :isStudent :backpack-course-m2013-cse101 .
+:akshay_tomar :attends :m2013-cse101 .
 
-:backpack-user-akshit_jain
+:akshit_jain
 				rdf:type :Student ;
 	    		:hasLabel "Akshit Jain" ;
     			foaf:name "Akshit Jain" ;
 	    		:hasImage "http://www.usebackpack.com/photos/277/M.jpg?1378638636" ;
 	    		:hasRollNo "2013124" ;
 	    		:hasEmail "akshit13124@iiitd.ac.in" .
-:backpack-user-akshit_jain :hasID "277".
-:backpack-user-akshit_jain :isStudent :backpack-course-m2013-cse101 .
+:akshit_jain :hasUserId "277".
+:akshit_jain :attends :m2013-cse101 .
 
-:backpack-user-alakh_dhruv_chopra
+:alakh_dhruv_chopra
 				rdf:type :Student ;
 	    		:hasLabel "Alakh Dhruv Chopra" ;
     			foaf:name "Alakh Dhruv Chopra" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" ;
 	    		:hasRollNo "2012016" ;
 	    		:hasEmail "alakhdhruv12016@iiitd.ac.in" .
-:backpack-user-alakh_dhruv_chopra :isStudent :backpack-course-m2013-cse101 .
+:alakh_dhruv_chopra :attends :m2013-cse101 .
 
-:backpack-user-alvika_gautam
+:alvika_gautam
 				rdf:type :Student ;
 	    		:hasLabel "Alvika Gautam" ;
     			foaf:name "Alvika Gautam" ;
 	    		:hasImage "http://www.usebackpack.com/photos/2022/M.jpg?1389076446" ;
 	    		:hasRollNo "MT12061" ;
 	    		:hasEmail "alvikag@iiitd.ac.in" .
-:backpack-user-alvika_gautam :hasID "2022".
-:backpack-user-alvika_gautam :isStudent :backpack-course-m2013-cse101 .
+:alvika_gautam :hasUserId "2022".
+:alvika_gautam :attends :m2013-cse101 .
 
-:backpack-user-aman_agarwal
+:aman_agarwal
 				rdf:type :Student ;
 	    		:hasLabel "Aman Agarwal" ;
     			foaf:name "Aman Agarwal" ;
 	    		:hasImage "http://www.usebackpack.com/photos/320/M.jpg?1378027135" ;
 	    		:hasRollNo "2013009" ;
 	    		:hasEmail "aman13009@iiitd.ac.in" .
-:backpack-user-aman_agarwal :hasID "320".
-:backpack-user-aman_agarwal :isStudent :backpack-course-m2013-cse101 .
+:aman_agarwal :hasUserId "320".
+:aman_agarwal :attends :m2013-cse101 .
 
-:backpack-user-aman_khan
+:aman_khan
 				rdf:type :Student ;
 	    		:hasLabel "Aman Khan" ;
     			foaf:name "Aman Khan" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" ;
 	    		:hasRollNo "2013010" ;
 	    		:hasEmail "aman13010@iiitd.ac.in" .
-:backpack-user-aman_khan :isStudent :backpack-course-m2013-cse101 .
+:aman_khan :attends :m2013-cse101 .
 
-:backpack-user-aman_pande
+:aman_pande
 				rdf:type :Student ;
 	    		:hasLabel "Aman Pande" ;
     			foaf:name "Aman Pande" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" ;
 	    		:hasRollNo "2013011" ;
 	    		:hasEmail "aman13011@iiitd.ac.in" .
-:backpack-user-aman_pande :isStudent :backpack-course-m2013-cse101 .
+:aman_pande :attends :m2013-cse101 .
 
-:backpack-user-amit_khiwal
+:amit_khiwal
 				rdf:type :Student ;
 	    		:hasLabel "Amit Khiwal" ;
     			foaf:name "Amit Khiwal" ;
 	    		:hasImage "http://www.usebackpack.com/photos/544/M.jpg?1377246978" ;
 	    		:hasRollNo "2011016" ;
 	    		:hasEmail "amit11016@iiitd.ac.in" .
-:backpack-user-amit_khiwal :hasID "544".
-:backpack-user-amit_khiwal :isStudent :backpack-course-m2013-cse101 .
+:amit_khiwal :hasUserId "544".
+:amit_khiwal :attends :m2013-cse101 .
 
-:backpack-user-amod_agrawal
+:amod_agrawal
 				rdf:type :Student ;
 	    		:hasLabel "Amod Agrawal" ;
     			foaf:name "Amod Agrawal" ;
 	    		:hasImage "http://www.usebackpack.com/photos/274/M.JPG?1392451833" ;
 	    		:hasRollNo "2013125" ;
 	    		:hasEmail "amod13125@iiitd.ac.in" .
-:backpack-user-amod_agrawal :hasID "274".
-:backpack-user-amod_agrawal :isStudent :backpack-course-m2013-cse101 .
+:amod_agrawal :hasUserId "274".
+:amod_agrawal :attends :m2013-cse101 .
 
-:backpack-user-amya_rai
+:amya_rai
 				rdf:type :Student ;
 	    		:hasLabel "Amya Rai" ;
     			foaf:name "Amya Rai" ;
 	    		:hasImage "http://www.usebackpack.com/photos/421/M.jpg?1376380611" ;
 	    		:hasRollNo "2013012" ;
 	    		:hasEmail "amya13012@iiitd.ac.in" .
-:backpack-user-amya_rai :hasID "421".
-:backpack-user-amya_rai :isStudent :backpack-course-m2013-cse101 .
+:amya_rai :hasUserId "421".
+:amya_rai :attends :m2013-cse101 .
 
-:backpack-user-anand_kumar
+:anand_kumar
 				rdf:type :Student ;
 	    		:hasLabel "Anand Kumar" ;
     			foaf:name "Anand Kumar" ;
 	    		:hasImage "http://www.usebackpack.com/photos/596/M.jpg?1410778997" ;
 	    		:hasRollNo "2013013" ;
 	    		:hasEmail "anand13013@iiitd.ac.in" .
-:backpack-user-anand_kumar :hasID "596".
-:backpack-user-anand_kumar :isStudent :backpack-course-m2013-cse101 .
+:anand_kumar :hasUserId "596".
+:anand_kumar :attends :m2013-cse101 .
 
-:backpack-user-aneesh_dogra
+:aneesh_dogra
 				rdf:type :Student ;
 	    		:hasLabel "Aneesh Dogra" ;
     			foaf:name "Aneesh Dogra" ;
 	    		:hasImage "http://www.usebackpack.com/photos/404/M.jpg?1407184786" ;
 	    		:hasRollNo "2013014" ;
 	    		:hasEmail "aneesh13014@iiitd.ac.in" .
-:backpack-user-aneesh_dogra :hasID "404".
-:backpack-user-aneesh_dogra :isStudent :backpack-course-m2013-cse101 .
+:aneesh_dogra :hasUserId "404".
+:aneesh_dogra :attends :m2013-cse101 .
 
-:backpack-user-aneesh_kumar
+:aneesh_kumar
 				rdf:type :Student ;
 	    		:hasLabel "Aneesh Kumar" ;
     			foaf:name "Aneesh Kumar" ;
 	    		:hasImage "http://www.usebackpack.com/photos/595/M.jpg?1381088778" ;
 	    		:hasRollNo "2013126" ;
 	    		:hasEmail "aneesh13126@iiitd.ac.in" .
-:backpack-user-aneesh_kumar :hasID "595".
-:backpack-user-aneesh_kumar :isStudent :backpack-course-m2013-cse101 .
+:aneesh_kumar :hasUserId "595".
+:aneesh_kumar :attends :m2013-cse101 .
 
-:backpack-user-anjali_anand
+:anjali_anand
 				rdf:type :Student ;
 	    		:hasLabel "Anjali Anand" ;
     			foaf:name "Anjali Anand" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" ;
 	    		:hasRollNo "2013015" ;
 	    		:hasEmail "anjali13015@iiitd.ac.in" .
-:backpack-user-anjali_anand :isStudent :backpack-course-m2013-cse101 .
+:anjali_anand :attends :m2013-cse101 .
 
-:backpack-user-anjali_ujjainia
+:anjali_ujjainia
 				rdf:type :Student ;
 	    		:hasLabel "Anjali Ujjainia" ;
     			foaf:name "Anjali Ujjainia" ;
 	    		:hasImage "http://www.usebackpack.com/photos/533/M.jpg?1378069907" ;
 	    		:hasRollNo "13016" ;
 	    		:hasEmail "anjali13016@iiitd.ac.in" .
-:backpack-user-anjali_ujjainia :hasID "533".
-:backpack-user-anjali_ujjainia :isStudent :backpack-course-m2013-cse101 .
+:anjali_ujjainia :hasUserId "533".
+:anjali_ujjainia :attends :m2013-cse101 .
 
-:backpack-user-anjli_chikara
+:anjli_chikara
 				rdf:type :Student ;
 	    		:hasLabel "Anjli Chikara" ;
     			foaf:name "Anjli Chikara" ;
 	    		:hasImage "http://www.usebackpack.com/photos/409/M.jpg?1376403207" ;
 	    		:hasRollNo "MT13062" ;
 	    		:hasEmail "anjli1362@iiitd.ac.in" .
-:backpack-user-anjli_chikara :hasID "409".
-:backpack-user-anjli_chikara :isStudent :backpack-course-m2013-cse101 .
+:anjli_chikara :hasUserId "409".
+:anjli_chikara :attends :m2013-cse101 .
 
-:backpack-user-ankit_verma
+:ankit_verma
 				rdf:type :Student ;
 	    		:hasLabel "Ankit Verma" ;
     			foaf:name "Ankit Verma" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" ;
 	    		:hasRollNo "017" ;
 	    		:hasEmail "ankit13017@iiitd.ac.in" .
-:backpack-user-ankit_verma :isStudent :backpack-course-m2013-cse101 .
+:ankit_verma :attends :m2013-cse101 .
 
-:backpack-user-ankita_verma
+:ankita_verma
 				rdf:type :Student ;
 	    		:hasLabel "Ankita Verma" ;
     			foaf:name "Ankita Verma" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" ;
 	    		:hasRollNo "2013018" ;
 	    		:hasEmail "ankita13018@iiitd.ac.in" .
-:backpack-user-ankita_verma :isStudent :backpack-course-m2013-cse101 .
+:ankita_verma :attends :m2013-cse101 .
 
-:backpack-user-ankur_singh
+:ankur_singh
 				rdf:type :Student ;
 	    		:hasLabel "Ankur Singh" ;
     			foaf:name "Ankur Singh" ;
 	    		:hasImage "http://www.usebackpack.com/photos/329/M.jpg?1379150548" ;
 	    		:hasRollNo "2013019" ;
 	    		:hasEmail "ankur13019@iiitd.ac.in" .
-:backpack-user-ankur_singh :hasID "329".
-:backpack-user-ankur_singh :isStudent :backpack-course-m2013-cse101 .
+:ankur_singh :hasUserId "329".
+:ankur_singh :attends :m2013-cse101 .
 
-:backpack-user-anmol_gahlawat
+:anmol_gahlawat
 				rdf:type :Student ;
 	    		:hasLabel "Anmol Gahlawat" ;
     			foaf:name "Anmol Gahlawat" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" ;
 	    		:hasRollNo "2013020" ;
 	    		:hasEmail "anmol13020@iiitd.ac.in" .
-:backpack-user-anmol_gahlawat :isStudent :backpack-course-m2013-cse101 .
+:anmol_gahlawat :attends :m2013-cse101 .
 
-:backpack-user-anmol_singh
+:anmol_singh
 				rdf:type :Student ;
 	    		:hasLabel "Anmol Singh" ;
     			foaf:name "Anmol Singh" ;
 	    		:hasImage "http://www.usebackpack.com/photos/352/M.JPG?1376811615" ;
 	    		:hasRollNo "2013021" ;
 	    		:hasEmail "anmol13021@iiitd.ac.in" .
-:backpack-user-anmol_singh :hasID "352".
-:backpack-user-anmol_singh :isStudent :backpack-course-m2013-cse101 .
+:anmol_singh :hasUserId "352".
+:anmol_singh :attends :m2013-cse101 .
 
-:backpack-user-anudeep_athlur
+:anudeep_athlur
 				rdf:type :Student ;
 	    		:hasLabel "Anudeep Athlur" ;
     			foaf:name "Anudeep Athlur" ;
 	    		:hasImage "http://www.usebackpack.com/photos/138/M.jpg?1376221248" ;
 	    		:hasRollNo "2011026" ;
 	    		:hasEmail "anudeep11026@iiitd.ac.in" .
-:backpack-user-anudeep_athlur :hasID "138".
-:backpack-user-anudeep_athlur :isStudent :backpack-course-m2013-cse101 .
+:anudeep_athlur :hasUserId "138".
+:anudeep_athlur :attends :m2013-cse101 .
 
-:backpack-user-anulima_choudhary
+:anulima_choudhary
 				rdf:type :Student ;
 	    		:hasLabel "Anulima Choudhary" ;
     			foaf:name "Anulima Choudhary" ;
 	    		:hasImage "http://www.usebackpack.com/photos/312/M.JPG?1376229375" ;
 	    		:hasRollNo "2010018" ;
 	    		:hasEmail "anulima10018@iiitd.ac.in" .
-:backpack-user-anulima_choudhary :hasID "312".
-:backpack-user-anulima_choudhary :isStudent :backpack-course-m2013-cse101 .
+:anulima_choudhary :hasUserId "312".
+:anulima_choudhary :attends :m2013-cse101 .
 
-:backpack-user-anwesh_kumar_sahoo
+:anwesh_kumar_sahoo
 				rdf:type :Student ;
 	    		:hasLabel "Anwesh Kumar Sahoo" ;
     			foaf:name "Anwesh Kumar Sahoo" ;
 	    		:hasImage "http://www.usebackpack.com/photos/353/M.jpg?1411654570" ;
 	    		:hasRollNo "2013127" ;
 	    		:hasEmail "anwesh13127@iiitd.ac.in" .
-:backpack-user-anwesh_kumar_sahoo :hasID "353".
-:backpack-user-anwesh_kumar_sahoo :isStudent :backpack-course-m2013-cse101 .
+:anwesh_kumar_sahoo :hasUserId "353".
+:anwesh_kumar_sahoo :attends :m2013-cse101 .
 
-:backpack-user-aparna_bharati
+:aparna_bharati
 				rdf:type :Student ;
 	    		:hasLabel "Aparna Bharati" ;
     			foaf:name "Aparna Bharati" ;
 	    		:hasImage "http://www.usebackpack.com/photos/148/M.jpg?1379999888" ;
 	    		:hasRollNo "2011027" ;
 	    		:hasEmail "aparna11027@iiitd.ac.in" .
-:backpack-user-aparna_bharati :hasID "148".
-:backpack-user-aparna_bharati :isStudent :backpack-course-m2013-cse101 .
+:aparna_bharati :hasUserId "148".
+:aparna_bharati :attends :m2013-cse101 .
 
-:backpack-user-apoorv_narang
+:apoorv_narang
 				rdf:type :Student ;
 	    		:hasLabel "Apoorv Narang" ;
     			foaf:name "Apoorv Narang" ;
 	    		:hasImage "http://www.usebackpack.com/photos/7/M.jpg?1375763340" ;
 	    		:hasRollNo "2010019" ;
 	    		:hasEmail "apoorv10019@iiitd.ac.in" .
-:backpack-user-apoorv_narang :hasID "7".
-:backpack-user-apoorv_narang :isStudent :backpack-course-m2013-cse101 .
+:apoorv_narang :hasUserId "7".
+:apoorv_narang :attends :m2013-cse101 .
 
-:backpack-user-apoorv_singh
+:apoorv_singh
 				rdf:type :Student ;
 	    		:hasLabel "Apoorv Singh" ;
     			foaf:name "Apoorv Singh" ;
 	    		:hasImage "http://www.usebackpack.com/photos/11/M.JPG?1415665742" ;
 	    		:hasRollNo "2011028" ;
 	    		:hasEmail "apoorv11028@iiitd.ac.in" .
-:backpack-user-apoorv_singh :hasID "11".
-:backpack-user-apoorv_singh :isStudent :backpack-course-m2013-cse101 .
+:apoorv_singh :hasUserId "11".
+:apoorv_singh :attends :m2013-cse101 .
 
-:backpack-user-apurba_mondal
+:apurba_mondal
 				rdf:type :Student ;
 	    		:hasLabel "Apurba Mondal" ;
     			foaf:name "Apurba Mondal" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" ;
 	    		:hasRollNo "2013128" ;
 	    		:hasEmail "apurba13128@iiitd.ac.in" .
-:backpack-user-apurba_mondal :isStudent :backpack-course-m2013-cse101 .
+:apurba_mondal :attends :m2013-cse101 .
 
-:backpack-user-archit_agarwal
+:archit_agarwal
 				rdf:type :Student ;
 	    		:hasLabel "Archit Agarwal" ;
     			foaf:name "Archit Agarwal" ;
 	    		:hasImage "http://www.usebackpack.com/photos/44/M.png?1394039144" ;
 	    		:hasRollNo "2011030" ;
 	    		:hasEmail "archit11030@iiitd.ac.in" .
-:backpack-user-archit_agarwal :hasID "44".
-:backpack-user-archit_agarwal :isStudent :backpack-course-m2013-cse101 .
+:archit_agarwal :hasUserId "44".
+:archit_agarwal :attends :m2013-cse101 .
 
-:backpack-user-arjun_verma
+:arjun_verma
 				rdf:type :Student ;
 	    		:hasLabel "Arjun Verma" ;
     			foaf:name "Arjun Verma" ;
 	    		:hasImage "http://www.usebackpack.com/photos/271/M.jpg?1414676158" ;
 	    		:hasRollNo "2013022" ;
 	    		:hasEmail "arjun13022@iiitd.ac.in" .
-:backpack-user-arjun_verma :hasID "271".
-:backpack-user-arjun_verma :isStudent :backpack-course-m2013-cse101 .
+:arjun_verma :hasUserId "271".
+:arjun_verma :attends :m2013-cse101 .
 
-:backpack-user-arushi_jain
+:arushi_jain
 				rdf:type :Student ;
 	    		:hasLabel "Arushi Jain" ;
     			foaf:name "Arushi Jain" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" ;
 	    		:hasRollNo "2013023" ;
 	    		:hasEmail "arushi13023@iiitd.ac.in" .
-:backpack-user-arushi_jain :isStudent :backpack-course-m2013-cse101 .
+:arushi_jain :attends :m2013-cse101 .
 
-:backpack-user-ashish_aapan
+:ashish_aapan
 				rdf:type :Student ;
 	    		:hasLabel "Ashish Aapan" ;
     			foaf:name "Ashish Aapan" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" ;
 	    		:hasRollNo "2013024" ;
 	    		:hasEmail "ashish13024@iiitd.ac.in" .
-:backpack-user-ashish_aapan :isStudent :backpack-course-m2013-cse101 .
+:ashish_aapan :attends :m2013-cse101 .
 
-:backpack-user-ashish_rawat
+:ashish_rawat
 				rdf:type :Student ;
 	    		:hasLabel "Ashish Rawat" ;
     			foaf:name "Ashish Rawat" ;
 	    		:hasImage "http://www.usebackpack.com/photos/715/M.jpeg?1390236168" ;
 	    		:hasRollNo "2012027" ;
 	    		:hasEmail "ashish12027@iiitd.ac.in" .
-:backpack-user-ashish_rawat :hasID "715".
-:backpack-user-ashish_rawat :isStudent :backpack-course-m2013-cse101 .
+:ashish_rawat :hasUserId "715".
+:ashish_rawat :attends :m2013-cse101 .
 
-:backpack-user-astha_gupta
+:astha_gupta
 				rdf:type :Student ;
 	    		:hasLabel "Astha Gupta" ;
     			foaf:name "Astha Gupta" ;
 	    		:hasImage "http://www.usebackpack.com/photos/297/M.jpg?1380772198" ;
 	    		:hasRollNo "2013129" ;
 	    		:hasEmail "astha13129@iiitd.ac.in" .
-:backpack-user-astha_gupta :hasID "297".
-:backpack-user-astha_gupta :isStudent :backpack-course-m2013-cse101 .
+:astha_gupta :hasUserId "297".
+:astha_gupta :attends :m2013-cse101 .
 
-:backpack-user-atul_jain
+:atul_jain
 				rdf:type :Student ;
 	    		:hasLabel "Atul Jain" ;
     			foaf:name "Atul Jain" ;
 	    		:hasImage "http://www.usebackpack.com/photos/333/M.jpg?1382626245" ;
 	    		:hasRollNo "2013025" ;
 	    		:hasEmail "atul13025@iiitd.ac.in" .
-:backpack-user-atul_jain :hasID "333".
-:backpack-user-atul_jain :isStudent :backpack-course-m2013-cse101 .
+:atul_jain :hasUserId "333".
+:atul_jain :attends :m2013-cse101 .
 
-:backpack-user-atulya_jain
+:atulya_jain
 				rdf:type :Student ;
 	    		:hasLabel "Atulya Jain" ;
     			foaf:name "Atulya Jain" ;
 	    		:hasImage "http://www.usebackpack.com/photos/381/M.JPG?1410024275" ;
 	    		:hasRollNo "2013026" ;
 	    		:hasEmail "atulya13026@iiitd.ac.in" .
-:backpack-user-atulya_jain :hasID "381".
-:backpack-user-atulya_jain :isStudent :backpack-course-m2013-cse101 .
+:atulya_jain :hasUserId "381".
+:atulya_jain :attends :m2013-cse101 .
 
-:backpack-user-avikal_kohli
+:avikal_kohli
 				rdf:type :Student ;
 	    		:hasLabel "Avikal Kohli" ;
     			foaf:name "Avikal Kohli" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" ;
 	    		:hasRollNo "2013130" ;
 	    		:hasEmail "avikal13130@iiitd.ac.in" .
-:backpack-user-avikal_kohli :isStudent :backpack-course-m2013-cse101 .
+:avikal_kohli :attends :m2013-cse101 .
 
-:backpack-user-ayush_dattagupta
+:ayush_dattagupta
 				rdf:type :Student ;
 	    		:hasLabel "Ayush Dattagupta" ;
     			foaf:name "Ayush Dattagupta" ;
 	    		:hasImage "http://www.usebackpack.com/photos/417/M.jpg?1376481037" ;
 	    		:hasRollNo "2013131" ;
 	    		:hasEmail "ayush13131@iiitd.ac.in" .
-:backpack-user-ayush_dattagupta :hasID "417".
-:backpack-user-ayush_dattagupta :isStudent :backpack-course-m2013-cse101 .
+:ayush_dattagupta :hasUserId "417".
+:ayush_dattagupta :attends :m2013-cse101 .
 
-:backpack-user-ayush_shah
+:ayush_shah
 				rdf:type :Student ;
 	    		:hasLabel "Ayush Shah" ;
     			foaf:name "Ayush Shah" ;
 	    		:hasImage "http://www.usebackpack.com/photos/276/M.jpg?1376214944" ;
 	    		:hasRollNo "2013027" ;
 	    		:hasEmail "ayush13027@iiitd.ac.in" .
-:backpack-user-ayush_shah :hasID "276".
-:backpack-user-ayush_shah :isStudent :backpack-course-m2013-cse101 .
+:ayush_shah :hasUserId "276".
+:ayush_shah :attends :m2013-cse101 .
 
-:backpack-user-bhavna_nagpal
+:bhavna_nagpal
 				rdf:type :Student ;
 	    		:hasLabel "Bhavna Nagpal" ;
     			foaf:name "Bhavna Nagpal" ;
 	    		:hasImage "http://www.usebackpack.com/photos/573/M.JPG?1407105697" ;
 	    		:hasRollNo "2013029" ;
 	    		:hasEmail "bhavna13029@iiitd.ac.in" .
-:backpack-user-bhavna_nagpal :hasID "573".
-:backpack-user-bhavna_nagpal :isStudent :backpack-course-m2013-cse101 .
+:bhavna_nagpal :hasUserId "573".
+:bhavna_nagpal :attends :m2013-cse101 .
 
-:backpack-user-chanchal_prajapati
+:chanchal_prajapati
 				rdf:type :Student ;
 	    		:hasLabel "Chanchal Prajapati" ;
     			foaf:name "Chanchal Prajapati" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" ;
 	    		:hasRollNo "2013030" ;
 	    		:hasEmail "chanchal13030@iiitd.ac.in" .
-:backpack-user-chanchal_prajapati :isStudent :backpack-course-m2013-cse101 .
+:chanchal_prajapati :attends :m2013-cse101 .
 
-:backpack-user-chetan_sharma
+:chetan_sharma
 				rdf:type :Student ;
 	    		:hasLabel "Chetan Sharma" ;
     			foaf:name "Chetan Sharma" ;
 	    		:hasImage "http://www.usebackpack.com/photos/342/M.jpg?1390061810" ;
 	    		:hasRollNo "2013031" ;
 	    		:hasEmail "chetan13031@iiitd.ac.in" .
-:backpack-user-chetan_sharma :hasID "342".
-:backpack-user-chetan_sharma :isStudent :backpack-course-m2013-cse101 .
+:chetan_sharma :hasUserId "342".
+:chetan_sharma :attends :m2013-cse101 .
 
-:backpack-user-damini_khanna
+:damini_khanna
 				rdf:type :Student ;
 	    		:hasLabel "Damini Khanna" ;
     			foaf:name "Damini Khanna" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" ;
 	    		:hasRollNo "MT13094" ;
 	    		:hasEmail "damini1394@iiitd.ac.in" .
-:backpack-user-damini_khanna :isStudent :backpack-course-m2013-cse101 .
+:damini_khanna :attends :m2013-cse101 .
 
-:backpack-user-deepanshu_arora
+:deepanshu_arora
 				rdf:type :Student ;
 	    		:hasLabel "Deepanshu Arora" ;
     			foaf:name "Deepanshu Arora" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" ;
 	    		:hasRollNo "13032" ;
 	    		:hasEmail "deepanshu13032@iiitd.ac.in" .
-:backpack-user-deepanshu_arora :isStudent :backpack-course-m2013-cse101 .
+:deepanshu_arora :attends :m2013-cse101 .
 
-:backpack-user-devansh_kumar
+:devansh_kumar
 				rdf:type :Student ;
 	    		:hasLabel "Devansh Kumar" ;
     			foaf:name "Devansh Kumar" ;
 	    		:hasImage "http://www.usebackpack.com/photos/491/M.jpg?1398533975" ;
 	    		:hasRollNo "2011042" ;
 	    		:hasEmail "devansh11042@iiitd.ac.in" .
-:backpack-user-devansh_kumar :hasID "491".
-:backpack-user-devansh_kumar :isStudent :backpack-course-m2013-cse101 .
+:devansh_kumar :hasUserId "491".
+:devansh_kumar :attends :m2013-cse101 .
 
-:backpack-user-dibyendu_talukder
+:dibyendu_talukder
 				rdf:type :Student ;
 	    		:hasLabel "Dibyendu Talukder" ;
     			foaf:name "Dibyendu Talukder" ;
 	    		:hasImage "http://www.usebackpack.com/photos/345/M.jpg?1376285932" ;
 	    		:hasRollNo "MT13063" ;
 	    		:hasEmail "dibyendu1363@iiitd.ac.in" .
-:backpack-user-dibyendu_talukder :hasID "345".
-:backpack-user-dibyendu_talukder :isStudent :backpack-course-m2013-cse101 .
+:dibyendu_talukder :hasUserId "345".
+:dibyendu_talukder :attends :m2013-cse101 .
 
-:backpack-user-diljyot_singh_jaura
+:diljyot_singh_jaura
 				rdf:type :Student ;
 	    		:hasLabel "Diljyot Singh Jaura" ;
     			foaf:name "Diljyot Singh Jaura" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" ;
 	    		:hasRollNo "2013132" ;
 	    		:hasEmail "diljyot13132@iiitd.ac.in" .
-:backpack-user-diljyot_singh_jaura :isStudent :backpack-course-m2013-cse101 .
+:diljyot_singh_jaura :attends :m2013-cse101 .
 
-:backpack-user-divya_mehra
+:divya_mehra
 				rdf:type :Student ;
 	    		:hasLabel "Divya Mehra" ;
     			foaf:name "Divya Mehra" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" ;
 	    		:hasRollNo "2013033" ;
 	    		:hasEmail "divya13033@iiitd.ac.in" .
-:backpack-user-divya_mehra :isStudent :backpack-course-m2013-cse101 .
+:divya_mehra :attends :m2013-cse101 .
 
-:backpack-user-divyanshu_sharma
+:divyanshu_sharma
 				rdf:type :Student ;
 	    		:hasLabel "Divyanshu Sharma" ;
     			foaf:name "Divyanshu Sharma" ;
 	    		:hasImage "http://www.usebackpack.com/photos/321/M.JPG?1414333666" ;
 	    		:hasRollNo "2013034" ;
 	    		:hasEmail "divyanshu13034@iiitd.ac.in" .
-:backpack-user-divyanshu_sharma :hasID "321".
-:backpack-user-divyanshu_sharma :isStudent :backpack-course-m2013-cse101 .
+:divyanshu_sharma :hasUserId "321".
+:divyanshu_sharma :attends :m2013-cse101 .
 
-:backpack-user-farheen_shah
+:farheen_shah
 				rdf:type :Student ;
 	    		:hasLabel "Farheen Shah" ;
     			foaf:name "Farheen Shah" ;
 	    		:hasImage "http://www.usebackpack.com/photos/307/M.jpg?1407248602" ;
 	    		:hasRollNo "2013133" ;
 	    		:hasEmail "farheen13133@iiitd.ac.in" .
-:backpack-user-farheen_shah :hasID "307".
-:backpack-user-farheen_shah :isStudent :backpack-course-m2013-cse101 .
+:farheen_shah :hasUserId "307".
+:farheen_shah :attends :m2013-cse101 .
 
-:backpack-user-gaurav_bansal
+:gaurav_bansal
 				rdf:type :Student ;
 	    		:hasLabel "Gaurav Bansal" ;
     			foaf:name "Gaurav Bansal" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" ;
 	    		:hasRollNo "2013035" ;
 	    		:hasEmail "gaurav13035@iiitd.ac.in" .
-:backpack-user-gaurav_bansal :isStudent :backpack-course-m2013-cse101 .
+:gaurav_bansal :attends :m2013-cse101 .
 
-:backpack-user-gaurav_rathee
+:gaurav_rathee
 				rdf:type :Student ;
 	    		:hasLabel "Gaurav Rathee" ;
     			foaf:name "Gaurav Rathee" ;
 	    		:hasImage "http://www.usebackpack.com/photos/316/M.jpg?1400698358" ;
 	    		:hasRollNo "2013036" ;
 	    		:hasEmail "gaurav13036@iiitd.ac.in" .
-:backpack-user-gaurav_rathee :hasID "316".
-:backpack-user-gaurav_rathee :isStudent :backpack-course-m2013-cse101 .
+:gaurav_rathee :hasUserId "316".
+:gaurav_rathee :attends :m2013-cse101 .
 
-:backpack-user-gaurav_yadav
+:gaurav_yadav
 				rdf:type :Student ;
 	    		:hasLabel "Gaurav Yadav" ;
     			foaf:name "Gaurav Yadav" ;
 	    		:hasImage "http://www.usebackpack.com/photos/337/M.png?1396411035" ;
 	    		:hasRollNo "2013037" ;
 	    		:hasEmail "gaurav13037@iiitd.ac.in" .
-:backpack-user-gaurav_yadav :hasID "337".
-:backpack-user-gaurav_yadav :isStudent :backpack-course-m2013-cse101 .
+:gaurav_yadav :hasUserId "337".
+:gaurav_yadav :attends :m2013-cse101 .
 
-:backpack-user-grishma_sinha
+:grishma_sinha
 				rdf:type :Student ;
 	    		:hasLabel "Grishma Sinha" ;
     			foaf:name "Grishma Sinha" ;
 	    		:hasImage "http://www.usebackpack.com/photos/439/M.jpg?1376661854" ;
 	    		:hasRollNo "2013134" ;
 	    		:hasEmail "grishma13134@iiitd.ac.in" .
-:backpack-user-grishma_sinha :hasID "439".
-:backpack-user-grishma_sinha :isStudent :backpack-course-m2013-cse101 .
+:grishma_sinha :hasUserId "439".
+:grishma_sinha :attends :m2013-cse101 .
 
-:backpack-user-gurshabad_singh_grover
+:gurshabad_singh_grover
 				rdf:type :Student ;
 	    		:hasLabel "Gurshabad Singh Grover" ;
     			foaf:name "Gurshabad Singh Grover" ;
 	    		:hasImage "http://www.usebackpack.com/photos/419/M.jpg?1410014635" ;
 	    		:hasRollNo "2013038" ;
 	    		:hasEmail "gurshabad13038@iiitd.ac.in" .
-:backpack-user-gurshabad_singh_grover :hasID "419".
-:backpack-user-gurshabad_singh_grover :isStudent :backpack-course-m2013-cse101 .
+:gurshabad_singh_grover :hasUserId "419".
+:gurshabad_singh_grover :attends :m2013-cse101 .
 
-:backpack-user-hammad_akhtar
+:hammad_akhtar
 				rdf:type :Student ;
 	    		:hasLabel "Hammad Akhtar" ;
     			foaf:name "Hammad Akhtar" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" ;
 	    		:hasRollNo "2013060" ;
 	    		:hasEmail "hammad13060@iiitd.ac.in" .
-:backpack-user-hammad_akhtar :isStudent :backpack-course-m2013-cse101 .
+:hammad_akhtar :attends :m2013-cse101 .
 
-:backpack-user-herrman_swami
+:herrman_swami
 				rdf:type :Student ;
 	    		:hasLabel "Herrman Swami" ;
     			foaf:name "Herrman Swami" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" ;
 	    		:hasRollNo "2013039" ;
 	    		:hasEmail "herrman13039@iiitd.ac.in" .
-:backpack-user-herrman_swami :isStudent :backpack-course-m2013-cse101 .
+:herrman_swami :attends :m2013-cse101 .
 
-:backpack-user-himani_iiitd
+:himani_iiitd
 				rdf:type :Student ;
 	    		:hasLabel "Himani IIITD" ;
     			foaf:name "Himani IIITD" ;
 	    		:hasImage "http://www.usebackpack.com/photos/558/M.jpg?1377456713" ;
 	    		:hasRollNo "2013040" ;
 	    		:hasEmail "himani13040@iiitd.ac.in" .
-:backpack-user-himani_iiitd :hasID "558".
-:backpack-user-himani_iiitd :isStudent :backpack-course-m2013-cse101 .
+:himani_iiitd :hasUserId "558".
+:himani_iiitd :attends :m2013-cse101 .
 
-:backpack-user-ishan_sharma
+:ishan_sharma
 				rdf:type :Student ;
 	    		:hasLabel "Ishan Sharma" ;
     			foaf:name "Ishan Sharma" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" ;
 	    		:hasRollNo "13041" ;
 	    		:hasEmail "ishan13041@iiitd.ac.in" .
-:backpack-user-ishan_sharma :isStudent :backpack-course-m2013-cse101 .
+:ishan_sharma :attends :m2013-cse101 .
 
-:backpack-user-ishita_khurana
+:ishita_khurana
 				rdf:type :Student ;
 	    		:hasLabel "Ishita Khurana" ;
     			foaf:name "Ishita Khurana" ;
 	    		:hasImage "http://www.usebackpack.com/photos/510/M.jpg?1379939254" ;
 	    		:hasRollNo "2013042" ;
 	    		:hasEmail "ishita13042@iiitd.ac.in" .
-:backpack-user-ishita_khurana :hasID "510".
-:backpack-user-ishita_khurana :isStudent :backpack-course-m2013-cse101 .
+:ishita_khurana :hasUserId "510".
+:ishita_khurana :attends :m2013-cse101 .
 
-:backpack-user-jaisurya_jai
+:jaisurya_jai
 				rdf:type :Student ;
 	    		:hasLabel "Jaisurya Jai" ;
     			foaf:name "Jaisurya Jai" ;
 	    		:hasImage "http://www.usebackpack.com/photos/532/M.jpg?1393277387" ;
 	    		:hasRollNo "2013028" ;
 	    		:hasEmail "jaisurya13028@iiitd.ac.in" .
-:backpack-user-jaisurya_jai :hasID "532".
-:backpack-user-jaisurya_jai :isStudent :backpack-course-m2013-cse101 .
+:jaisurya_jai :hasUserId "532".
+:jaisurya_jai :attends :m2013-cse101 .
 
-:backpack-user-jalaj_pandey
+:jalaj_pandey
 				rdf:type :Student ;
 	    		:hasLabel "Jalaj Pandey" ;
     			foaf:name "Jalaj Pandey" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" ;
 	    		:hasRollNo "2013043" ;
 	    		:hasEmail "jalaj13043@iiitd.ac.in" .
-:backpack-user-jalaj_pandey :isStudent :backpack-course-m2013-cse101 .
+:jalaj_pandey :attends :m2013-cse101 .
 
-:backpack-user-jatin_sindhu
+:jatin_sindhu
 				rdf:type :Student ;
 	    		:hasLabel "Jatin Sindhu" ;
     			foaf:name "Jatin Sindhu" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" ;
 	    		:hasRollNo "2011057" ;
 	    		:hasEmail "jatin11057@iiitd.ac.in" .
-:backpack-user-jatin_sindhu :isStudent :backpack-course-m2013-cse101 .
+:jatin_sindhu :attends :m2013-cse101 .
 
-:backpack-user-jeevan_joishi
+:jeevan_joishi
 				rdf:type :Student ;
 	    		:hasLabel "Jeevan Joishi" ;
     			foaf:name "Jeevan Joishi" ;
 	    		:hasImage "http://www.usebackpack.com/photos/401/M.jpg?1407144530" ;
 	    		:hasRollNo "MT13036" ;
 	    		:hasEmail "jeevan1336@iiitd.ac.in" .
-:backpack-user-jeevan_joishi :hasID "401".
-:backpack-user-jeevan_joishi :isStudent :backpack-course-m2013-cse101 .
+:jeevan_joishi :hasUserId "401".
+:jeevan_joishi :attends :m2013-cse101 .
 
-:backpack-user-juhi_bhatnagar
+:juhi_bhatnagar
 				rdf:type :Student ;
 	    		:hasLabel "Juhi Bhatnagar" ;
     			foaf:name "Juhi Bhatnagar" ;
 	    		:hasImage "http://www.usebackpack.com/photos/390/M.jpg?1398322883" ;
 	    		:hasRollNo "2013044" ;
 	    		:hasEmail "juhi13044@iiitd.ac.in" .
-:backpack-user-juhi_bhatnagar :hasID "390".
-:backpack-user-juhi_bhatnagar :isStudent :backpack-course-m2013-cse101 .
+:juhi_bhatnagar :hasUserId "390".
+:juhi_bhatnagar :attends :m2013-cse101 .
 
-:backpack-user-kapil_khatri
+:kapil_khatri
 				rdf:type :Student ;
 	    		:hasLabel "Kapil Khatri" ;
     			foaf:name "Kapil Khatri" ;
 	    		:hasImage "http://www.usebackpack.com/photos/356/M.jpg?1393402688" ;
 	    		:hasRollNo "2013046" ;
 	    		:hasEmail "kapil13046@iiitd.ac.in" .
-:backpack-user-kapil_khatri :hasID "356".
-:backpack-user-kapil_khatri :isStudent :backpack-course-m2013-cse101 .
+:kapil_khatri :hasUserId "356".
+:kapil_khatri :attends :m2013-cse101 .
 
-:backpack-user-karan_barsiwal
+:karan_barsiwal
 				rdf:type :Student ;
 	    		:hasLabel "Karan Barsiwal" ;
     			foaf:name "Karan Barsiwal" ;
 	    		:hasImage "http://www.usebackpack.com/photos/427/M.jpg?1410628842" ;
 	    		:hasRollNo "2013047" ;
 	    		:hasEmail "karan13047@iiitd.ac.in" .
-:backpack-user-karan_barsiwal :hasID "427".
-:backpack-user-karan_barsiwal :isStudent :backpack-course-m2013-cse101 .
+:karan_barsiwal :hasUserId "427".
+:karan_barsiwal :attends :m2013-cse101 .
 
-:backpack-user-karan_grover
+:karan_grover
 				rdf:type :Student ;
 	    		:hasLabel "Karan Grover" ;
     			foaf:name "Karan Grover" ;
 	    		:hasImage "http://www.usebackpack.com/photos/535/M.jpg?1410526122" ;
 	    		:hasRollNo "2013048" ;
 	    		:hasEmail "karan13048@iiitd.ac.in" .
-:backpack-user-karan_grover :hasID "535".
-:backpack-user-karan_grover :isStudent :backpack-course-m2013-cse101 .
+:karan_grover :hasUserId "535".
+:karan_grover :attends :m2013-cse101 .
 
-:backpack-user-karan_rajput
+:karan_rajput
 				rdf:type :Student ;
 	    		:hasLabel "Karan Rajput" ;
     			foaf:name "Karan Rajput" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" ;
 	    		:hasRollNo "13135" ;
 	    		:hasEmail "karan13135@iiitd.ac.in" .
-:backpack-user-karan_rajput :isStudent :backpack-course-m2013-cse101 .
+:karan_rajput :attends :m2013-cse101 .
 
-:backpack-user-karishma_babbar
+:karishma_babbar
 				rdf:type :Student ;
 	    		:hasLabel "Karishma Babbar" ;
     			foaf:name "Karishma Babbar" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" ;
 	    		:hasRollNo "201313" ;
 	    		:hasEmail "karishma13136@iiitd.ac.in" .
-:backpack-user-karishma_babbar :isStudent :backpack-course-m2013-cse101 .
+:karishma_babbar :attends :m2013-cse101 .
 
-:backpack-user-karlapudi_nikhil_raj
+:karlapudi_nikhil_raj
 				rdf:type :Student ;
 	    		:hasLabel "Karlapudi Nikhil Raj" ;
     			foaf:name "Karlapudi Nikhil Raj" ;
 	    		:hasImage "http://www.usebackpack.com/photos/431/M.JPG?1407833792" ;
 	    		:hasRollNo "2013049" ;
 	    		:hasEmail "karlapudi13049@iiitd.ac.in" .
-:backpack-user-karlapudi_nikhil_raj :hasID "431".
-:backpack-user-karlapudi_nikhil_raj :isStudent :backpack-course-m2013-cse101 .
+:karlapudi_nikhil_raj :hasUserId "431".
+:karlapudi_nikhil_raj :attends :m2013-cse101 .
 
-:backpack-user-kartik_gupta
+:kartik_gupta
 				rdf:type :Student ;
 	    		:hasLabel "Kartik Gupta" ;
     			foaf:name "Kartik Gupta" ;
 	    		:hasImage "http://www.usebackpack.com/photos/344/M.jpg?1377021589" ;
 	    		:hasRollNo "2013050" ;
 	    		:hasEmail "kartik13050@iiitd.ac.in" .
-:backpack-user-kartik_gupta :hasID "344".
-:backpack-user-kartik_gupta :isStudent :backpack-course-m2013-cse101 .
+:kartik_gupta :hasUserId "344".
+:kartik_gupta :attends :m2013-cse101 .
 
-:backpack-user-kartik_maji
+:kartik_maji
 				rdf:type :Student ;
 	    		:hasLabel "Kartik Maji" ;
     			foaf:name "Kartik Maji" ;
 	    		:hasImage "http://www.usebackpack.com/photos/319/M.JPG?1407970933" ;
 	    		:hasRollNo "2013051" ;
 	    		:hasEmail "kartik13051@iiitd.ac.in" .
-:backpack-user-kartik_maji :hasID "319".
-:backpack-user-kartik_maji :isStudent :backpack-course-m2013-cse101 .
+:kartik_maji :hasUserId "319".
+:kartik_maji :attends :m2013-cse101 .
 
-:backpack-user-kishor_singh_rawat
+:kishor_singh_rawat
 				rdf:type :Student ;
 	    		:hasLabel "Kishor Singh Rawat" ;
     			foaf:name "Kishor Singh Rawat" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" ;
 	    		:hasRollNo "MT13127" ;
 	    		:hasEmail "kishor13127@iiitd.ac.in" .
-:backpack-user-kishor_singh_rawat :isStudent :backpack-course-m2013-cse101 .
+:kishor_singh_rawat :attends :m2013-cse101 .
 
-:backpack-user-kshitij_kamble
+:kshitij_kamble
 				rdf:type :Student ;
 	    		:hasLabel "Kshitij Kamble" ;
     			foaf:name "Kshitij Kamble" ;
 	    		:hasImage "http://www.usebackpack.com/photos/322/M.jpg?1391259901" ;
 	    		:hasRollNo "2013052" ;
 	    		:hasEmail "kshitij13052@iiitd.ac.in" .
-:backpack-user-kshitij_kamble :hasID "322".
-:backpack-user-kshitij_kamble :isStudent :backpack-course-m2013-cse101 .
+:kshitij_kamble :hasUserId "322".
+:kshitij_kamble :attends :m2013-cse101 .
 
-:backpack-user-kshitiz_bakshi
+:kshitiz_bakshi
 				rdf:type :Student ;
 	    		:hasLabel "Kshitiz Bakshi" ;
     			foaf:name "Kshitiz Bakshi" ;
 	    		:hasImage "http://www.usebackpack.com/photos/188/M.jpg?1375979679" ;
 	    		:hasRollNo "2010040" ;
 	    		:hasEmail "kshitiz10040@iiitd.ac.in" .
-:backpack-user-kshitiz_bakshi :hasID "188".
-:backpack-user-kshitiz_bakshi :isStudent :backpack-course-m2013-cse101 .
+:kshitiz_bakshi :hasUserId "188".
+:kshitiz_bakshi :attends :m2013-cse101 .
 
-:backpack-user-kumar_abhinav
+:kumar_abhinav
 				rdf:type :Student ;
 	    		:hasLabel "Kumar Abhinav" ;
     			foaf:name "Kumar Abhinav" ;
 	    		:hasImage "http://www.usebackpack.com/photos/120/M.jpg?1376042240" ;
 	    		:hasRollNo "MT 13065" ;
 	    		:hasEmail "kumar1365@iiitd.ac.in" .
-:backpack-user-kumar_abhinav :hasID "120".
-:backpack-user-kumar_abhinav :isStudent :backpack-course-m2013-cse101 .
+:kumar_abhinav :hasUserId "120".
+:kumar_abhinav :attends :m2013-cse101 .
 
-:backpack-user-kunal_choudhary
+:kunal_choudhary
 				rdf:type :Student ;
 	    		:hasLabel "Kunal Choudhary" ;
     			foaf:name "Kunal Choudhary" ;
 	    		:hasImage "http://www.usebackpack.com/photos/508/M.jpg?1376560467" ;
 	    		:hasRollNo "2013053" ;
 	    		:hasEmail "kunal13053@iiitd.ac.in" .
-:backpack-user-kunal_choudhary :hasID "508".
-:backpack-user-kunal_choudhary :isStudent :backpack-course-m2013-cse101 .
+:kunal_choudhary :hasUserId "508".
+:kunal_choudhary :attends :m2013-cse101 .
 
-:backpack-user-kunal_lal
+:kunal_lal
 				rdf:type :Student ;
 	    		:hasLabel "Kunal Lal" ;
     			foaf:name "Kunal Lal" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" ;
 	    		:hasRollNo "2013054" ;
 	    		:hasEmail "kunal13054@iiitd.ac.in" .
-:backpack-user-kunal_lal :isStudent :backpack-course-m2013-cse101 .
+:kunal_lal :attends :m2013-cse101 .
 
-:backpack-user-mahitha_kalyani
+:mahitha_kalyani
 				rdf:type :Student ;
 	    		:hasLabel "Mahitha Kalyani" ;
     			foaf:name "Mahitha Kalyani" ;
 	    		:hasImage "http://www.usebackpack.com/photos/556/M.jpg?1377193634" ;
 	    		:hasRollNo "2013045" ;
 	    		:hasEmail "mahitha13045@iiitd.ac.in" .
-:backpack-user-mahitha_kalyani :hasID "556".
-:backpack-user-mahitha_kalyani :isStudent :backpack-course-m2013-cse101 .
+:mahitha_kalyani :hasUserId "556".
+:mahitha_kalyani :attends :m2013-cse101 .
 
-:backpack-user-mallika_alok_agarwal
+:mallika_alok_agarwal
 				rdf:type :Student ;
 	    		:hasLabel "Mallika Alok Agarwal" ;
     			foaf:name "Mallika Alok Agarwal" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" ;
 	    		:hasRollNo "2013055" ;
 	    		:hasEmail "mallika13055@iiitd.ac.in" .
-:backpack-user-mallika_alok_agarwal :isStudent :backpack-course-m2013-cse101 .
+:mallika_alok_agarwal :attends :m2013-cse101 .
 
-:backpack-user-manan_wason
+:manan_wason
 				rdf:type :Student ;
 	    		:hasLabel "Manan Wason" ;
     			foaf:name "Manan Wason" ;
 	    		:hasImage "http://www.usebackpack.com/photos/413/M.JPG?1376410561" ;
 	    		:hasRollNo "2013056" ;
 	    		:hasEmail "manan13056@iiitd.ac.in" .
-:backpack-user-manan_wason :hasID "413".
-:backpack-user-manan_wason :isStudent :backpack-course-m2013-cse101 .
+:manan_wason :hasUserId "413".
+:manan_wason :attends :m2013-cse101 .
 
-:backpack-user-manav_batra
+:manav_batra
 				rdf:type :Student ;
 	    		:hasLabel "Manav Batra" ;
     			foaf:name "Manav Batra" ;
 	    		:hasImage "http://www.usebackpack.com/photos/325/M.jpg?1378050211" ;
 	    		:hasRollNo "2013057" ;
 	    		:hasEmail "manav13057@iiitd.ac.in" .
-:backpack-user-manav_batra :hasID "325".
-:backpack-user-manav_batra :isStudent :backpack-course-m2013-cse101 .
+:manav_batra :hasUserId "325".
+:manav_batra :attends :m2013-cse101 .
 
-:backpack-user-manish_patel
+:manish_patel
 				rdf:type :Student ;
 	    		:hasLabel "Manish Patel" ;
     			foaf:name "Manish Patel" ;
 	    		:hasImage "http://www.usebackpack.com/photos/521/M.png?1410775099" ;
 	    		:hasRollNo "2013058" ;
 	    		:hasEmail "manish13058@iiitd.ac.in" .
-:backpack-user-manish_patel :hasID "521".
-:backpack-user-manish_patel :isStudent :backpack-course-m2013-cse101 .
+:manish_patel :hasUserId "521".
+:manish_patel :attends :m2013-cse101 .
 
-:backpack-user-masroor_ahmad
+:masroor_ahmad
 				rdf:type :Student ;
 	    		:hasLabel "Masroor Ahmad" ;
     			foaf:name "Masroor Ahmad" ;
 	    		:hasImage "http://www.usebackpack.com/photos/283/M.jpg?1409515797" ;
 	    		:hasRollNo "2013137" ;
 	    		:hasEmail "masroor13137@iiitd.ac.in" .
-:backpack-user-masroor_ahmad :hasID "283".
-:backpack-user-masroor_ahmad :isStudent :backpack-course-m2013-cse101 .
+:masroor_ahmad :hasUserId "283".
+:masroor_ahmad :attends :m2013-cse101 .
 
-:backpack-user-mayank_vachher
+:mayank_vachher
 				rdf:type :Student ;
 	    		:hasLabel "Mayank Vachher" ;
     			foaf:name "Mayank Vachher" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" ;
 	    		:hasRollNo "2013059" ;
 	    		:hasEmail "mayank13059@iiitd.ac.in" .
-:backpack-user-mayank_vachher :isStudent :backpack-course-m2013-cse101 .
+:mayank_vachher :attends :m2013-cse101 .
 
-:backpack-user-mehar_vatwani
+:mehar_vatwani
 				rdf:type :Student ;
 	    		:hasLabel "Mehar Vatwani" ;
     			foaf:name "Mehar Vatwani" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" ;
 	    		:hasRollNo "2013138" ;
 	    		:hasEmail "mehar13138@iiitd.ac.in" .
-:backpack-user-mehar_vatwani :isStudent :backpack-course-m2013-cse101 .
+:mehar_vatwani :attends :m2013-cse101 .
 
-:backpack-user-mohini_verma
+:mohini_verma
 				rdf:type :Student ;
 	    		:hasLabel "Mohini Verma" ;
     			foaf:name "Mohini Verma" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" ;
 	    		:hasRollNo "2013062" ;
 	    		:hasEmail "mohini13062@iiitd.ac.in" .
-:backpack-user-mohini_verma :isStudent :backpack-course-m2013-cse101 .
+:mohini_verma :attends :m2013-cse101 .
 
-:backpack-user-mohit_wadhwa
+:mohit_wadhwa
 				rdf:type :Student ;
 	    		:hasLabel "Mohit Wadhwa" ;
     			foaf:name "Mohit Wadhwa" ;
 	    		:hasImage "http://www.usebackpack.com/photos/523/M.png?1407182292" ;
 	    		:hasRollNo "2013063" ;
 	    		:hasEmail "mohit13063@iiitd.ac.in" .
-:backpack-user-mohit_wadhwa :hasID "523".
-:backpack-user-mohit_wadhwa :isStudent :backpack-course-m2013-cse101 .
+:mohit_wadhwa :hasUserId "523".
+:mohit_wadhwa :attends :m2013-cse101 .
 
-:backpack-user-naman_gupta
+:naman_gupta
 				rdf:type :Student ;
 	    		:hasLabel "Naman Gupta" ;
     			foaf:name "Naman Gupta" ;
 	    		:hasImage "http://www.usebackpack.com/photos/405/M.jpg?1414391942" ;
 	    		:hasRollNo "2013064" ;
 	    		:hasEmail "naman13064@iiitd.ac.in" .
-:backpack-user-naman_gupta :hasID "405".
-:backpack-user-naman_gupta :isStudent :backpack-course-m2013-cse101 .
+:naman_gupta :hasUserId "405".
+:naman_gupta :attends :m2013-cse101 .
 
-:backpack-user-naman_gupta
+:naman_gupta
 				rdf:type :Student ;
 	    		:hasLabel "Naman Gupta" ;
     			foaf:name "Naman Gupta" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" ;
 	    		:hasRollNo "2013141" ;
 	    		:hasEmail "naman13141@iiitd.ac.in" .
-:backpack-user-naman_gupta :isStudent :backpack-course-m2013-cse101 .
+:naman_gupta :attends :m2013-cse101 .
 
-:backpack-user-namrata_deka
+:namrata_deka
 				rdf:type :Student ;
 	    		:hasLabel "Namrata Deka" ;
     			foaf:name "Namrata Deka" ;
 	    		:hasImage "http://www.usebackpack.com/photos/293/M.jpg?1376412943" ;
 	    		:hasRollNo "2013065" ;
 	    		:hasEmail "namrata13065@iiitd.ac.in" .
-:backpack-user-namrata_deka :hasID "293".
-:backpack-user-namrata_deka :isStudent :backpack-course-m2013-cse101 .
+:namrata_deka :hasUserId "293".
+:namrata_deka :attends :m2013-cse101 .
 
-:backpack-user-nandika_chaudhary
+:nandika_chaudhary
 				rdf:type :Student ;
 	    		:hasLabel "Nandika Chaudhary" ;
     			foaf:name "Nandika Chaudhary" ;
 	    		:hasImage "http://www.usebackpack.com/photos/313/M.jpg?1376230618" ;
 	    		:hasRollNo "13066" ;
 	    		:hasEmail "nandika13066@iiitd.ac.in" .
-:backpack-user-nandika_chaudhary :hasID "313".
-:backpack-user-nandika_chaudhary :isStudent :backpack-course-m2013-cse101 .
+:nandika_chaudhary :hasUserId "313".
+:nandika_chaudhary :attends :m2013-cse101 .
 
-:backpack-user-nawazish_mohammed
+:nawazish_mohammed
 				rdf:type :Student ;
 	    		:hasLabel "Nawazish Mohammed" ;
     			foaf:name "Nawazish Mohammed" ;
 	    		:hasImage "http://www.usebackpack.com/photos/287/M.jpg?1396029216" ;
 	    		:hasRollNo "2013061" ;
 	    		:hasEmail "nawazish13061@iiitd.ac.in" .
-:backpack-user-nawazish_mohammed :hasID "287".
-:backpack-user-nawazish_mohammed :isStudent :backpack-course-m2013-cse101 .
+:nawazish_mohammed :hasUserId "287".
+:nawazish_mohammed :attends :m2013-cse101 .
 
-:backpack-user-neeraj_vaishnao
+:neeraj_vaishnao
 				rdf:type :Student ;
 	    		:hasLabel "Neeraj Vaishnao" ;
     			foaf:name "Neeraj Vaishnao" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" ;
 	    		:hasRollNo "2013142" ;
 	    		:hasEmail "neeraj13142@iiitd.ac.in" .
-:backpack-user-neeraj_vaishnao :isStudent :backpack-course-m2013-cse101 .
+:neeraj_vaishnao :attends :m2013-cse101 .
 
-:backpack-user-nikhil_kumar
+:nikhil_kumar
 				rdf:type :Student ;
 	    		:hasLabel "Nikhil Kumar" ;
     			foaf:name "Nikhil Kumar" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" ;
 	    		:hasRollNo "2013143" ;
 	    		:hasEmail "nikhil13143@iiitd.ac.in" .
-:backpack-user-nikhil_kumar :isStudent :backpack-course-m2013-cse101 .
+:nikhil_kumar :attends :m2013-cse101 .
 
-:backpack-user-nikhil_singhal
+:nikhil_singhal
 				rdf:type :Student ;
 	    		:hasLabel "Nikhil Singhal" ;
     			foaf:name "Nikhil Singhal" ;
 	    		:hasImage "http://www.usebackpack.com/photos/384/M.jpg?1378308367" ;
 	    		:hasRollNo "2013067" ;
 	    		:hasEmail "nikhil13067@iiitd.ac.in" .
-:backpack-user-nikhil_singhal :hasID "384".
-:backpack-user-nikhil_singhal :isStudent :backpack-course-m2013-cse101 .
+:nikhil_singhal :hasUserId "384".
+:nikhil_singhal :attends :m2013-cse101 .
 
-:backpack-user-nikita_gupta
+:nikita_gupta
 				rdf:type :Student ;
 	    		:hasLabel "Nikita Gupta" ;
     			foaf:name "Nikita Gupta" ;
 	    		:hasImage "http://www.usebackpack.com/photos/360/M.jpg?1376297454" ;
 	    		:hasRollNo "2013068" ;
 	    		:hasEmail "nikita13068@iiitd.ac.in" .
-:backpack-user-nikita_gupta :hasID "360".
-:backpack-user-nikita_gupta :isStudent :backpack-course-m2013-cse101 .
+:nikita_gupta :hasUserId "360".
+:nikita_gupta :attends :m2013-cse101 .
 
-:backpack-user-nischay_iiitd
+:nischay_iiitd
 				rdf:type :Student ;
 	    		:hasLabel "Nischay Iiitd" ;
     			foaf:name "Nischay Iiitd" ;
 	    		:hasImage "http://www.usebackpack.com/photos/416/M.jpg?1383517583" ;
 	    		:hasRollNo "2013144" ;
 	    		:hasEmail "nischay13144@iiitd.ac.in" .
-:backpack-user-nischay_iiitd :hasID "416".
-:backpack-user-nischay_iiitd :isStudent :backpack-course-m2013-cse101 .
+:nischay_iiitd :hasUserId "416".
+:nischay_iiitd :attends :m2013-cse101 .
 
-:backpack-user-nishant_sharma
+:nishant_sharma
 				rdf:type :Student ;
 	    		:hasLabel "Nishant Sharma" ;
     			foaf:name "Nishant Sharma" ;
 	    		:hasImage "http://www.usebackpack.com/photos/19/M.jpg?1378749821" ;
 	    		:hasRollNo "2011070" ;
 	    		:hasEmail "nishant11070@iiitd.ac.in" .
-:backpack-user-nishant_sharma :hasID "19".
-:backpack-user-nishant_sharma :isStudent :backpack-course-m2013-cse101 .
+:nishant_sharma :hasUserId "19".
+:nishant_sharma :attends :m2013-cse101 .
 
-:backpack-user-nitesh_kumar
+:nitesh_kumar
 				rdf:type :Student ;
 	    		:hasLabel "Nitesh Kumar" ;
     			foaf:name "Nitesh Kumar" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" ;
 	    		:hasRollNo "2013069" ;
 	    		:hasEmail "nitesh13069@iiitd.ac.in" .
-:backpack-user-nitesh_kumar :isStudent :backpack-course-m2013-cse101 .
+:nitesh_kumar :attends :m2013-cse101 .
 
-:backpack-user-nitin_varun
+:nitin_varun
 				rdf:type :Student ;
 	    		:hasLabel "Nitin Varun" ;
     			foaf:name "Nitin Varun" ;
 	    		:hasImage "http://www.usebackpack.com/photos/315/M.jpg?1407205414" ;
 	    		:hasRollNo "2013070" ;
 	    		:hasEmail "nitin13070@iiitd.ac.in" .
-:backpack-user-nitin_varun :hasID "315".
-:backpack-user-nitin_varun :isStudent :backpack-course-m2013-cse101 .
+:nitin_varun :hasUserId "315".
+:nitin_varun :attends :m2013-cse101 .
 
-:backpack-user-ojaswi_gupta
+:ojaswi_gupta
 				rdf:type :Student ;
 	    		:hasLabel "Ojaswi Gupta" ;
     			foaf:name "Ojaswi Gupta" ;
 	    		:hasImage "http://www.usebackpack.com/photos/393/M.jpg?1376739576" ;
 	    		:hasRollNo "2013071" ;
 	    		:hasEmail "ojaswi13071@iiitd.ac.in" .
-:backpack-user-ojaswi_gupta :hasID "393".
-:backpack-user-ojaswi_gupta :isStudent :backpack-course-m2013-cse101 .
+:ojaswi_gupta :hasUserId "393".
+:ojaswi_gupta :attends :m2013-cse101 .
 
-:backpack-user-parth_shrivastava
+:parth_shrivastava
 				rdf:type :Student ;
 	    		:hasLabel "Parth Shrivastava" ;
     			foaf:name "Parth Shrivastava" ;
 	    		:hasImage "http://www.usebackpack.com/photos/457/M.jpg?1376413205" ;
 	    		:hasRollNo "2013146" ;
 	    		:hasEmail "parth13146@iiitd.ac.in" .
-:backpack-user-parth_shrivastava :hasID "457".
-:backpack-user-parth_shrivastava :isStudent :backpack-course-m2013-cse101 .
+:parth_shrivastava :hasUserId "457".
+:parth_shrivastava :attends :m2013-cse101 .
 
-:backpack-user-pavani_tripathi
+:pavani_tripathi
 				rdf:type :Student ;
 	    		:hasLabel "Pavani Tripathi" ;
     			foaf:name "Pavani Tripathi" ;
 	    		:hasImage "http://www.usebackpack.com/photos/350/M.jpg?1381341771" ;
 	    		:hasRollNo "2013147" ;
 	    		:hasEmail "pavani13147@iiitd.ac.in" .
-:backpack-user-pavani_tripathi :hasID "350".
-:backpack-user-pavani_tripathi :isStudent :backpack-course-m2013-cse101 .
+:pavani_tripathi :hasUserId "350".
+:pavani_tripathi :attends :m2013-cse101 .
 
-:backpack-user-piyush_kumar
+:piyush_kumar
 				rdf:type :Student ;
 	    		:hasLabel "Piyush Kumar" ;
     			foaf:name "Piyush Kumar" ;
 	    		:hasImage "http://www.usebackpack.com/photos/378/M.JPG?1391616222" ;
 	    		:hasRollNo "2013072" ;
 	    		:hasEmail "piyush13072@iiitd.ac.in" .
-:backpack-user-piyush_kumar :hasID "378".
-:backpack-user-piyush_kumar :isStudent :backpack-course-m2013-cse101 .
+:piyush_kumar :hasUserId "378".
+:piyush_kumar :attends :m2013-cse101 .
 
-:backpack-user-piyush_thakran
+:piyush_thakran
 				rdf:type :Student ;
 	    		:hasLabel "Piyush Thakran" ;
     			foaf:name "Piyush Thakran" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" ;
 	    		:hasRollNo "2013148" ;
 	    		:hasEmail "piyush13148@iiitd.ac.in" .
-:backpack-user-piyush_thakran :isStudent :backpack-course-m2013-cse101 .
+:piyush_thakran :attends :m2013-cse101 .
 
-:backpack-user-prabhat_mishra
+:prabhat_mishra
 				rdf:type :Student ;
 	    		:hasLabel "Prabhat Mishra" ;
     			foaf:name "Prabhat Mishra" ;
 	    		:hasImage "http://www.usebackpack.com/photos/58/M.JPG?1378836589" ;
 	    		:hasRollNo "MT13073" ;
 	    		:hasEmail "prabhat1373@iiitd.ac.in" .
-:backpack-user-prabhat_mishra :hasID "58".
-:backpack-user-prabhat_mishra :isStudent :backpack-course-m2013-cse101 .
+:prabhat_mishra :hasUserId "58".
+:prabhat_mishra :attends :m2013-cse101 .
 
-:backpack-user-prateek_jassal
+:prateek_jassal
 				rdf:type :Student ;
 	    		:hasLabel "Prateek Jassal" ;
     			foaf:name "Prateek Jassal" ;
 	    		:hasImage "http://www.usebackpack.com/photos/156/M.jpg?1378335935" ;
 	    		:hasRollNo "MT 12070" ;
 	    		:hasEmail "Prateek1270@iiitd.ac.in" .
-:backpack-user-prateek_jassal :hasID "156".
-:backpack-user-prateek_jassal :isStudent :backpack-course-m2013-cse101 .
+:prateek_jassal :hasUserId "156".
+:prateek_jassal :attends :m2013-cse101 .
 
-:backpack-user-prateekshit_pandey
+:prateekshit_pandey
 				rdf:type :Student ;
 	    		:hasLabel "Prateekshit Pandey" ;
     			foaf:name "Prateekshit Pandey" ;
 	    		:hasImage "http://www.usebackpack.com/photos/425/M.jpg?1379430557" ;
 	    		:hasRollNo "2012078" ;
 	    		:hasEmail "prateekshit12078@iiitd.ac.in" .
-:backpack-user-prateekshit_pandey :hasID "425".
-:backpack-user-prateekshit_pandey :isStudent :backpack-course-m2013-cse101 .
+:prateekshit_pandey :hasUserId "425".
+:prateekshit_pandey :attends :m2013-cse101 .
 
-:backpack-user-prerna_singh
+:prerna_singh
 				rdf:type :Student ;
 	    		:hasLabel "Prerna Singh" ;
     			foaf:name "Prerna Singh" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" ;
 	    		:hasRollNo "2013149" ;
 	    		:hasEmail "prerna13149@iiitd.ac.in" .
-:backpack-user-prerna_singh :isStudent :backpack-course-m2013-cse101 .
+:prerna_singh :attends :m2013-cse101 .
 
-:backpack-user-prikankshit_mor
+:prikankshit_mor
 				rdf:type :Student ;
 	    		:hasLabel "Prikankshit Mor" ;
     			foaf:name "Prikankshit Mor" ;
 	    		:hasImage "http://www.usebackpack.com/photos/289/M.jpg?1377319170" ;
 	    		:hasRollNo "2013073" ;
 	    		:hasEmail "prikankshit13073@iiitd.ac.in" .
-:backpack-user-prikankshit_mor :hasID "289".
-:backpack-user-prikankshit_mor :isStudent :backpack-course-m2013-cse101 .
+:prikankshit_mor :hasUserId "289".
+:prikankshit_mor :attends :m2013-cse101 .
 
-:backpack-user-priyanka_singhal
+:priyanka_singhal
 				rdf:type :Student ;
 	    		:hasLabel "Priyanka Singhal" ;
     			foaf:name "Priyanka Singhal" ;
 	    		:hasImage "http://www.usebackpack.com/photos/541/M.jpg?1390034133" ;
 	    		:hasRollNo "MT13048" ;
 	    		:hasEmail "priyanka1348@iiitd.ac.in" .
-:backpack-user-priyanka_singhal :hasID "541".
-:backpack-user-priyanka_singhal :isStudent :backpack-course-m2013-cse101 .
+:priyanka_singhal :hasUserId "541".
+:priyanka_singhal :attends :m2013-cse101 .
 
-:backpack-user-priyanshu_singh
+:priyanshu_singh
 				rdf:type :Student ;
 	    		:hasLabel "Priyanshu Singh" ;
     			foaf:name "Priyanshu Singh" ;
 	    		:hasImage "http://www.usebackpack.com/photos/447/M.jpg?1413295305" ;
 	    		:hasRollNo "2013074" ;
 	    		:hasEmail "priyanshu13074@iiitd.ac.in" .
-:backpack-user-priyanshu_singh :hasID "447".
-:backpack-user-priyanshu_singh :isStudent :backpack-course-m2013-cse101 .
+:priyanshu_singh :hasUserId "447".
+:priyanshu_singh :attends :m2013-cse101 .
 
-:backpack-user-protichi_basak
+:protichi_basak
 				rdf:type :Student ;
 	    		:hasLabel "Protichi Basak" ;
     			foaf:name "Protichi Basak" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" ;
 	    		:hasRollNo "2013075" ;
 	    		:hasEmail "protichi13075@iiitd.ac.in" .
-:backpack-user-protichi_basak :isStudent :backpack-course-m2013-cse101 .
+:protichi_basak :attends :m2013-cse101 .
 
-:backpack-user-pulkit_manocha
+:pulkit_manocha
 				rdf:type :Student ;
 	    		:hasLabel "Pulkit Manocha" ;
     			foaf:name "Pulkit Manocha" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" ;
 	    		:hasRollNo "2012083" ;
 	    		:hasEmail "pulkit12083@iiitd.ac.in" .
-:backpack-user-pulkit_manocha :isStudent :backpack-course-m2013-cse101 .
+:pulkit_manocha :attends :m2013-cse101 .
 
-:backpack-user-puneet_jain
+:puneet_jain
 				rdf:type :Student ;
 	    		:hasLabel "Puneet Jain" ;
     			foaf:name "Puneet Jain" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" ;
 	    		:hasRollNo "2013150" ;
 	    		:hasEmail "puneet13150@iiitd.ac.in" .
-:backpack-user-puneet_jain :isStudent :backpack-course-m2013-cse101 .
+:puneet_jain :attends :m2013-cse101 .
 
-:backpack-user-pushkin_soni
+:pushkin_soni
 				rdf:type :Student ;
 	    		:hasLabel "Pushkin Soni" ;
     			foaf:name "Pushkin Soni" ;
 	    		:hasImage "http://www.usebackpack.com/photos/338/M.jpg?1404639092" ;
 	    		:hasRollNo "2013076" ;
 	    		:hasEmail "pushkin13076@iiitd.ac.in" .
-:backpack-user-pushkin_soni :hasID "338".
-:backpack-user-pushkin_soni :isStudent :backpack-course-m2013-cse101 .
+:pushkin_soni :hasUserId "338".
+:pushkin_soni :attends :m2013-cse101 .
 
-:backpack-user-rachna_iiitd
+:rachna_iiitd
 				rdf:type :Student ;
 	    		:hasLabel "Rachna IIITD" ;
     			foaf:name "Rachna IIITD" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" ;
 	    		:hasRollNo "2013077" ;
 	    		:hasEmail "rachna13077@iiitd.ac.in" .
-:backpack-user-rachna_iiitd :isStudent :backpack-course-m2013-cse101 .
+:rachna_iiitd :attends :m2013-cse101 .
 
-:backpack-user-ravi_teja_palakurthy
+:ravi_teja_palakurthy
 				rdf:type :Student ;
 	    		:hasLabel "Ravi Teja Palakurthy" ;
     			foaf:name "Ravi Teja Palakurthy" ;
 	    		:hasImage "http://www.usebackpack.com/photos/435/M.jpg?1380425832" ;
 	    		:hasRollNo "2013145" ;
 	    		:hasEmail "palakurthy13145@iiitd.ac.in" .
-:backpack-user-ravi_teja_palakurthy :hasID "435".
-:backpack-user-ravi_teja_palakurthy :isStudent :backpack-course-m2013-cse101 .
+:ravi_teja_palakurthy :hasUserId "435".
+:ravi_teja_palakurthy :attends :m2013-cse101 .
 
-:backpack-user-rishabh_kawatra
+:rishabh_kawatra
 				rdf:type :Student ;
 	    		:hasLabel "Rishabh Kawatra" ;
     			foaf:name "Rishabh Kawatra" ;
 	    		:hasImage "http://www.usebackpack.com/photos/498/M.jpg?1398359812" ;
 	    		:hasRollNo "2011087" ;
 	    		:hasEmail "rishabh11087@iiitd.ac.in" .
-:backpack-user-rishabh_kawatra :hasID "498".
-:backpack-user-rishabh_kawatra :isStudent :backpack-course-m2013-cse101 .
+:rishabh_kawatra :hasUserId "498".
+:rishabh_kawatra :attends :m2013-cse101 .
 
-:backpack-user-ritvik_agarwal
+:ritvik_agarwal
 				rdf:type :Student ;
 	    		:hasLabel "Ritvik Agarwal" ;
     			foaf:name "Ritvik Agarwal" ;
 	    		:hasImage "http://www.usebackpack.com/photos/284/M.png?1393414040" ;
 	    		:hasRollNo "2013078" ;
 	    		:hasEmail "ritvik13078@iiitd.ac.in" .
-:backpack-user-ritvik_agarwal :hasID "284".
-:backpack-user-ritvik_agarwal :isStudent :backpack-course-m2013-cse101 .
+:ritvik_agarwal :hasUserId "284".
+:ritvik_agarwal :attends :m2013-cse101 .
 
-:backpack-user-ritwik_kaul
+:ritwik_kaul
 				rdf:type :Student ;
 	    		:hasLabel "Ritwik Kaul" ;
     			foaf:name "Ritwik Kaul" ;
 	    		:hasImage "http://www.usebackpack.com/photos/565/M.jpg?1414317013" ;
 	    		:hasRollNo "2013079" ;
 	    		:hasEmail "ritwik13079@iiitd.ac.in" .
-:backpack-user-ritwik_kaul :hasID "565".
-:backpack-user-ritwik_kaul :isStudent :backpack-course-m2013-cse101 .
+:ritwik_kaul :hasUserId "565".
+:ritwik_kaul :attends :m2013-cse101 .
 
-:backpack-user-robin_singh_ratre
+:robin_singh_ratre
 				rdf:type :Student ;
 	    		:hasLabel "Robin Singh Ratre" ;
     			foaf:name "Robin Singh Ratre" ;
 	    		:hasImage "http://www.usebackpack.com/photos/311/M.jpg?1379683041" ;
 	    		:hasRollNo "2013151" ;
 	    		:hasEmail "robin13151@iiitd.ac.in" .
-:backpack-user-robin_singh_ratre :hasID "311".
-:backpack-user-robin_singh_ratre :isStudent :backpack-course-m2013-cse101 .
+:robin_singh_ratre :hasUserId "311".
+:robin_singh_ratre :attends :m2013-cse101 .
 
-:backpack-user-rohan_garg
+:rohan_garg
 				rdf:type :Student ;
 	    		:hasLabel "Rohan Garg" ;
     			foaf:name "Rohan Garg" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" ;
 	    		:hasRollNo "2011089" ;
 	    		:hasEmail "rohan11089@iiitd.ac.in" .
-:backpack-user-rohan_garg :isStudent :backpack-course-m2013-cse101 .
+:rohan_garg :attends :m2013-cse101 .
 
-:backpack-user-rohit_singh
+:rohit_singh
 				rdf:type :Student ;
 	    		:hasLabel "Rohit Singh" ;
     			foaf:name "Rohit Singh" ;
 	    		:hasImage "http://www.usebackpack.com/photos/392/M.jpg?1376321301" ;
 	    		:hasRollNo "2013080" ;
 	    		:hasEmail "rohit13080@iiitd.ac.in" .
-:backpack-user-rohit_singh :hasID "392".
-:backpack-user-rohit_singh :isStudent :backpack-course-m2013-cse101 .
+:rohit_singh :hasUserId "392".
+:rohit_singh :attends :m2013-cse101 .
 
-:backpack-user-rupam_patir
+:rupam_patir
 				rdf:type :Student ;
 	    		:hasLabel "Rupam Patir" ;
     			foaf:name "Rupam Patir" ;
 	    		:hasImage "http://www.usebackpack.com/photos/317/M.JPG?1407158343" ;
 	    		:hasRollNo "2013081" ;
 	    		:hasEmail "rupam13081@iiitd.ac.in" .
-:backpack-user-rupam_patir :hasID "317".
-:backpack-user-rupam_patir :isStudent :backpack-course-m2013-cse101 .
+:rupam_patir :hasUserId "317".
+:rupam_patir :attends :m2013-cse101 .
 
-:backpack-user-sabbella_sai_hemanth_reddy
+:sabbella_sai_hemanth_reddy
 				rdf:type :Student ;
 	    		:hasLabel "Sabbella Sai Hemanth Reddy" ;
     			foaf:name "Sabbella Sai Hemanth Reddy" ;
 	    		:hasImage "http://www.usebackpack.com/photos/436/M.jpg?1403437567" ;
 	    		:hasRollNo "2013152" ;
 	    		:hasEmail "sabbella13152@iiitd.ac.in" .
-:backpack-user-sabbella_sai_hemanth_reddy :hasID "436".
-:backpack-user-sabbella_sai_hemanth_reddy :isStudent :backpack-course-m2013-cse101 .
+:sabbella_sai_hemanth_reddy :hasUserId "436".
+:sabbella_sai_hemanth_reddy :attends :m2013-cse101 .
 
-:backpack-user-sahil_babbar
+:sahil_babbar
 				rdf:type :Student ;
 	    		:hasLabel "Sahil Babbar" ;
     			foaf:name "Sahil Babbar" ;
 	    		:hasImage "http://www.usebackpack.com/photos/403/M.png?1412603720" ;
 	    		:hasRollNo "2013082" ;
 	    		:hasEmail "sahil13082@iiitd.ac.in" .
-:backpack-user-sahil_babbar :hasID "403".
-:backpack-user-sahil_babbar :isStudent :backpack-course-m2013-cse101 .
+:sahil_babbar :hasUserId "403".
+:sahil_babbar :attends :m2013-cse101 .
 
-:backpack-user-sahil_iiitd
+:sahil_iiitd
 				rdf:type :Student ;
 	    		:hasLabel "Sahil Iiitd" ;
     			foaf:name "Sahil Iiitd" ;
 	    		:hasImage "http://www.usebackpack.com/photos/423/M.jpg?1376398899" ;
 	    		:hasRollNo "2013153" ;
 	    		:hasEmail "sahil13153@iiitd.ac.in" .
-:backpack-user-sahil_iiitd :hasID "423".
-:backpack-user-sahil_iiitd :isStudent :backpack-course-m2013-cse101 .
+:sahil_iiitd :hasUserId "423".
+:sahil_iiitd :attends :m2013-cse101 .
 
-:backpack-user-sahil_shekhawat
+:sahil_shekhawat
 				rdf:type :Student ;
 	    		:hasLabel "Sahil Shekhawat" ;
     			foaf:name "Sahil Shekhawat" ;
 	    		:hasImage "http://www.usebackpack.com/photos/376/M.jpg?1409921379" ;
 	    		:hasRollNo "2013083" ;
 	    		:hasEmail "sahil13083@iiitd.ac.in" .
-:backpack-user-sahil_shekhawat :hasID "376".
-:backpack-user-sahil_shekhawat :isStudent :backpack-course-m2013-cse101 .
+:sahil_shekhawat :hasUserId "376".
+:sahil_shekhawat :attends :m2013-cse101 .
 
-:backpack-user-saket_kumar_verma
+:saket_kumar_verma
 				rdf:type :Student ;
 	    		:hasLabel "Saket Kumar Verma" ;
     			foaf:name "Saket Kumar Verma" ;
 	    		:hasImage "http://www.usebackpack.com/photos/520/M.jpg?1380116939" ;
 	    		:hasRollNo "2013154" ;
 	    		:hasEmail "saket13154@iiitd.ac.in" .
-:backpack-user-saket_kumar_verma :hasID "520".
-:backpack-user-saket_kumar_verma :isStudent :backpack-course-m2013-cse101 .
+:saket_kumar_verma :hasUserId "520".
+:saket_kumar_verma :attends :m2013-cse101 .
 
-:backpack-user-saloni_gupta
+:saloni_gupta
 				rdf:type :Student ;
 	    		:hasLabel "Saloni Gupta" ;
     			foaf:name "Saloni Gupta" ;
 	    		:hasImage "http://www.usebackpack.com/photos/490/M.jpg?1407133724" ;
 	    		:hasRollNo "2013084" ;
 	    		:hasEmail "saloni13084@iiitd.ac.in" .
-:backpack-user-saloni_gupta :hasID "490".
-:backpack-user-saloni_gupta :isStudent :backpack-course-m2013-cse101 .
+:saloni_gupta :hasUserId "490".
+:saloni_gupta :attends :m2013-cse101 .
 
-:backpack-user-saloni_kogta
+:saloni_kogta
 				rdf:type :Student ;
 	    		:hasLabel "Saloni Kogta" ;
     			foaf:name "Saloni Kogta" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" ;
 	    		:hasRollNo "2013155" ;
 	    		:hasEmail "saloni13155@iiitd.ac.in" .
-:backpack-user-saloni_kogta :isStudent :backpack-course-m2013-cse101 .
+:saloni_kogta :attends :m2013-cse101 .
 
-:backpack-user-sambhav_satija
+:sambhav_satija
 				rdf:type :Student ;
 	    		:hasLabel "Sambhav Satija" ;
     			foaf:name "Sambhav Satija" ;
 	    		:hasImage "http://www.usebackpack.com/photos/304/M.png?1391773001" ;
 	    		:hasRollNo "2013085" ;
 	    		:hasEmail "sambhav13085@iiitd.ac.in" .
-:backpack-user-sambhav_satija :hasID "304".
-:backpack-user-sambhav_satija :isStudent :backpack-course-m2013-cse101 .
+:sambhav_satija :hasUserId "304".
+:sambhav_satija :attends :m2013-cse101 .
 
-:backpack-user-sameer_kumar
+:sameer_kumar
 				rdf:type :Student ;
 	    		:hasLabel "Sameer Kumar" ;
     			foaf:name "Sameer Kumar" ;
 	    		:hasImage "http://www.usebackpack.com/photos/357/M.jpg?1386256369" ;
 	    		:hasRollNo "2013086" ;
 	    		:hasEmail "sameer13086@iiitd.ac.in" .
-:backpack-user-sameer_kumar :hasID "357".
-:backpack-user-sameer_kumar :isStudent :backpack-course-m2013-cse101 .
+:sameer_kumar :hasUserId "357".
+:sameer_kumar :attends :m2013-cse101 .
 
-:backpack-user-sameer_mohammad_malik
+:sameer_mohammad_malik
 				rdf:type :Student ;
 	    		:hasLabel "Sameer Mohammad Malik" ;
     			foaf:name "Sameer Mohammad Malik" ;
 	    		:hasImage "http://www.usebackpack.com/photos/581/M.jpg?1390137964" ;
 	    		:hasRollNo "13140" ;
 	    		:hasEmail "sameer13140@iiitd.ac.in" .
-:backpack-user-sameer_mohammad_malik :hasID "581".
-:backpack-user-sameer_mohammad_malik :isStudent :backpack-course-m2013-cse101 .
+:sameer_mohammad_malik :hasUserId "581".
+:sameer_mohammad_malik :attends :m2013-cse101 .
 
-:backpack-user-samir_iiitd
+:samir_iiitd
 				rdf:type :Student ;
 	    		:hasLabel "Samir IIITD" ;
     			foaf:name "Samir IIITD" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" ;
 	    		:hasRollNo "2013087" ;
 	    		:hasEmail "samir13087@iiitd.ac.in" .
-:backpack-user-samir_iiitd :isStudent :backpack-course-m2013-cse101 .
+:samir_iiitd :attends :m2013-cse101 .
 
-:backpack-user-sanchit_agarwal
+:sanchit_agarwal
 				rdf:type :Student ;
 	    		:hasLabel "Sanchit Agarwal" ;
     			foaf:name "Sanchit Agarwal" ;
 	    		:hasImage "http://www.usebackpack.com/photos/170/M.jpg?1408591813" ;
 	    		:hasRollNo "2012156" ;
 	    		:hasEmail "sanchit12156@iiitd.ac.in" .
-:backpack-user-sanchit_agarwal :hasID "170".
-:backpack-user-sanchit_agarwal :isStudent :backpack-course-m2013-cse101 .
+:sanchit_agarwal :hasUserId "170".
+:sanchit_agarwal :attends :m2013-cse101 .
 
-:backpack-user-sanchit_gupta
+:sanchit_gupta
 				rdf:type :Student ;
 	    		:hasLabel "Sanchit Gupta" ;
     			foaf:name "Sanchit Gupta" ;
 	    		:hasImage "http://www.usebackpack.com/photos/429/M.jpg?1391122324" ;
 	    		:hasRollNo "2013088" ;
 	    		:hasEmail "sanchit13088@iiitd.ac.in" .
-:backpack-user-sanchit_gupta :hasID "429".
-:backpack-user-sanchit_gupta :isStudent :backpack-course-m2013-cse101 .
+:sanchit_gupta :hasUserId "429".
+:sanchit_gupta :attends :m2013-cse101 .
 
-:backpack-user-sanket_jain
+:sanket_jain
 				rdf:type :Student ;
 	    		:hasLabel "Sanket Jain" ;
     			foaf:name "Sanket Jain" ;
 	    		:hasImage "http://www.usebackpack.com/photos/349/M.jpg?1376291269" ;
 	    		:hasRollNo "2013156" ;
 	    		:hasEmail "sanket13156@iiitd.ac.in" .
-:backpack-user-sanket_jain :hasID "349".
-:backpack-user-sanket_jain :isStudent :backpack-course-m2013-cse101 .
+:sanket_jain :hasUserId "349".
+:sanket_jain :attends :m2013-cse101 .
 
-:backpack-user-saransh_gupta
+:saransh_gupta
 				rdf:type :Student ;
 	    		:hasLabel "Saransh Gupta" ;
     			foaf:name "Saransh Gupta" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" ;
 	    		:hasRollNo "2013089" ;
 	    		:hasEmail "saransh13089@iiitd.ac.in" .
-:backpack-user-saransh_gupta :isStudent :backpack-course-m2013-cse101 .
+:saransh_gupta :attends :m2013-cse101 .
 
-:backpack-user-saransh_nahar
+:saransh_nahar
 				rdf:type :Student ;
 	    		:hasLabel "Saransh Nahar" ;
     			foaf:name "Saransh Nahar" ;
 	    		:hasImage "http://www.usebackpack.com/photos/483/M.jpg?1415194191" ;
 	    		:hasRollNo "2013090" ;
 	    		:hasEmail "saransh13090@iiitd.ac.in" .
-:backpack-user-saransh_nahar :hasID "483".
-:backpack-user-saransh_nahar :isStudent :backpack-course-m2013-cse101 .
+:saransh_nahar :hasUserId "483".
+:saransh_nahar :attends :m2013-cse101 .
 
-:backpack-user-sarthak_madan
+:sarthak_madan
 				rdf:type :Student ;
 	    		:hasLabel "Sarthak Madan" ;
     			foaf:name "Sarthak Madan" ;
 	    		:hasImage "http://www.usebackpack.com/photos/358/M.jpg?1377018569" ;
 	    		:hasRollNo "2013091" ;
 	    		:hasEmail "sarthak13091@iiitd.ac.in" .
-:backpack-user-sarthak_madan :hasID "358".
-:backpack-user-sarthak_madan :isStudent :backpack-course-m2013-cse101 .
+:sarthak_madan :hasUserId "358".
+:sarthak_madan :attends :m2013-cse101 .
 
-:backpack-user-saurabh_de
+:saurabh_de
 				rdf:type :Student ;
 	    		:hasLabel "Saurabh De" ;
     			foaf:name "Saurabh De" ;
 	    		:hasImage "http://www.usebackpack.com/photos/270/M.jpg?1376215908" ;
 	    		:hasRollNo "2013092" ;
 	    		:hasEmail "saurabh13092@iiitd.ac.in" .
-:backpack-user-saurabh_de :hasID "270".
-:backpack-user-saurabh_de :isStudent :backpack-course-m2013-cse101 .
+:saurabh_de :hasUserId "270".
+:saurabh_de :attends :m2013-cse101 .
 
-:backpack-user-shambhavi_singh
+:shambhavi_singh
 				rdf:type :Student ;
 	    		:hasLabel "Shambhavi Singh" ;
     			foaf:name "Shambhavi Singh" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" ;
 	    		:hasRollNo "13093" ;
 	    		:hasEmail "shambhavi13093@iiitd.ac.in" .
-:backpack-user-shambhavi_singh :isStudent :backpack-course-m2013-cse101 .
+:shambhavi_singh :attends :m2013-cse101 .
 
-:backpack-user-sheel_priya_gautam
+:sheel_priya_gautam
 				rdf:type :Student ;
 	    		:hasLabel "Sheel Priya Gautam" ;
     			foaf:name "Sheel Priya Gautam" ;
 	    		:hasImage "http://www.usebackpack.com/photos/383/M.jpeg?1412873293" ;
 	    		:hasRollNo "2013157" ;
 	    		:hasEmail "sheel13157@iiitd.ac.in" .
-:backpack-user-sheel_priya_gautam :hasID "383".
-:backpack-user-sheel_priya_gautam :isStudent :backpack-course-m2013-cse101 .
+:sheel_priya_gautam :hasUserId "383".
+:sheel_priya_gautam :attends :m2013-cse101 .
 
-:backpack-user-shitij_singhal
+:shitij_singhal
 				rdf:type :Student ;
 	    		:hasLabel "Shitij Singhal" ;
     			foaf:name "Shitij Singhal" ;
 	    		:hasImage "http://www.usebackpack.com/photos/422/M.jpg?1410029475" ;
 	    		:hasRollNo "2013094" ;
 	    		:hasEmail "shitij13094@iiitd.ac.in" .
-:backpack-user-shitij_singhal :hasID "422".
-:backpack-user-shitij_singhal :isStudent :backpack-course-m2013-cse101 .
+:shitij_singhal :hasUserId "422".
+:shitij_singhal :attends :m2013-cse101 .
 
-:backpack-user-shivam_jainer
+:shivam_jainer
 				rdf:type :Student ;
 	    		:hasLabel "Shivam Jainer" ;
     			foaf:name "Shivam Jainer" ;
 	    		:hasImage "http://www.usebackpack.com/photos/453/M.jpg?1398981594" ;
 	    		:hasRollNo "2013158" ;
 	    		:hasEmail "shivam13158@iiitd.ac.in" .
-:backpack-user-shivam_jainer :hasID "453".
-:backpack-user-shivam_jainer :isStudent :backpack-course-m2013-cse101 .
+:shivam_jainer :hasUserId "453".
+:shivam_jainer :attends :m2013-cse101 .
 
-:backpack-user-shivam_thukral
+:shivam_thukral
 				rdf:type :Student ;
 	    		:hasLabel "Shivam Thukral" ;
     			foaf:name "Shivam Thukral" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" ;
 	    		:hasRollNo "2013095" ;
 	    		:hasEmail "shivam13095@iiitd.ac.in" .
-:backpack-user-shivam_thukral :isStudent :backpack-course-m2013-cse101 .
+:shivam_thukral :attends :m2013-cse101 .
 
-:backpack-user-shrabanti_halder
+:shrabanti_halder
 				rdf:type :Student ;
 	    		:hasLabel "Shrabanti Halder" ;
     			foaf:name "Shrabanti Halder" ;
 	    		:hasImage "http://www.usebackpack.com/photos/351/M.jpg?1376291224" ;
 	    		:hasRollNo "2013096" ;
 	    		:hasEmail "shrabanti13096@iiitd.ac.in" .
-:backpack-user-shrabanti_halder :hasID "351".
-:backpack-user-shrabanti_halder :isStudent :backpack-course-m2013-cse101 .
+:shrabanti_halder :hasUserId "351".
+:shrabanti_halder :attends :m2013-cse101 .
 
-:backpack-user-shrey_chopra
+:shrey_chopra
 				rdf:type :Student ;
 	    		:hasLabel "Shrey Chopra" ;
     			foaf:name "Shrey Chopra" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" ;
 	    		:hasRollNo "2013097" ;
 	    		:hasEmail "shrey13097@iiitd.ac.in" .
-:backpack-user-shrey_chopra :isStudent :backpack-course-m2013-cse101 .
+:shrey_chopra :attends :m2013-cse101 .
 
-:backpack-user-shrey_shashank
+:shrey_shashank
 				rdf:type :Student ;
 	    		:hasLabel "Shrey Shashank" ;
     			foaf:name "Shrey Shashank" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" ;
 	    		:hasRollNo "2012097" ;
 	    		:hasEmail "shrey12097@iiitd.ac.in" .
-:backpack-user-shrey_shashank :isStudent :backpack-course-m2013-cse101 .
+:shrey_shashank :attends :m2013-cse101 .
 
-:backpack-user-shubham_aggarwal
+:shubham_aggarwal
 				rdf:type :Student ;
 	    		:hasLabel "Shubham Aggarwal" ;
     			foaf:name "Shubham Aggarwal" ;
 	    		:hasImage "http://www.usebackpack.com/photos/455/M.jpg?1376551113" ;
 	    		:hasRollNo "2013098" ;
 	    		:hasEmail "shubham13098@iiitd.ac.in" .
-:backpack-user-shubham_aggarwal :hasID "455".
-:backpack-user-shubham_aggarwal :isStudent :backpack-course-m2013-cse101 .
+:shubham_aggarwal :hasUserId "455".
+:shubham_aggarwal :attends :m2013-cse101 .
 
-:backpack-user-shubham_chauhan
+:shubham_chauhan
 				rdf:type :Student ;
 	    		:hasLabel "Shubham Chauhan" ;
     			foaf:name "Shubham Chauhan" ;
 	    		:hasImage "http://www.usebackpack.com/photos/318/M.jpg?1376307811" ;
 	    		:hasRollNo "2013099" ;
 	    		:hasEmail "shubham13099@iiitd.ac.in" .
-:backpack-user-shubham_chauhan :hasID "318".
-:backpack-user-shubham_chauhan :isStudent :backpack-course-m2013-cse101 .
+:shubham_chauhan :hasUserId "318".
+:shubham_chauhan :attends :m2013-cse101 .
 
-:backpack-user-shubham_sharma
+:shubham_sharma
 				rdf:type :Student ;
 	    		:hasLabel "Shubham Sharma" ;
     			foaf:name "Shubham Sharma" ;
 	    		:hasImage "http://www.usebackpack.com/photos/285/M.jpg?1410956931" ;
 	    		:hasRollNo "2013100" ;
 	    		:hasEmail "shubham13100@iiitd.ac.in" .
-:backpack-user-shubham_sharma :hasID "285".
-:backpack-user-shubham_sharma :isStudent :backpack-course-m2013-cse101 .
+:shubham_sharma :hasUserId "285".
+:shubham_sharma :attends :m2013-cse101 .
 
-:backpack-user-shubham_sinha
+:shubham_sinha
 				rdf:type :Student ;
 	    		:hasLabel "Shubham Sinha" ;
     			foaf:name "Shubham Sinha" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" ;
 	    		:hasRollNo "2013159" ;
 	    		:hasEmail "shubham13159@iiitd.ac.in" .
-:backpack-user-shubham_sinha :isStudent :backpack-course-m2013-cse101 .
+:shubham_sinha :attends :m2013-cse101 .
 
-:backpack-user-shubhangi_prasad
+:shubhangi_prasad
 				rdf:type :Student ;
 	    		:hasLabel "Shubhangi Prasad" ;
     			foaf:name "Shubhangi Prasad" ;
 	    		:hasImage "http://www.usebackpack.com/photos/252/M.jpg?1410092473" ;
 	    		:hasRollNo "2011108" ;
 	    		:hasEmail "shubhangi11108@iiitd.ac.in" .
-:backpack-user-shubhangi_prasad :hasID "252".
-:backpack-user-shubhangi_prasad :isStudent :backpack-course-m2013-cse101 .
+:shubhangi_prasad :hasUserId "252".
+:shubhangi_prasad :attends :m2013-cse101 .
 
-:backpack-user-shuchita_gupta
+:shuchita_gupta
 				rdf:type :Student ;
 	    		:hasLabel "Shuchita Gupta" ;
     			foaf:name "Shuchita Gupta" ;
 	    		:hasImage "http://www.usebackpack.com/photos/294/M.jpg?1380731685" ;
 	    		:hasRollNo "2013101" ;
 	    		:hasEmail "shuchita13101@iiitd.ac.in" .
-:backpack-user-shuchita_gupta :hasID "294".
-:backpack-user-shuchita_gupta :isStudent :backpack-course-m2013-cse101 .
+:shuchita_gupta :hasUserId "294".
+:shuchita_gupta :attends :m2013-cse101 .
 
-:backpack-user-shweta_rani
+:shweta_rani
 				rdf:type :Student ;
 	    		:hasLabel "Shweta Rani" ;
     			foaf:name "Shweta Rani" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" ;
 	    		:hasRollNo "2013102" ;
 	    		:hasEmail "shweta13102@iiitd.ac.in" .
-:backpack-user-shweta_rani :isStudent :backpack-course-m2013-cse101 .
+:shweta_rani :attends :m2013-cse101 .
 
-:backpack-user-siddhant_sharma
+:siddhant_sharma
 				rdf:type :Student ;
 	    		:hasLabel "Siddhant Sharma" ;
     			foaf:name "Siddhant Sharma" ;
 	    		:hasImage "http://www.usebackpack.com/photos/452/M.jpg?1391340206" ;
 	    		:hasRollNo "2013160" ;
 	    		:hasEmail "siddhant13160@iiitd.ac.in" .
-:backpack-user-siddhant_sharma :hasID "452".
-:backpack-user-siddhant_sharma :isStudent :backpack-course-m2013-cse101 .
+:siddhant_sharma :hasUserId "452".
+:siddhant_sharma :attends :m2013-cse101 .
 
-:backpack-user-siddharth_jain
+:siddharth_jain
 				rdf:type :Student ;
 	    		:hasLabel "Siddharth Jain" ;
     			foaf:name "Siddharth Jain" ;
 	    		:hasImage "http://www.usebackpack.com/photos/363/M.jpg?1376299543" ;
 	    		:hasRollNo "2013161" ;
 	    		:hasEmail "siddharth13161@iiitd.ac.in" .
-:backpack-user-siddharth_jain :hasID "363".
-:backpack-user-siddharth_jain :isStudent :backpack-course-m2013-cse101 .
+:siddharth_jain :hasUserId "363".
+:siddharth_jain :attends :m2013-cse101 .
 
-:backpack-user-siddhartho_das
+:siddhartho_das
 				rdf:type :Student ;
 	    		:hasLabel "Siddhartho Das" ;
     			foaf:name "Siddhartho Das" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" ;
 	    		:hasRollNo "2012104" ;
 	    		:hasEmail "siddhartho12104@iiitd.ac.in" .
-:backpack-user-siddhartho_das :isStudent :backpack-course-m2013-cse101 .
+:siddhartho_das :attends :m2013-cse101 .
 
-:backpack-user-sidhant_tickoo
+:sidhant_tickoo
 				rdf:type :Student ;
 	    		:hasLabel "Sidhant Tickoo" ;
     			foaf:name "Sidhant Tickoo" ;
 	    		:hasImage "http://www.usebackpack.com/photos/434/M.JPG?1376398966" ;
 	    		:hasRollNo "2013103" ;
 	    		:hasEmail "sidhant13103@iiitd.ac.in" .
-:backpack-user-sidhant_tickoo :hasID "434".
-:backpack-user-sidhant_tickoo :isStudent :backpack-course-m2013-cse101 .
+:sidhant_tickoo :hasUserId "434".
+:sidhant_tickoo :attends :m2013-cse101 .
 
-:backpack-user-simran_saxena
+:simran_saxena
 				rdf:type :Student ;
 	    		:hasLabel "Simran Saxena" ;
     			foaf:name "Simran Saxena" ;
 	    		:hasImage "http://www.usebackpack.com/photos/299/M.jpg?1377327830" ;
 	    		:hasRollNo "2013104" ;
 	    		:hasEmail "simran13104@iiitd.ac.in" .
-:backpack-user-simran_saxena :hasID "299".
-:backpack-user-simran_saxena :isStudent :backpack-course-m2013-cse101 .
+:simran_saxena :hasUserId "299".
+:simran_saxena :attends :m2013-cse101 .
 
-:backpack-user-simranjeet_singh
+:simranjeet_singh
 				rdf:type :Student ;
 	    		:hasLabel "Simranjeet Singh" ;
     			foaf:name "Simranjeet Singh" ;
 	    		:hasImage "http://www.usebackpack.com/photos/536/M.jpg?1391413423" ;
 	    		:hasRollNo "2013162" ;
 	    		:hasEmail "simranjeet13162@iiitd.ac.in" .
-:backpack-user-simranjeet_singh :hasID "536".
-:backpack-user-simranjeet_singh :isStudent :backpack-course-m2013-cse101 .
+:simranjeet_singh :hasUserId "536".
+:simranjeet_singh :attends :m2013-cse101 .
 
-:backpack-user-sonali_raichandel
+:sonali_raichandel
 				rdf:type :Student ;
 	    		:hasLabel "Sonali Raichandel" ;
     			foaf:name "Sonali Raichandel" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" ;
 	    		:hasRollNo "2013105" ;
 	    		:hasEmail "sonali13105@iiitd.ac.in" .
-:backpack-user-sonali_raichandel :isStudent :backpack-course-m2013-cse101 .
+:sonali_raichandel :attends :m2013-cse101 .
 
-:backpack-user-soumya_sharma
+:soumya_sharma
 				rdf:type :Student ;
 	    		:hasLabel "Soumya Sharma" ;
     			foaf:name "Soumya Sharma" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" ;
 	    		:hasRollNo "2013106" ;
 	    		:hasEmail "soumya13106@iiitd.ac.in" .
-:backpack-user-soumya_sharma :isStudent :backpack-course-m2013-cse101 .
+:soumya_sharma :attends :m2013-cse101 .
 
-:backpack-user-srajan_bhatnagar
+:srajan_bhatnagar
 				rdf:type :Student ;
 	    		:hasLabel "Srajan Bhatnagar" ;
     			foaf:name "Srajan Bhatnagar" ;
 	    		:hasImage "http://www.usebackpack.com/photos/281/M.jpg?1379012673" ;
 	    		:hasRollNo "13163" ;
 	    		:hasEmail "srajan13163@iiitd.ac.in" .
-:backpack-user-srajan_bhatnagar :hasID "281".
-:backpack-user-srajan_bhatnagar :isStudent :backpack-course-m2013-cse101 .
+:srajan_bhatnagar :hasUserId "281".
+:srajan_bhatnagar :attends :m2013-cse101 .
 
-:backpack-user-srijan_batra
+:srijan_batra
 				rdf:type :Student ;
 	    		:hasLabel "Srijan Batra" ;
     			foaf:name "Srijan Batra" ;
 	    		:hasImage "http://www.usebackpack.com/photos/298/M.jpg?1376225372" ;
 	    		:hasRollNo "2013107" ;
 	    		:hasEmail "srijan13107@iiitd.ac.in" .
-:backpack-user-srijan_batra :hasID "298".
-:backpack-user-srijan_batra :isStudent :backpack-course-m2013-cse101 .
+:srijan_batra :hasUserId "298".
+:srijan_batra :attends :m2013-cse101 .
 
-:backpack-user-srinidhi_hegde
+:srinidhi_hegde
 				rdf:type :Student ;
 	    		:hasLabel "Srinidhi Hegde" ;
     			foaf:name "Srinidhi Hegde" ;
 	    		:hasImage "http://www.usebackpack.com/photos/300/M.jpg?1404445882" ;
 	    		:hasRollNo "2013164" ;
 	    		:hasEmail "srinidhi13164@iiitd.ac.in" .
-:backpack-user-srinidhi_hegde :hasID "300".
-:backpack-user-srinidhi_hegde :isStudent :backpack-course-m2013-cse101 .
+:srinidhi_hegde :hasUserId "300".
+:srinidhi_hegde :attends :m2013-cse101 .
 
-:backpack-user-srishti_sengupta
+:srishti_sengupta
 				rdf:type :Student ;
 	    		:hasLabel "Srishti Sengupta" ;
     			foaf:name "Srishti Sengupta" ;
 	    		:hasImage "http://www.usebackpack.com/photos/279/M.jpg?1376821251" ;
 	    		:hasRollNo "2013108" ;
 	    		:hasEmail "srishti13108@iiitd.ac.in" .
-:backpack-user-srishti_sengupta :hasID "279".
-:backpack-user-srishti_sengupta :isStudent :backpack-course-m2013-cse101 .
+:srishti_sengupta :hasUserId "279".
+:srishti_sengupta :attends :m2013-cse101 .
 
-:backpack-user-stuti_goel
+:stuti_goel
 				rdf:type :Student ;
 	    		:hasLabel "Stuti Goel" ;
     			foaf:name "Stuti Goel" ;
 	    		:hasImage "http://www.usebackpack.com/photos/576/M.jpg?1400215379" ;
 	    		:hasRollNo "2013109" ;
 	    		:hasEmail "stuti13109@iiitd.ac.in" .
-:backpack-user-stuti_goel :hasID "576".
-:backpack-user-stuti_goel :isStudent :backpack-course-m2013-cse101 .
+:stuti_goel :hasUserId "576".
+:stuti_goel :attends :m2013-cse101 .
 
-:backpack-user-subodh_yadav
+:subodh_yadav
 				rdf:type :Student ;
 	    		:hasLabel "Subodh Yadav" ;
     			foaf:name "Subodh Yadav" ;
 	    		:hasImage "http://www.usebackpack.com/photos/557/M.jpg?1377758392" ;
 	    		:hasRollNo "2013110" ;
 	    		:hasEmail "subodh13110@iiitd.ac.in" .
-:backpack-user-subodh_yadav :hasID "557".
-:backpack-user-subodh_yadav :isStudent :backpack-course-m2013-cse101 .
+:subodh_yadav :hasUserId "557".
+:subodh_yadav :attends :m2013-cse101 .
 
-:backpack-user-sukrit_kalra
+:sukrit_kalra
 				rdf:type :Student ;
 	    		:hasLabel "Sukrit Kalra" ;
     			foaf:name "Sukrit Kalra" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" ;
 	    		:hasRollNo "2012108" ;
 	    		:hasEmail "sukrit12108@iiitd.ac.in" .
-:backpack-user-sukrit_kalra :isStudent :backpack-course-m2013-cse101 .
+:sukrit_kalra :attends :m2013-cse101 .
 
-:backpack-user-sumit_keswani
+:sumit_keswani
 				rdf:type :Student ;
 	    		:hasLabel "Sumit Keswani" ;
     			foaf:name "Sumit Keswani" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" ;
 	    		:hasRollNo "201313111" ;
 	    		:hasEmail "sumit13111@iiitd.ac.in" .
-:backpack-user-sumit_keswani :isStudent :backpack-course-m2013-cse101 .
+:sumit_keswani :attends :m2013-cse101 .
 
-:backpack-user-tanay_kabra
+:tanay_kabra
 				rdf:type :Student ;
 	    		:hasLabel "Tanay Kabra" ;
     			foaf:name "Tanay Kabra" ;
 	    		:hasImage "http://www.usebackpack.com/photos/410/M.jpg?1379562481" ;
 	    		:hasRollNo "2013165" ;
 	    		:hasEmail "tanay13165@iiitd.ac.in" .
-:backpack-user-tanay_kabra :hasID "410".
-:backpack-user-tanay_kabra :isStudent :backpack-course-m2013-cse101 .
+:tanay_kabra :hasUserId "410".
+:tanay_kabra :attends :m2013-cse101 .
 
-:backpack-user-tarun_malhotra
+:tarun_malhotra
 				rdf:type :Student ;
 	    		:hasLabel "Tarun Malhotra" ;
     			foaf:name "Tarun Malhotra" ;
 	    		:hasImage "http://www.usebackpack.com/photos/577/M.jpg?1379510459" ;
 	    		:hasRollNo "13112" ;
 	    		:hasEmail "tarun13112@iiitd.ac.in" .
-:backpack-user-tarun_malhotra :hasID "577".
-:backpack-user-tarun_malhotra :isStudent :backpack-course-m2013-cse101 .
+:tarun_malhotra :hasUserId "577".
+:tarun_malhotra :attends :m2013-cse101 .
 
-:backpack-user-taruvar_aggarwal
+:taruvar_aggarwal
 				rdf:type :Student ;
 	    		:hasLabel "Taruvar Aggarwal" ;
     			foaf:name "Taruvar Aggarwal" ;
 	    		:hasImage "http://www.usebackpack.com/photos/397/M.jpg?1376323772" ;
 	    		:hasRollNo "2013166" ;
 	    		:hasEmail "taruvar13166@iiitd.ac.in" .
-:backpack-user-taruvar_aggarwal :hasID "397".
-:backpack-user-taruvar_aggarwal :isStudent :backpack-course-m2013-cse101 .
+:taruvar_aggarwal :hasUserId "397".
+:taruvar_aggarwal :attends :m2013-cse101 .
 
-:backpack-user-tavneet_singh
+:tavneet_singh
 				rdf:type :Student ;
 	    		:hasLabel "Tavneet Singh" ;
     			foaf:name "Tavneet Singh" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" ;
 	    		:hasRollNo "2012113" ;
 	    		:hasEmail "tavneet12113@iiitd.ac.in" .
-:backpack-user-tavneet_singh :isStudent :backpack-course-m2013-cse101 .
+:tavneet_singh :attends :m2013-cse101 .
 
-:backpack-user-tushar_gupta
+:tushar_gupta
 				rdf:type :Student ;
 	    		:hasLabel "Tushar Gupta" ;
     			foaf:name "Tushar Gupta" ;
 	    		:hasImage "http://www.usebackpack.com/photos/275/M.jpg?1376214915" ;
 	    		:hasRollNo "2013113" ;
 	    		:hasEmail "tushar13113@iiitd.ac.in" .
-:backpack-user-tushar_gupta :hasID "275".
-:backpack-user-tushar_gupta :isStudent :backpack-course-m2013-cse101 .
+:tushar_gupta :hasUserId "275".
+:tushar_gupta :attends :m2013-cse101 .
 
-:backpack-user-tushar_sharma
+:tushar_sharma
 				rdf:type :Student ;
 	    		:hasLabel "Tushar Sharma" ;
     			foaf:name "Tushar Sharma" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" ;
 	    		:hasRollNo "2013114" ;
 	    		:hasEmail "tushar13114@iiitd.ac.in" .
-:backpack-user-tushar_sharma :isStudent :backpack-course-m2013-cse101 .
+:tushar_sharma :attends :m2013-cse101 .
 
-:backpack-user-uday_yadav
+:uday_yadav
 				rdf:type :Student ;
 	    		:hasLabel "Uday Yadav" ;
     			foaf:name "Uday Yadav" ;
 	    		:hasImage "http://www.usebackpack.com/photos/485/M.jpg?1392713611" ;
 	    		:hasRollNo "2013115" ;
 	    		:hasEmail "uday13115@iiitd.ac.in" .
-:backpack-user-uday_yadav :hasID "485".
-:backpack-user-uday_yadav :isStudent :backpack-course-m2013-cse101 .
+:uday_yadav :hasUserId "485".
+:uday_yadav :attends :m2013-cse101 .
 
-:backpack-user-utkarsh_upadhyaya
+:utkarsh_upadhyaya
 				rdf:type :Student ;
 	    		:hasLabel "Utkarsh Upadhyaya" ;
     			foaf:name "Utkarsh Upadhyaya" ;
 	    		:hasImage "http://www.usebackpack.com/photos/395/M.jpg?1376324013" ;
 	    		:hasRollNo "2013167" ;
 	    		:hasEmail "utkarsh13167@iiitd.ac.in" .
-:backpack-user-utkarsh_upadhyaya :hasID "395".
-:backpack-user-utkarsh_upadhyaya :isStudent :backpack-course-m2013-cse101 .
+:utkarsh_upadhyaya :hasUserId "395".
+:utkarsh_upadhyaya :attends :m2013-cse101 .
 
-:backpack-user-varun_bansal
+:varun_bansal
 				rdf:type :Student ;
 	    		:hasLabel "Varun Bansal" ;
     			foaf:name "Varun Bansal" ;
 	    		:hasImage "http://www.usebackpack.com/photos/531/M.JPG?1384876889" ;
 	    		:hasRollNo "2013168" ;
 	    		:hasEmail "varun13168@iiitd.ac.in" .
-:backpack-user-varun_bansal :hasID "531".
-:backpack-user-varun_bansal :isStudent :backpack-course-m2013-cse101 .
+:varun_bansal :hasUserId "531".
+:varun_bansal :attends :m2013-cse101 .
 
-:backpack-user-varun_kumar
+:varun_kumar
 				rdf:type :Student ;
 	    		:hasLabel "Varun Kumar" ;
     			foaf:name "Varun Kumar" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" ;
 	    		:hasRollNo "2013169" ;
 	    		:hasEmail "varun13169@iiitd.ac.in" .
-:backpack-user-varun_kumar :isStudent :backpack-course-m2013-cse101 .
+:varun_kumar :attends :m2013-cse101 .
 
-:backpack-user-vinamra_aeran
+:vinamra_aeran
 				rdf:type :Student ;
 	    		:hasLabel "Vinamra Aeran" ;
     			foaf:name "Vinamra Aeran" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" ;
 	    		:hasRollNo "2013116" ;
 	    		:hasEmail "vinamra13116@iiitd.ac.in" .
-:backpack-user-vinamra_aeran :isStudent :backpack-course-m2013-cse101 .
+:vinamra_aeran :attends :m2013-cse101 .
 
-:backpack-user-virender_singh
+:virender_singh
 				rdf:type :Student ;
 	    		:hasLabel "Virender Singh" ;
     			foaf:name "Virender Singh" ;
 	    		:hasImage "http://www.usebackpack.com/photos/373/M.jpg?1381345269" ;
 	    		:hasRollNo "2013117" ;
 	    		:hasEmail "virender13117@iiitd.ac.in" .
-:backpack-user-virender_singh :hasID "373".
-:backpack-user-virender_singh :isStudent :backpack-course-m2013-cse101 .
+:virender_singh :hasUserId "373".
+:virender_singh :attends :m2013-cse101 .
 
-:backpack-user-vishal_iiitd
+:vishal_iiitd
 				rdf:type :Student ;
 	    		:hasLabel "Vishal IIITD" ;
     			foaf:name "Vishal IIITD" ;
 	    		:hasImage "http://www.usebackpack.com/photos/493/M.png?1414380953" ;
 	    		:hasRollNo "2013118" ;
 	    		:hasEmail "vishal13118@iiitd.ac.in" .
-:backpack-user-vishal_iiitd :hasID "493".
-:backpack-user-vishal_iiitd :isStudent :backpack-course-m2013-cse101 .
+:vishal_iiitd :hasUserId "493".
+:vishal_iiitd :attends :m2013-cse101 .
 
-:backpack-user-vishal_m
+:vishal_m
 				rdf:type :Student ;
 	    		:hasLabel "Vishal M" ;
     			foaf:name "Vishal M" ;
 	    		:hasImage "http://www.usebackpack.com/photos/560/M.jpg?1405088281" ;
 	    		:hasRollNo "2013120" ;
 	    		:hasEmail "vishal13120@iiitd.ac.in" .
-:backpack-user-vishal_m :hasID "560".
-:backpack-user-vishal_m :isStudent :backpack-course-m2013-cse101 .
+:vishal_m :hasUserId "560".
+:vishal_m :attends :m2013-cse101 .
 
-:backpack-user-vishal_midha
+:vishal_midha
 				rdf:type :Student ;
 	    		:hasLabel "Vishal Midha" ;
     			foaf:name "Vishal Midha" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" ;
 	    		:hasRollNo "2013119" ;
 	    		:hasEmail "vishal13119@iiitd.ac.in" .
-:backpack-user-vishal_midha :isStudent :backpack-course-m2013-cse101 .
+:vishal_midha :attends :m2013-cse101 .
 
-:backpack-user-vishal_ranjan
+:vishal_ranjan
 				rdf:type :Student ;
 	    		:hasLabel "Vishal Ranjan" ;
     			foaf:name "Vishal Ranjan" ;
 	    		:hasImage "http://www.usebackpack.com/photos/529/M.jpg?1415903366" ;
 	    		:hasRollNo "13170" ;
 	    		:hasEmail "vishal13170@iiitd.ac.in" .
-:backpack-user-vishal_ranjan :hasID "529".
-:backpack-user-vishal_ranjan :isStudent :backpack-course-m2013-cse101 .
+:vishal_ranjan :hasUserId "529".
+:vishal_ranjan :attends :m2013-cse101 .
 
-:backpack-user-vivek_gupta
+:vivek_gupta
 				rdf:type :Student ;
 	    		:hasLabel "Vivek Gupta" ;
     			foaf:name "Vivek Gupta" ;
 	    		:hasImage "http://www.usebackpack.com/photos/346/M.jpg?1403198156" ;
 	    		:hasRollNo "MT13050" ;
 	    		:hasEmail "vivek1350@iiitd.ac.in" .
-:backpack-user-vivek_gupta :hasID "346".
-:backpack-user-vivek_gupta :isStudent :backpack-course-m2013-cse101 .
+:vivek_gupta :hasUserId "346".
+:vivek_gupta :attends :m2013-cse101 .
 
-:backpack-user-yashovardhan_sharma
+:yashovardhan_sharma
 				rdf:type :Student ;
 	    		:hasLabel "Yashovardhan Sharma" ;
     			foaf:name "Yashovardhan Sharma" ;
 	    		:hasImage "http://www.usebackpack.com/photos/340/M.jpg?1406914223" ;
 	    		:hasRollNo "2013121" ;
 	    		:hasEmail "yashovardhan13121@iiitd.ac.in" .
-:backpack-user-yashovardhan_sharma :hasID "340".
-:backpack-user-yashovardhan_sharma :isStudent :backpack-course-m2013-cse101 .
+:yashovardhan_sharma :hasUserId "340".
+:yashovardhan_sharma :attends :m2013-cse101 .
 
-:backpack-user-yogesh_kumar
+:yogesh_kumar
 				rdf:type :Student ;
 	    		:hasLabel "Yogesh Kumar" ;
     			foaf:name "Yogesh Kumar" ;
 	    		:hasImage "http://www.usebackpack.com/photos/278/M.jpg?1378409694" ;
 	    		:hasRollNo "2013171" ;
 	    		:hasEmail "yogesh13171@iiitd.ac.in" .
-:backpack-user-yogesh_kumar :hasID "278".
-:backpack-user-yogesh_kumar :isStudent :backpack-course-m2013-cse101 .
+:yogesh_kumar :hasUserId "278".
+:yogesh_kumar :attends :m2013-cse101 .
 
-:backpack-course-m2013-cse300
-			rdf:type :Subject ;
-    		:hasID "cse300" ;
+:software_engineering rdf:type :Subject ;
+                        :hasLabel "Software Engineering".:m2013-cse300
+        :hasSubject :software_engineering ;
+    		:hasCourseId "cse300" ;
     		:hasLabel "Software Engineering" ;
     		:hasWebsite "http://www.usebackpack.com/iiitd/m2013/cse300".
 
-:backpack-user-ashish_sureka
+:ashish_sureka
     			rdf:type :Faculty ;
     			:hasLabel "Ashish Sureka" ;
     			foaf:name "Ashish Sureka" ;
 	    		:hasImage "http://www.usebackpack.com/photos/38/M.jpg?1376492039" .
-:backpack-user-ashish_sureka :hasID "38".
-:backpack-user-ashish_sureka :teaches :backpack-course-m2013-cse300 .
+:ashish_sureka :hasUserId "38".
+:ashish_sureka :teaches :software_engineering .
 
-:backpack-user-swati_agrawal
+:swati_agrawal
     			rdf:type :Student ;
     			:hasLabel "Swati Agrawal" ;
     			foaf:name "Swati Agrawal" ;
 	    		:hasImage "http://www.usebackpack.com/photos/484/M.jpg?1376490661" .
-:backpack-user-swati_agrawal :hasID "484".
-:backpack-user-swati_agrawal :isTeachingAssistantOf :backpack-course-m2013-cse300 .
+:swati_agrawal :hasUserId "484".
+:swati_agrawal :isTeachingAssistantOf :software_engineering .
 
-:backpack-user-rahul_mishra
+:rahul_mishra
     			rdf:type :Student ;
     			:hasLabel "Rahul Mishra" ;
     			foaf:name "Rahul Mishra" ;
 	    		:hasImage "http://www.usebackpack.com/photos/487/M.jpg?1392789158" .
-:backpack-user-rahul_mishra :hasID "487".
-:backpack-user-rahul_mishra :isTeachingAssistantOf :backpack-course-m2013-cse300 .
+:rahul_mishra :hasUserId "487".
+:rahul_mishra :isTeachingAssistantOf :software_engineering .
 
-:backpack-course-m2013-esc301
-			rdf:type :Subject ;
-    		:hasID "esc301" ;
+:introduction_to_robotics rdf:type :Subject ;
+                        :hasLabel "Introduction to Robotics".:m2013-esc301
+        :hasSubject :introduction_to_robotics ;
+    		:hasCourseId "esc301" ;
     		:hasLabel "Introduction to Robotics" ;
     		:hasWebsite "http://www.usebackpack.com/iiitd/m2013/esc301".
 
-:backpack-user-p__b__sujit
+:p__b__sujit
     			rdf:type :Faculty ;
     			:hasLabel "P. B. Sujit" ;
     			foaf:name "P. B. Sujit" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" .
-:backpack-user-p__b__sujit :teaches :backpack-course-m2013-esc301 .
+:p__b__sujit :teaches :introduction_to_robotics .
 
-:backpack-user-parikshit_maini
+:parikshit_maini
     			rdf:type :Student ;
     			:hasLabel "Parikshit Maini" ;
     			foaf:name "Parikshit Maini" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" .
-:backpack-user-parikshit_maini :isTeachingAssistantOf :backpack-course-m2013-esc301 .
+:parikshit_maini :isTeachingAssistantOf :introduction_to_robotics .
 
-:backpack-user-alvika_gautam
+:alvika_gautam
     			rdf:type :Student ;
     			:hasLabel "Alvika Gautam" ;
     			foaf:name "Alvika Gautam" ;
 	    		:hasImage "http://www.usebackpack.com/photos/647/M.jpg?1378101520" .
-:backpack-user-alvika_gautam :hasID "647".
-:backpack-user-alvika_gautam :isTeachingAssistantOf :backpack-course-m2013-esc301 .
+:alvika_gautam :hasUserId "647".
+:alvika_gautam :isTeachingAssistantOf :introduction_to_robotics .
 
-:backpack-course-m2013-ent401
-			rdf:type :Subject ;
-    		:hasID "ent401" ;
+:technological_entrepreneurship_as_a_career rdf:type :Subject ;
+                        :hasLabel "Technological Entrepreneurship as a career".:m2013-ent401
+        :hasSubject :technological_entrepreneurship_as_a_career ;
+    		:hasCourseId "ent401" ;
     		:hasLabel "Technological Entrepreneurship as a career" ;
     		:hasWebsite "http://www.usebackpack.com/iiitd/m2013/ent401".
 
-:backpack-user-hemant_kumar
+:hemant_kumar
     			rdf:type :Faculty ;
     			:hasLabel "Hemant Kumar" ;
     			foaf:name "Hemant Kumar" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" .
-:backpack-user-hemant_kumar :teaches :backpack-course-m2013-ent401 .
+:hemant_kumar :teaches :technological_entrepreneurship_as_a_career .
 
-:backpack-course-m2013-cse539
-			rdf:type :Subject ;
-    		:hasID "cse539" ;
+:cellular_data_network rdf:type :Subject ;
+                        :hasLabel "Cellular Data Network".:m2013-cse539
+        :hasSubject :cellular_data_network ;
+    		:hasCourseId "cse539" ;
     		:hasLabel "Cellular Data Network" ;
     		:hasWebsite "http://www.usebackpack.com/iiitd/m2013/cse539".
 
-:backpack-user-geeta_tripathi
+:geeta_tripathi
     			rdf:type :Faculty ;
     			:hasLabel "Geeta Tripathi" ;
     			foaf:name "Geeta Tripathi" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" .
-:backpack-user-geeta_tripathi :teaches :backpack-course-m2013-cse539 .
+:geeta_tripathi :teaches :cellular_data_network .
 
-:backpack-user-madhvi_gupta
+:madhvi_gupta
     			rdf:type :Student ;
     			:hasLabel "Madhvi Gupta" ;
     			foaf:name "Madhvi Gupta" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" .
-:backpack-user-madhvi_gupta :isTeachingAssistantOf :backpack-course-m2013-cse539 .
+:madhvi_gupta :isTeachingAssistantOf :cellular_data_network .
 
-:backpack-course-m2013-cse632
-			rdf:type :Subject ;
-    		:hasID "cse632" ;
+:semantic_web rdf:type :Subject ;
+                        :hasLabel "Semantic Web".:m2013-cse632
+        :hasSubject :semantic_web ;
+    		:hasCourseId "cse632" ;
     		:hasLabel "Semantic Web" ;
     		:hasWebsite "http://www.usebackpack.com/iiitd/m2013/cse632".
 
-:backpack-user-anupama_mallik
+:anupama_mallik
     			rdf:type :Faculty ;
     			:hasLabel "Anupama Mallik" ;
     			foaf:name "Anupama Mallik" ;
 	    		:hasImage "http://www.usebackpack.com/photos/145/M.jpg?1376307767" .
-:backpack-user-anupama_mallik :hasID "145".
-:backpack-user-anupama_mallik :teaches :backpack-course-m2013-cse632 .
+:anupama_mallik :hasUserId "145".
+:anupama_mallik :teaches :semantic_web .
 
-:backpack-user-swati_agrawal
+:swati_agrawal
     			rdf:type :Student ;
     			:hasLabel "Swati Agrawal" ;
     			foaf:name "Swati Agrawal" ;
 	    		:hasImage "http://www.usebackpack.com/photos/484/M.jpg?1376490661" .
-:backpack-user-swati_agrawal :hasID "484".
-:backpack-user-swati_agrawal :isTeachingAssistantOf :backpack-course-m2013-cse632 .
+:swati_agrawal :hasUserId "484".
+:swati_agrawal :isTeachingAssistantOf :semantic_web .
 
-:backpack-user-sweta_mishra
+:sweta_mishra
     			rdf:type :Student ;
     			:hasLabel "Sweta Mishra" ;
     			foaf:name "Sweta Mishra" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" .
-:backpack-user-sweta_mishra :isTeachingAssistantOf :backpack-course-m2013-cse632 .
+:sweta_mishra :isTeachingAssistantOf :semantic_web .
 
-:backpack-course-m2013-ece250
-			rdf:type :Subject ;
-    		:hasID "ece250" ;
+:signals_and_systems rdf:type :Subject ;
+                        :hasLabel "Signals and Systems".:m2013-ece250
+        :hasSubject :signals_and_systems ;
+    		:hasCourseId "ece250" ;
     		:hasLabel "Signals and Systems" ;
     		:hasWebsite "http://www.usebackpack.com/iiitd/m2013/ece250".
 
-:backpack-user-a_v_subramanyam
+:a_v_subramanyam
     			rdf:type :Faculty ;
     			:hasLabel "A V Subramanyam" ;
     			foaf:name "A V Subramanyam" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" .
-:backpack-user-a_v_subramanyam :teaches :backpack-course-m2013-ece250 .
+:a_v_subramanyam :teaches :signals_and_systems .
 
-:backpack-course-m2013-eld
-			rdf:type :Subject ;
-    		:hasID "eld" ;
+:embedded_logic_design rdf:type :Subject ;
+                        :hasLabel "Embedded Logic Design".:m2013-eld
+        :hasSubject :embedded_logic_design ;
+    		:hasCourseId "eld" ;
     		:hasLabel "Embedded Logic Design" ;
     		:hasWebsite "http://www.usebackpack.com/iiitd/m2013/eld".
 
-:backpack-user-alexander_fell
+:alexander_fell
     			rdf:type :Faculty ;
     			:hasLabel "Alexander Fell" ;
     			foaf:name "Alexander Fell" ;
 	    		:hasImage "http://www.usebackpack.com/photos/147/M.jpg?1375948325" .
-:backpack-user-alexander_fell :hasID "147".
-:backpack-user-alexander_fell :teaches :backpack-course-m2013-eld .
+:alexander_fell :hasUserId "147".
+:alexander_fell :teaches :embedded_logic_design .
 
-:backpack-user-manoj_gulati
+:manoj_gulati
     			rdf:type :Student ;
     			:hasLabel "Manoj Gulati" ;
     			foaf:name "Manoj Gulati" ;
 	    		:hasImage "http://www.usebackpack.com/photos/153/M.png?1376113527" .
-:backpack-user-manoj_gulati :hasID "153".
-:backpack-user-manoj_gulati :isTeachingAssistantOf :backpack-course-m2013-eld .
+:manoj_gulati :hasUserId "153".
+:manoj_gulati :isTeachingAssistantOf :embedded_logic_design .
 
-:backpack-user-pallavi_das
+:pallavi_das
     			rdf:type :Student ;
     			:hasLabel "Pallavi Das" ;
     			foaf:name "Pallavi Das" ;
 	    		:hasImage "http://www.usebackpack.com/photos/194/M.jpg?1389362596" .
-:backpack-user-pallavi_das :hasID "194".
-:backpack-user-pallavi_das :isTeachingAssistantOf :backpack-course-m2013-eld .
+:pallavi_das :hasUserId "194".
+:pallavi_das :isTeachingAssistantOf :embedded_logic_design .
 
-:backpack-user-rahul_singhal
+:rahul_singhal
     			rdf:type :Student ;
     			:hasLabel "Rahul Singhal" ;
     			foaf:name "Rahul Singhal" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" .
-:backpack-user-rahul_singhal :isTeachingAssistantOf :backpack-course-m2013-eld .
+:rahul_singhal :isTeachingAssistantOf :embedded_logic_design .
 
-:backpack-user-nilesh_chander_varshney
+:nilesh_chander_varshney
     			rdf:type :Student ;
     			:hasLabel "Nilesh Chander Varshney" ;
     			foaf:name "Nilesh Chander Varshney" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" .
-:backpack-user-nilesh_chander_varshney :isTeachingAssistantOf :backpack-course-m2013-eld .
+:nilesh_chander_varshney :isTeachingAssistantOf :embedded_logic_design .
 
-:backpack-user-mansi_jain
+:mansi_jain
     			rdf:type :Student ;
     			:hasLabel "Mansi Jain" ;
     			foaf:name "Mansi Jain" ;
 	    		:hasImage "http://www.usebackpack.com/photos/228/M.JPG?1389765263" .
-:backpack-user-mansi_jain :hasID "228".
-:backpack-user-mansi_jain :isTeachingAssistantOf :backpack-course-m2013-eld .
+:mansi_jain :hasUserId "228".
+:mansi_jain :isTeachingAssistantOf :embedded_logic_design .
 
-:backpack-course-m2013-cse111
-			rdf:type :Subject ;
-    		:hasID "cse111" ;
+:digital_circuits rdf:type :Subject ;
+                        :hasLabel "Digital Circuits".:m2013-cse111
+        :hasSubject :digital_circuits ;
+    		:hasCourseId "cse111" ;
     		:hasLabel "Digital Circuits" ;
     		:hasWebsite "http://www.usebackpack.com/iiitd/m2013/cse111".
 
-:backpack-user-r__n__biswas
+:r__n__biswas
     			rdf:type :Faculty ;
     			:hasLabel "R. N. Biswas" ;
     			foaf:name "R. N. Biswas" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" .
-:backpack-user-r__n__biswas :teaches :backpack-course-m2013-cse111 .
+:r__n__biswas :teaches :digital_circuits .
 
-:backpack-course-m2013-mth100
-			rdf:type :Subject ;
-    		:hasID "mth100" ;
+:maths1:_linear_algebra rdf:type :Subject ;
+                        :hasLabel "Maths1: Linear Algebra".:m2013-mth100
+        :hasSubject :maths1:_linear_algebra ;
+    		:hasCourseId "mth100" ;
     		:hasLabel "Maths1: Linear Algebra" ;
     		:hasWebsite "http://www.usebackpack.com/iiitd/m2013/mth100".
 
-:backpack-user-samaresh_chatterji
+:samaresh_chatterji
     			rdf:type :Faculty ;
     			:hasLabel "Samaresh Chatterji" ;
     			foaf:name "Samaresh Chatterji" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" .
-:backpack-user-samaresh_chatterji :teaches :backpack-course-m2013-mth100 .
+:samaresh_chatterji :teaches :maths1:_linear_algebra .
 
-:backpack-course-m2013-mth301
-			rdf:type :Subject ;
-    		:hasID "mth301" ;
+:maths3 rdf:type :Subject ;
+                        :hasLabel "Maths3".:m2013-mth301
+        :hasSubject :maths3 ;
+    		:hasCourseId "mth301" ;
     		:hasLabel "Maths3" ;
     		:hasWebsite "http://www.usebackpack.com/iiitd/m2013/mth301".
 
-:backpack-user-samaresh_chatterji
+:samaresh_chatterji
     			rdf:type :Faculty ;
     			:hasLabel "Samaresh Chatterji" ;
     			foaf:name "Samaresh Chatterji" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" .
-:backpack-user-samaresh_chatterji :teaches :backpack-course-m2013-mth301 .
+:samaresh_chatterji :teaches :maths3 .
 
-:backpack-course-m2013-cse301
-			rdf:type :Subject ;
-    		:hasID "cse301" ;
+:compilers rdf:type :Subject ;
+                        :hasLabel "compilers".:m2013-cse301
+        :hasSubject :compilers ;
+    		:hasCourseId "cse301" ;
     		:hasLabel "compilers" ;
     		:hasWebsite "http://www.usebackpack.com/iiitd/m2013/cse301".
 
-:backpack-user-apala_guha
+:apala_guha
     			rdf:type :Faculty ;
     			:hasLabel "Apala Guha" ;
     			foaf:name "Apala Guha" ;
 	    		:hasImage "http://www.usebackpack.com/photos/465/M.jpg?1377160144" .
-:backpack-user-apala_guha :hasID "465".
-:backpack-user-apala_guha :teaches :backpack-course-m2013-cse301 .
+:apala_guha :hasUserId "465".
+:apala_guha :teaches :compilers .
 
-:backpack-user-savita_dabral
+:savita_dabral
     			rdf:type :Student ;
     			:hasLabel "Savita Dabral" ;
     			foaf:name "Savita Dabral" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" .
-:backpack-user-savita_dabral :isTeachingAssistantOf :backpack-course-m2013-cse301 .
+:savita_dabral :isTeachingAssistantOf :compilers .
 
-:backpack-user-ruchita_bansal
+:ruchita_bansal
     			rdf:type :Student ;
     			:hasLabel "Ruchita Bansal" ;
     			foaf:name "Ruchita Bansal" ;
 	    		:hasImage "http://www.usebackpack.com/photos/45/M.jpg?1375784297" .
-:backpack-user-ruchita_bansal :hasID "45".
-:backpack-user-ruchita_bansal :isTeachingAssistantOf :backpack-course-m2013-cse301 .
+:ruchita_bansal :hasUserId "45".
+:ruchita_bansal :isTeachingAssistantOf :compilers .
 
-:backpack-user-narayana_reddy_y
+:narayana_reddy_y
     			rdf:type :Student ;
     			:hasLabel "Narayana Reddy Y" ;
     			foaf:name "Narayana Reddy Y" ;
 	    		:hasImage "http://www.usebackpack.com/photos/98/M.jpg?1375882473" .
-:backpack-user-narayana_reddy_y :hasID "98".
-:backpack-user-narayana_reddy_y :isTeachingAssistantOf :backpack-course-m2013-cse301 .
+:narayana_reddy_y :hasUserId "98".
+:narayana_reddy_y :isTeachingAssistantOf :compilers .
 
-:backpack-user-adarsh_dubey
+:adarsh_dubey
     			rdf:type :Student ;
     			:hasLabel "Adarsh Dubey" ;
     			foaf:name "Adarsh Dubey" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" .
-:backpack-user-adarsh_dubey :isTeachingAssistantOf :backpack-course-m2013-cse301 .
+:adarsh_dubey :isTeachingAssistantOf :compilers .
 
-:backpack-user-sakshi_tiwari
+:sakshi_tiwari
     			rdf:type :Student ;
     			:hasLabel "Sakshi Tiwari" ;
     			foaf:name "Sakshi Tiwari" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" .
-:backpack-user-sakshi_tiwari :isTeachingAssistantOf :backpack-course-m2013-cse301 .
+:sakshi_tiwari :isTeachingAssistantOf :compilers .
 
-:backpack-course-m2013-cse694d
-			rdf:type :Subject ;
-    		:hasID "cse694d" ;
+:privacy_in_location-based_services rdf:type :Subject ;
+                        :hasLabel "Privacy in Location-based Services".:m2013-cse694d
+        :hasSubject :privacy_in_location-based_services ;
+    		:hasCourseId "cse694d" ;
     		:hasLabel "Privacy in Location-based Services" ;
     		:hasWebsite "http://www.usebackpack.com/iiitd/m2013/cse694d".
 
-:backpack-user-vikram_goyal
+:vikram_goyal
     			rdf:type :Faculty ;
     			:hasLabel "Vikram Goyal" ;
     			foaf:name "Vikram Goyal" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" .
-:backpack-user-vikram_goyal :teaches :backpack-course-m2013-cse694d .
+:vikram_goyal :teaches :privacy_in_location-based_services .
 
-:backpack-course-m2013-cse507
-			rdf:type :Subject ;
-    		:hasID "cse507" ;
+:database_system_implementation rdf:type :Subject ;
+                        :hasLabel "Database System Implementation".:m2013-cse507
+        :hasSubject :database_system_implementation ;
+    		:hasCourseId "cse507" ;
     		:hasLabel "Database System Implementation" ;
     		:hasWebsite "http://www.usebackpack.com/iiitd/m2013/cse507".
 
-:backpack-user-vikram_goyal
+:vikram_goyal
     			rdf:type :Faculty ;
     			:hasLabel "Vikram Goyal" ;
     			foaf:name "Vikram Goyal" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" .
-:backpack-user-vikram_goyal :teaches :backpack-course-m2013-cse507 .
+:vikram_goyal :teaches :database_system_implementation .
 
-:backpack-user-lovey_agrawal
+:lovey_agrawal
     			rdf:type :Student ;
     			:hasLabel "Lovey Agrawal" ;
     			foaf:name "Lovey Agrawal" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" .
-:backpack-user-lovey_agrawal :isTeachingAssistantOf :backpack-course-m2013-cse507 .
+:lovey_agrawal :isTeachingAssistantOf :database_system_implementation .
 
-:backpack-user-krishan_arya
+:krishan_arya
     			rdf:type :Student ;
     			:hasLabel "Krishan Arya" ;
     			foaf:name "Krishan Arya" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" .
-:backpack-user-krishan_arya :isTeachingAssistantOf :backpack-course-m2013-cse507 .
+:krishan_arya :isTeachingAssistantOf :database_system_implementation .
 
-:backpack-course-m2013-cse545
-			rdf:type :Subject ;
-    		:hasID "cse545" ;
+:foundation_of_computer_security rdf:type :Subject ;
+                        :hasLabel "Foundation of Computer Security".:m2013-cse545
+        :hasSubject :foundation_of_computer_security ;
+    		:hasCourseId "cse545" ;
     		:hasLabel "Foundation of Computer Security" ;
     		:hasWebsite "http://www.usebackpack.com/iiitd/m2013/cse545".
 
-:backpack-user-gaurav_gupta
+:gaurav_gupta
     			rdf:type :Faculty ;
     			:hasLabel "Gaurav Gupta" ;
     			foaf:name "Gaurav Gupta" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" .
-:backpack-user-gaurav_gupta :teaches :backpack-course-m2013-cse545 .
+:gaurav_gupta :teaches :foundation_of_computer_security .
 
-:backpack-user-sandipan_biswas
+:sandipan_biswas
     			rdf:type :Student ;
     			:hasLabel "Sandipan Biswas" ;
     			foaf:name "Sandipan Biswas" ;
 	    		:hasImage "http://www.usebackpack.com/photos/208/M.JPG?1379054006" .
-:backpack-user-sandipan_biswas :hasID "208".
-:backpack-user-sandipan_biswas :isTeachingAssistantOf :backpack-course-m2013-cse545 .
+:sandipan_biswas :hasUserId "208".
+:sandipan_biswas :isTeachingAssistantOf :foundation_of_computer_security .
 
-:backpack-user-rashi_garg
+:rashi_garg
     			rdf:type :Student ;
     			:hasLabel "Rashi Garg" ;
     			foaf:name "Rashi Garg" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" .
-:backpack-user-rashi_garg :isTeachingAssistantOf :backpack-course-m2013-cse545 .
+:rashi_garg :isTeachingAssistantOf :foundation_of_computer_security .
 
-:backpack-user-adarsh_agarwal
+:adarsh_agarwal
     			rdf:type :Student ;
     			:hasLabel "Adarsh Agarwal" ;
     			foaf:name "Adarsh Agarwal" ;
 	    		:hasImage "http://www.usebackpack.com/photos/377/M.jpg?1377111746" .
-:backpack-user-adarsh_agarwal :hasID "377".
-:backpack-user-adarsh_agarwal :isTeachingAssistantOf :backpack-course-m2013-cse545 .
+:adarsh_agarwal :hasUserId "377".
+:adarsh_agarwal :isTeachingAssistantOf :foundation_of_computer_security .
 
-:backpack-user-megha_agrawal
+:megha_agrawal
     			rdf:type :Student ;
     			:hasLabel "Megha Agrawal" ;
     			foaf:name "Megha Agrawal" ;
 	    		:hasImage "http://www.usebackpack.com/assets/default_avatar.png" .
-:backpack-user-megha_agrawal :isTeachingAssistantOf :backpack-course-m2013-cse545 .
+:megha_agrawal :isTeachingAssistantOf :foundation_of_computer_security .
 
-:backpack-user-nishant_sharma
+:nishant_sharma
     			rdf:type :Student ;
     			:hasLabel "Nishant Sharma" ;
     			foaf:name "Nishant Sharma" ;
 	    		:hasImage "http://www.usebackpack.com/photos/694/M.jpg?1377767274" .
-:backpack-user-nishant_sharma :hasID "694".
-:backpack-user-nishant_sharma :isTeachingAssistantOf :backpack-course-m2013-cse545 .
+:nishant_sharma :hasUserId "694".
+:nishant_sharma :isTeachingAssistantOf :foundation_of_computer_security .
 

@@ -346,6 +346,16 @@
 
 
 
+###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#hasCourseId
+
+:hasCourseId rdf:type owl:DatatypeProperty ;
+             
+             rdfs:domain :Subject ;
+             
+             rdfs:range xsd:string .
+
+
+
 ###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#hasCredits
 
 :hasCredits rdf:type owl:DatatypeProperty ;
@@ -366,11 +376,33 @@
 
 
 
+###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#hasEmail
+
+:hasEmail rdf:type owl:DatatypeProperty ;
+          
+          rdfs:domain :Agent ;
+          
+          rdfs:range xsd:string .
+
+
+
 ###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#hasEndDate
 
 :hasEndDate rdf:type owl:DatatypeProperty ;
             
             rdfs:range xsd:dateTime .
+
+
+
+###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#hasImage
+
+:hasImage rdf:type owl:DatatypeProperty ;
+          
+          rdfs:range xsd:string ;
+          
+          rdfs:domain owl:Thing ;
+          
+          rdfs:subPropertyOf owl:topDataProperty .
 
 
 
@@ -386,11 +418,45 @@
 
 
 
+###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#hasRollNo
+
+:hasRollNo rdf:type owl:DatatypeProperty ;
+           
+           rdfs:domain :Student ;
+           
+           rdfs:range xsd:string .
+
+
+
 ###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#hasStartDate
 
 :hasStartDate rdf:type owl:DatatypeProperty ;
               
               rdfs:range xsd:dateTime .
+
+
+
+###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#hasUserId
+
+:hasUserId rdf:type owl:DatatypeProperty ;
+           
+           rdfs:range xsd:string ;
+           
+           rdfs:subPropertyOf owl:topDataProperty ;
+           
+           rdfs:domain foaf:Person .
+
+
+
+###  http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#hasWebsite
+
+:hasWebsite rdf:type owl:DatatypeProperty ;
+            
+            rdfs:range xsd:anyURI ;
+            
+            rdfs:domain owl:Thing ;
+            
+            rdfs:subPropertyOf owl:topDataProperty .
 
 
 
@@ -754,39 +820,6 @@
             ]
 ] .
 [ rdf:type swrl:Imp ;
-  swrl:body [ rdf:type swrl:AtomList ;
-              rdf:rest [ rdf:type swrl:AtomList ;
-                         rdf:first [ rdf:type swrl:ClassAtom ;
-                                     swrl:classPredicate :Person ;
-                                     swrl:argument1 <urn:swrl#b>
-                                   ] ;
-                         rdf:rest [ rdf:type swrl:AtomList ;
-                                    rdf:rest [ rdf:type swrl:AtomList ;
-                                               rdf:rest [ rdf:type swrl:AtomList ;
-                                                          rdf:rest rdf:nil ;
-                                                          rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
-                                                                      swrl:propertyPredicate :memberOf ;
-                                                                      swrl:argument1 <urn:swrl#b> ;
-                                                                      swrl:argument2 <urn:swrl#o>
-                                                                    ]
-                                                        ] ;
-                                               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
-                                                           swrl:propertyPredicate :memberOf ;
-                                                           swrl:argument1 <urn:swrl#a> ;
-                                                           swrl:argument2 <urn:swrl#o>
-                                                         ]
-                                             ] ;
-                                    rdf:first [ rdf:type swrl:ClassAtom ;
-                                                swrl:classPredicate :Team ;
-                                                swrl:argument1 <urn:swrl#o>
-                                              ]
-                                  ]
-                       ] ;
-              rdf:first [ rdf:type swrl:ClassAtom ;
-                          swrl:classPredicate :Person ;
-                          swrl:argument1 <urn:swrl#a>
-                        ]
-            ] ;
   swrl:head [ rdf:type swrl:AtomList ;
               rdf:rest rdf:nil ;
               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
@@ -794,12 +827,18 @@
                           swrl:argument1 <urn:swrl#a> ;
                           swrl:argument2 <urn:swrl#b>
                         ]
-            ]
-] .
-[ rdf:type swrl:Imp ;
+            ] ;
   swrl:body [ rdf:type swrl:AtomList ;
+              rdf:first [ rdf:type swrl:ClassAtom ;
+                          swrl:classPredicate :Person ;
+                          swrl:argument1 <urn:swrl#a>
+                        ] ;
               rdf:rest [ rdf:type swrl:AtomList ;
                          rdf:rest [ rdf:type swrl:AtomList ;
+                                    rdf:first [ rdf:type swrl:ClassAtom ;
+                                                swrl:classPredicate :Project ;
+                                                swrl:argument1 <urn:swrl#project>
+                                              ] ;
                                     rdf:rest [ rdf:type swrl:AtomList ;
                                                rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
                                                            swrl:propertyPredicate :takenUpBy ;
@@ -814,21 +853,48 @@
                                                                       swrl:argument1 <urn:swrl#project>
                                                                     ]
                                                         ]
-                                             ] ;
-                                    rdf:first [ rdf:type swrl:ClassAtom ;
-                                                swrl:classPredicate :Project ;
-                                                swrl:argument1 <urn:swrl#project>
-                                              ]
+                                             ]
                                   ] ;
                          rdf:first [ rdf:type swrl:ClassAtom ;
                                      swrl:classPredicate :Person ;
                                      swrl:argument1 <urn:swrl#b>
                                    ]
-                       ] ;
+                       ]
+            ]
+] .
+[ rdf:type swrl:Imp ;
+  swrl:body [ rdf:type swrl:AtomList ;
               rdf:first [ rdf:type swrl:ClassAtom ;
                           swrl:classPredicate :Person ;
                           swrl:argument1 <urn:swrl#a>
-                        ]
+                        ] ;
+              rdf:rest [ rdf:type swrl:AtomList ;
+                         rdf:first [ rdf:type swrl:ClassAtom ;
+                                     swrl:classPredicate :Person ;
+                                     swrl:argument1 <urn:swrl#b>
+                                   ] ;
+                         rdf:rest [ rdf:type swrl:AtomList ;
+                                    rdf:first [ rdf:type swrl:ClassAtom ;
+                                                swrl:classPredicate :Team ;
+                                                swrl:argument1 <urn:swrl#o>
+                                              ] ;
+                                    rdf:rest [ rdf:type swrl:AtomList ;
+                                               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                           swrl:propertyPredicate :memberOf ;
+                                                           swrl:argument1 <urn:swrl#a> ;
+                                                           swrl:argument2 <urn:swrl#o>
+                                                         ] ;
+                                               rdf:rest [ rdf:type swrl:AtomList ;
+                                                          rdf:rest rdf:nil ;
+                                                          rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                                      swrl:propertyPredicate :memberOf ;
+                                                                      swrl:argument1 <urn:swrl#b> ;
+                                                                      swrl:argument2 <urn:swrl#o>
+                                                                    ]
+                                                        ]
+                                             ]
+                                  ]
+                       ]
             ] ;
   swrl:head [ rdf:type swrl:AtomList ;
               rdf:rest rdf:nil ;
@@ -854,6 +920,11 @@
                           swrl:argument1 <urn:swrl#p>
                         ] ;
               rdf:rest [ rdf:type swrl:AtomList ;
+                         rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                     swrl:propertyPredicate :connectsToBox ;
+                                     swrl:argument2 <urn:swrl#b> ;
+                                     swrl:argument1 <urn:swrl#p>
+                                   ] ;
                          rdf:rest [ rdf:type swrl:AtomList ;
                                     rdf:rest rdf:nil ;
                                     rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
@@ -861,12 +932,7 @@
                                                 swrl:argument1 <urn:swrl#b> ;
                                                 swrl:argument2 <urn:swrl#i>
                                               ]
-                                  ] ;
-                         rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
-                                     swrl:propertyPredicate :connectsToBox ;
-                                     swrl:argument2 <urn:swrl#b> ;
-                                     swrl:argument1 <urn:swrl#p>
-                                   ]
+                                  ]
                        ]
             ]
 ] .
