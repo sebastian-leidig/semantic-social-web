@@ -1,12 +1,18 @@
 home:
     path:     /
     defaults: { _controller: SWebSemanticSocialWebBundle:Home:index }
+
 ontology_visualization:
     path:     /ontology
     defaults: { _controller: SWebSemanticSocialWebBundle:Ontology:index }
+ontology_data:
+    path:     /ontology/data
+    defaults: { _controller: SWebSemanticSocialWebBundle:Ontology:data }
+
 sparql_form:
     path:     /sparql
     defaults: { _controller: SWebSemanticSocialWebBundle:SparqlForm:index }
+
 about:
     path:     /about
     defaults: { _controller: SWebSemanticSocialWebBundle:About:index }

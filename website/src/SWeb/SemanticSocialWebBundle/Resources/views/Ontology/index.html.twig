@@ -1,14 +1,67 @@
 {% extends 'SWebSemanticSocialWebBundle::base.html.twig' %}
 
+{% block javascripts %}
+    <!-- Sigma JS libaries -->
+    <script src="{{ asset('js/sigma/sigma.min.js') }}"></script>
+    <script src="{{ asset('js/sigma/plugins/sigma.parsers.json.min.js') }}"></script>
+    <script src="{{ asset('js/sigma/plugins/sigma.layout.forceAtlas2.min.js') }}"></script>
+    <!-- Custom Scripts -->
+    {% javascripts '@SWebSemanticSocialWebBundle/Resources/views/Ontology/*' %}
+        <script type="text/javascript" src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+    <!-- Load Ontology Data -->
+    <script type="text/javascript">
+        $.getJSON( "{{ path('ontology_data') }}", parseOntology);
+    </script>
+{% endblock %}
+
+
 {% block jumbotron %}
-
-
-
+  <h1>Ontology Visualization</h1>
+  <p>This graph represents the ontology (i.e. the abstract structure) of the <i>Semantic Social Web</i> project application.</p>
 {% endblock %}
 
 
 {% block body %}
-
-
-
+      <div class="row">
+        <div class="col-md-9">
+          <div id="graph-container"></div>
+          <a href="#" download="ontology_graph.json" id="graph-download">Download graph as JSON file</a>
+        </div>
+        <div class="col-md-3">
+          <h2 id="details-title">Class Name</h2>
+          <p id="details-description">
+            Some description of this ...
+          </p>
+          <div id="details-class" style="visibility:none;">
+            <h3>Superclasses</h3>
+            <div id="details-superclasses">
+              <ul>
+                <li>superclass 1</li>
+                <li>superclass 2</li>
+              </ul>
+            </div>
+            <h3>Properties</h3>
+            <div id="details-class-properties">
+              <ul>
+                <li>property 1</li>
+                <li>property 2</li>
+              </ul>
+            </div>
+          </div>
+          <div id="details-property" style="visibility:none;">
+            <h3>Superproperties</h3>
+            <div id="details-superproperties">
+              <ul>
+                <li>superclass 1</li>
+                <li>superclass 2</li>
+              </ul>
+            </div>
+          </div>
+          <h3>Remarks</h3>
+          <div id="details-additional">
+            Equal to, etc.
+          </div>
+       </div>
+      </div>
 {% endblock %}
