@@ -1,0 +1,28 @@
+{% extends 'SWebSemanticSocialWebBundle::base.html.twig' %}
+
+{% block jumbotron %}
+
+    <h1>Admin Panel</h1>
+    <p>Configure the inner workings of the project.</p>
+
+{% endblock %}
+
+
+{% block body %}
+
+  <div class="row">
+    <div class="col-md-4">
+      <h2>Update Backpack Data</h2>
+      <p>Crawl and parse the usebackpack.com site to refresh the data about courses and students.</p>
+      <p><a class="btn btn-default" href="{{ path('admin') }}" role="button">Crawl usebackpack.com</a></p>
+   </div>
+    <div class="col-md-4">
+      <h2></h2>
+      <p></p>
+    </div>
+    <div class="col-md-4">
+      <h2></h2>
+      <p></p>
+    </div>
+  </div>
+{% endblock %}

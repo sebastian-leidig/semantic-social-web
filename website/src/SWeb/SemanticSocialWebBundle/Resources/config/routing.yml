@@ -2,6 +2,10 @@ home:
     path:     /
     defaults: { _controller: SWebSemanticSocialWebBundle:Home:index }
 
+predefined_queries:
+    path:     /connections
+    defaults: { _controller: SWebSemanticSocialWebBundle:PredefinedQueries:index }
+
 ontology_visualization:
     path:     /ontology
     defaults: { _controller: SWebSemanticSocialWebBundle:Ontology:index }
@@ -16,3 +20,7 @@ sparql_form:
 about:
     path:     /about
     defaults: { _controller: SWebSemanticSocialWebBundle:About:index }
+
+admin:
+    path:     /admin
+    defaults: { _controller: SWebSemanticSocialWebBundle:Admin:index }
