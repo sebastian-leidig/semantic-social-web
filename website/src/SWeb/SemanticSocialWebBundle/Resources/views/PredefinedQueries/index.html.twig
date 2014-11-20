@@ -11,5 +11,12 @@
 {% block body %}
 
     <p>Rahul's queries to be included here.</p>
+    <p>
+      <ul>
+        {% for item in results %}
+          <li>{{ item.name }}</li>
+        {% endfor %}
+      </ul>
+    </p>
 
 {% endblock %}
