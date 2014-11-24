@@ -1,4 +1,11 @@
-projectdeliverabledetails.pdf
-project-proposal_social-web-ontology.pdf
+*.pdf
+*.odp
+*.odt
 
+fuseki_server.sh
+
+jena-fuseki/*
 sweb_db/*
+data/*
+
+catalog-*.xml
