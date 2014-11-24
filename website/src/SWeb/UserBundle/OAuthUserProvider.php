@@ -1,4 +1,6 @@
-namespace SWeb\UserBundle\Model;
+<?php
+
+namespace SWeb\UserBundle;
 
 use HWI\Bundle\OAuthBundle\Security\Core\User\OAuthUserProvider as BaseOAuthUserProvider;
 
