@@ -2,6 +2,8 @@ security:
     providers:
         in_memory:
             memory: ~
+        sweb_hwi_provider:
+            id: sweb_user.oauth_user_provider
 
     firewalls:
         # dev:
@@ -18,7 +20,7 @@ security:
                 failure_path:      /login
 
                 oauth_user_provider:
-                    service: hwi_oauth.user.provider
+                    service: sweb_user.oauth_user_provider
 
     access_control:
         - { path: ^/login, roles: IS_AUTHENTICATED_ANONYMOUSLY }

@@ -1,3 +1,7 @@
+s_web_user:
+    resource: "@SWebUserBundle/Resources/config/routing.yml"
+    prefix:   /
+
 hwi_oauth_redirect:
     resource: "@HWIOAuthBundle/Resources/config/routing/redirect.xml"
     prefix:   /connect
@@ -13,4 +17,8 @@ google_login:
 s_web_semantic_social_web:
     resource: "@SWebSemanticSocialWebBundle/Resources/config/routing.yml"
     prefix:   /
+
+SWebUserBundle:
+        resource: "@SWebUserBundle/Resources/config/routing.yml"
+        prefix:   /
 

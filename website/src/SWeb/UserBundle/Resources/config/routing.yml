@@ -1,0 +1,3 @@
+s_web_user_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: SWebUserBundle:Default:index }
