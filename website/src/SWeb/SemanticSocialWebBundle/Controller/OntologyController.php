@@ -9,7 +9,8 @@ class OntologyController extends Controller
 {
     public function indexAction()
     {
-        return $this->render('SWebSemanticSocialWebBundle:Ontology:index.html.twig');
+        $dataUrl = $this->generateUrl('ontology_data');
+        return $this->render('SWebSemanticSocialWebBundle:Ontology:index.html.twig', array( "dataUrl" => $dataUrl));
     }
     
     public function dataAction()

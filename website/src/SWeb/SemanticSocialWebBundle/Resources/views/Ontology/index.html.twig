@@ -11,7 +11,7 @@
     {% endjavascripts %}
     <!-- Load Ontology Data -->
     <script type="text/javascript">
-        $.getJSON( "{{ path('ontology_data') }}", parseOntology);
+        $.getJSON( "{{ dataUrl }}", parseOntology);
     </script>
 {% endblock %}
 
