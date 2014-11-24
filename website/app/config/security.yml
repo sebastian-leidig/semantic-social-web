@@ -4,9 +4,21 @@ security:
             memory: ~
 
     firewalls:
-        dev:
-            pattern: ^/(_(profiler|wdt)|css|images|js)/
-            security: false
+        # dev:
+        #    pattern: ^/(_(profiler|wdt)|css|images|js)/
+        #    security: false
 
-        default:
+        secured_area:
             anonymous: ~
+            oauth:
+                resource_owners:
+                    google:             "/login/check-google"
+                login_path:        /login
+                use_forward:       false
+                failure_path:      /login
+
+                oauth_user_provider:
+                    service: hwi_oauth.user.provider
+
+    access_control:
+        - { path: ^/login, roles: IS_AUTHENTICATED_ANONYMOUSLY }
