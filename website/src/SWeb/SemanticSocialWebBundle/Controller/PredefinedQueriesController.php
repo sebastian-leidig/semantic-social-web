@@ -26,7 +26,7 @@ class PredefinedQueriesController extends Controller
             case 1:
 	              $INTEREST=$this->get('request')->request->get('interest');
 	              $query = $prefix.'
-	              SELECT ?label
+	              SELECT DISTINCT ?label
 	              WHERE
 	              {
 	                ?a :hasInterest :'.$INTEREST.' .
@@ -42,7 +42,7 @@ class PredefinedQueriesController extends Controller
             case 2:
 	              $PERSON=$this->get('request')->request->get('pname');
 	              $query = $prefix.'
-	              SELECT ?label
+	              SELECT DISTINCT ?label
 	              WHERE
 	              {
 		              :'.$PERSON.' :hasInterest ?I1	.
@@ -61,7 +61,7 @@ class PredefinedQueriesController extends Controller
 	              {	
 		              $COURSE=$this->get('request')->request->get('course');
 		              $query = $prefix.'
-		              SELECT ?label 
+		              SELECT DISTINCT ?label 
 		              WHERE
 		              {
 			              ?p1 :attends :'.$COURSE.'.
@@ -76,7 +76,7 @@ class PredefinedQueriesController extends Controller
 	              else
 	              {
 		              $query = $prefix.'
-		              SELECT ?course ?label
+		              SELECT DISTINCT ?course ?label
 		              WHERE
 		              {
 			              :'.$PERSON.' :attends ?c1.
@@ -95,7 +95,7 @@ class PredefinedQueriesController extends Controller
             case 4:
 	            $PERSON=$this->get('request')->request->get('pname');
 	            $query = $prefix.'
-	            SELECT ?label
+	            SELECT DISTINCT ?label
 	            WHERE
 	            {
 		            :'.$PERSON.' :attends ?e1.
@@ -112,7 +112,7 @@ class PredefinedQueriesController extends Controller
 	          $PERSON1=$this->get('request')->request->get('pname1');
 	          $PERSON2=$this->get('request')->request->get('pname2');
 	          $query = $prefix.'
-	          SELECT ?r1 ?r2
+	          SELECT DISTINCT ?r1 ?r2
 	          WHERE
 	          {
 		          :'.$PERSON1.' ?r11 ?p.
