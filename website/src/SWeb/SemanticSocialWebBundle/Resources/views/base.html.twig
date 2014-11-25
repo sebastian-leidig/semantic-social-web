@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -41,9 +42,22 @@
           </button>
           <a class="navbar-brand" href="{{ path('home') }}">Semantic Social Web</a>
         </div>
-        {{ include('SWebSemanticSocialWebBundle::menu.html.twig') }}
+        <div id="navbar" class="collapse navbar-collapse">
+          {{ include('SWebSemanticSocialWebBundle::menu.html.twig') }}
+          <div class="navbar-form navbar-right">
+            <a href="{{ path('hwi_oauth_service_redirect', {'service': 'google'}) }}" class="btn btn-success">
+              {% if is_granted('ROLE_USER') %}
+                Signed in as {{ app.user.username }}
+              {% else %}
+                Sign in with Google
+              {% endif %}
+            </a>
+          </div>
+         </div>
+
       </div>
     </div>
+
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
