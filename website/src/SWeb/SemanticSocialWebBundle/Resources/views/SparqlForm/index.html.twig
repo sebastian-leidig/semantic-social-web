@@ -10,6 +10,6 @@
 
 {% block body %}
 
-     <iframe src="http://localhost:3030/control-panel.tpl" width="100%" height="820"></iframe> 
+     <iframe src="http://{{ app.request.host }}:3030/control-panel.tpl" width="100%" height="820"></iframe> 
 
 {% endblock %}
