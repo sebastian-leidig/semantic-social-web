@@ -1,0 +1,17 @@
+<p>
+  <h4>
+    {% if entity.img is defined %}
+      <img src="{{ entity.img }}" class="user-img">
+    {% else %}
+      <img src="http://www.usebackpack.com/assets/default_avatar.png" class="user-img">
+    {% endif %}
+    {{ entity.name }}
+  </h4>
+  {% if entity.mail is defined %}
+    <a href="mailto:{{entity.mail}}">{{entity.mail}}</a>
+  {% endif %}
+  <br>
+  {% if entity.uid is defined %}
+    <a href="http://www.usebackpack.com/users/{{entity.uid}}">View on <i>Backpack</i></a>
+  {% endif %}
+</p>

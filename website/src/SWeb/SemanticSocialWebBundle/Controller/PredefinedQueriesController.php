@@ -26,16 +26,23 @@ class PredefinedQueriesController extends Controller
             case 1:
 	              $INTEREST=$this->get('request')->request->get('interest');
 	              $query = $prefix.'
-	              SELECT DISTINCT ?label
+	              SELECT DISTINCT ?name ?img ?mail ?uid
 	              WHERE
 	              {
-	                ?a :hasInterest :'.$INTEREST.' .
-	                ?a :hasLabel ?label.
+	                ?id :hasInterest :'.$INTEREST.' ;
+	                    :hasLabel ?name .
+                      OPTIONAL 
+                      {
+                        ?id :hasImage ?img ;
+                            :hasEmail ?mail ;
+                            :hasUserId ?uid .
+                      }
 	              }
 	              ';
 	              $f=1;
 	              //print "People sharing an interest in <i>{{ interest }}</i>";
 	              $r = $this->sparql($query);
+	              $r = $this->distinct($r, 'name');
 	              return $this->render('SWebSemanticSocialWebBundle:PredefinedQueries:results1.html.twig', array( "interest" => $INTEREST, "results" => $r));
 	              break;
 	              
@@ -61,33 +68,48 @@ class PredefinedQueriesController extends Controller
 	              {	
 		              $COURSE=$this->get('request')->request->get('course');
 		              $query = $prefix.'
-		              SELECT DISTINCT ?label 
+		              SELECT DISTINCT ?name ?img ?mail ?uid
 		              WHERE
 		              {
-			              ?p1 :attends :'.$COURSE.'.
-			              ?p1 :hasLabel ?label.
+			              ?p1 :attends :'.$COURSE.' ;
+	                      :hasLabel ?name .
+                        OPTIONAL 
+                        {
+                          ?p1 :hasImage ?img ;
+                              :hasEmail ?mail ;
+                              :hasUserId ?uid .
+                        }
 		              }
 		              ';
 		              $f=3;
 		              //print "People attending the course ".$COURSE." are :\n";
 	                $r = $this->sparql($query);
+	                $r = $this->distinct($r, 'name');
 	                return $this->render('SWebSemanticSocialWebBundle:PredefinedQueries:results3.html.twig', array( "person" => $PERSON, "course" => $COURSE, "results" => $r));
 	              }
 	              else
 	              {
 		              $query = $prefix.'
-		              SELECT DISTINCT ?course ?label
+		              SELECT DISTINCT ?course ?name ?img ?mail ?uid
 		              WHERE
 		              {
 			              :'.$PERSON.' :attends ?c1.
 			              ?p1 :attends ?c1.
-			              ?p1 :hasLabel ?label.
 			              ?c1 :hasLabel ?course.
+			              ?p1 :hasLabel ?label ;
+			                  :hasLabel ?name .
+                        OPTIONAL 
+                        {
+                          ?p1 :hasImage ?img ;
+                              :hasEmail ?mail ;
+                              :hasUserId ?uid .
+                        }
 		              }
 		              ';
 		              $f=4;
 		              //print "People sharing their courses with ".$PERSON." are\n";
 	                $r = $this->sparql($query);
+	                $r = $this->distinct($r, 'name');
 	                return $this->render('SWebSemanticSocialWebBundle:PredefinedQueries:results3.html.twig', array( "person" => $PERSON, "results" => $r));
 	              }
                 break;
@@ -138,10 +160,26 @@ class PredefinedQueriesController extends Controller
         $store = \ARC2::getRemoteStore($config);
         
         $res = $store->query($query);
-        $r = [];
-        if($res['result'] !== "")
-            $r = $res['result']['rows'];
+        $this->container->get('logger')->info('Local variables', get_defined_vars());
+        
+        if($res['result'] === "")
+            return [];
             
+        return $res['result']['rows'];
+    }
+    
+    function distinct($arr, $uniqueColumn)
+    {
+        $added = array();
+        $r = array();
+        foreach($arr as $item)
+        {
+            if(!in_array($item[$uniqueColumn], $added))
+            {
+                $r[] = $item;
+                $added[] = $item[$uniqueColumn];
+            }
+        }
         return $r;
     }
 }

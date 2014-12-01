@@ -10,10 +10,10 @@
 
 {% block body %}
     <h2>People sharing an interest in <i>{{ interest }}</i>:</h2>
-    {% for item in results %}
-      <p>
-        <img src="http://www.usebackpack.com/assets/default_avatar.png" class="user-img"> {{ item.label }}
-      </p>
-    {% endfor %}
-
+    <div style="width:40%">
+      {% for item in results %}
+        {{ include('SWebSemanticSocialWebBundle:EntityDisplay:person.html.twig', { 'entity': item }) }}
+        <hr>
+      {% endfor %}
+    </div>
 {% endblock %}

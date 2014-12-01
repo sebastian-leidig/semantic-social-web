@@ -17,10 +17,8 @@
     
     
     {% for item in results %}
-      <p>
-        <img src="http://www.usebackpack.com/assets/default_avatar.png" class="user-img"> {{ item.label }} 
-            {% if item.course is defined %} ({{ item.course }}) {% endif %}
-      </p>
+      {{ include('SWebSemanticSocialWebBundle:EntityDisplay:person.html.twig', { 'entity': item }) }}
+      <hr>
     {% endfor %}
 
 {% endblock %}
