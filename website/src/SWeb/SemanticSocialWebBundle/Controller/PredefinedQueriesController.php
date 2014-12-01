@@ -14,8 +14,41 @@ class PredefinedQueriesController extends Controller
     
     public function formAction($index)
     {
-        return $this->render('SWebSemanticSocialWebBundle:PredefinedQueries:form'.$index.'.html.twig');
-    }
+	$uname = $this->getUser()->getUsername();
+	$query_findName='PREFIX : <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#>
+			SELECT DISTINCT ?n
+			WHERE
+			{
+				?e :hasEmail "'.$uname.'".
+				?e :hasLabel ?n.
+			}
+			';
+	$x=$this->sparql($query_findName);
+	$query='PREFIX : <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#>
+		PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+		SELECT DISTINCT ?p
+		WHERE
+		{
+			?i rdf:type :Person.
+		        ?i :hasLabel ?p.
+			?i :hasEmail ?e.
+			FILTER (?e!="'.$uname.'")
+
+		}';
+	$a = $this->sparql($query);
+	$course_query='PREFIX : <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#>
+			PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+		SELECT DISTINCT ?s
+		WHERE
+		{
+			?c rdf:type :Subject.
+			?c :hasLabel ?s.
+
+		}';
+	$b = $this->sparql($course_query);
+        return $this->render('SWebSemanticSocialWebBundle:PredefinedQueries:form'.$index.'.html.twig', array("result_name" => $a , "result_course" => $b, "user_name" => $uname, "result_findName"=> $x));
+	//return $this->render('SWebSemanticSocialWebBundle:PredefinedQueries:form'.$index.'.html.twig');    
+}
     
     public function handleAction()
     {
@@ -149,7 +182,22 @@ class PredefinedQueriesController extends Controller
             return $this->render('SWebSemanticSocialWebBundle:PredefinedQueries:results5.html.twig', array( "person1" => $PERSON1, "person2" => $PERSON2, "results" => $r));
 	          break;
 	          
-        }
+	case 6:
+		$PERSON1=$this->get('request')->request->get('pname1');
+	        $PERSON2=$this->get('request')->request->get('pname2');
+	        $query = $prefix.'
+		SELECT ?l
+		WHERE
+		{
+			:'.$PERSON1.' :hasInterest ?i.
+			:'.$PERSON2.' :hasInterest ?i.
+			?i :hasLabel ?l.
+		}
+		';
+		 $r = $this->sparql($query);
+            return $this->render('SWebSemanticSocialWebBundle:PredefinedQueries:results6.html.twig', array( "person1" => $PERSON1, "person2" => $PERSON2, "results" => $r));
+	          break;			
+	  }
         
         return $this->render('SWebSemanticSocialWebBundle:PredefinedQueries:index.html.twig');
     }
@@ -182,4 +230,22 @@ class PredefinedQueriesController extends Controller
         }
         return $r;
     }
+
+    function topTenInterestAction()
+	{
+		$prefix = "PREFIX : <http://www.semanticweb.org/sebastian/ontologies/2014/social-web-ontology#> ";
+		$query = $prefix.'
+		SELECT (?i AS ?Interest) (COUNT(?i) AS ?People_with_this_Interest) 
+		WHERE
+		{
+			?p :hasInterest ?i.
+		}
+		GROUP BY ?i
+                ORDER BY DESC(?People_with_this_Interest)
+                LIMIT 10
+		';
+		$r = $this->sparql($query);
+		return $this->render('SWebSemanticSocialWebBundle:PredefinedQueries:topTenInterest.html.twig', array( "Interests" => "Interests", 			"People_with_this_Interest" => "People with this Interest", "results" => $r));	
+	}
+
 }

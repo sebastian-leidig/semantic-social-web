@@ -5,6 +5,9 @@ home:
 predefined_queries:
     path:     /connections
     defaults: { _controller: SWebSemanticSocialWebBundle:PredefinedQueries:index }
+predefined_queries_topTen:
+    path:     /connections/topTenInterests
+    defaults: { _controller: SWebSemanticSocialWebBundle:PredefinedQueries:topTenInterest }
 predefined_queries_form:
     path:     /connections/form/{index}
     defaults: { _controller: SWebSemanticSocialWebBundle:PredefinedQueries:form }

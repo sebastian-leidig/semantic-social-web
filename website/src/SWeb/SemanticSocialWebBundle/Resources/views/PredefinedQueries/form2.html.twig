@@ -12,8 +12,18 @@
 
     <p>
       <form action="{{ path('predefined_queries_handler') }}" method="POST">
-        Enter the Full Name of the Person : </br>
-        <input type="text" name="pname"></br>
+        Select the Name of the Person : </br>
+	<select name="pname">
+<option selected>{{result_findName[0].n}}
+	<!--{% for item in result_findName %}
+	<option selected>{{item.n}}
+	{% endfor %}-->
+        {% for item in result_name %}
+      <p>
+        <option> {{ item.p }}
+      </p>
+	{% endfor %}
+	</select>
         <input type="hidden" name="form" value="2">
         <input type="submit" value="Submit">
       </form>

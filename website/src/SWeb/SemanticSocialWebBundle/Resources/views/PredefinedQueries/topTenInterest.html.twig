@@ -1,0 +1,21 @@
+{% extends 'SWebSemanticSocialWebBundle::base.html.twig' %}
+
+{% block jumbotron %}
+
+    <h1>Find Your Connections</h1>
+    <p>Find relevant information based on your preferences.</p>
+
+{% endblock %}
+
+
+{% block body %}
+    <h2>Top 10 Interests:</h2>
+	<i>{{ Interests }}</i> and <i>{{ People_with_this_Interest }}</i>
+
+    {% for item in results %}
+      <p>
+        {{ item.Interest }} - {{ item.People_with_this_Interest }}
+      </p>
+    {% endfor %}
+
+{% endblock %}
